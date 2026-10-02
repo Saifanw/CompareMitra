@@ -1,114 +1,1342 @@
-[
-  {
-    "product_id": "mobile-001",
-    "brand": "Samsung",
-    "model": "Samsung M36",
-    "slug": "samsung-m36",
-    "category": "mobiles",
-    "price": null,
-    "display_size": "—",
-    "processor": "—",
-    "ram": "—",
-    "storage": "—",
-    "camera": "—",
-    "battery": "—",
-    "charging": "—",
-    "5g": true,
-    "pros": [
-      "Popular Indian-market brand"
-    ],
-    "limitations": [
-      "Demo record; current data not connected yet"
-    ],
-    "amazon_url": "",
-    "flipkart_url": "",
-    "image_url": "",
-    "source": "demo",
-    "last_updated": "2026-10-02",
-    "status": "demo"
+{
+  "schema_version": "1.3-preview",
+  "generated_on": "2026-10-02",
+  "site": "CompareMitra",
+  "tagline": "Compare Smart. Buy Better.",
+  "category": "mobile-phones",
+  "purpose": "Frontend preview database only; not production-locked.",
+  "data_policy": "Do not treat preview prices/availability as permanently current. Recheck price, SKU, India availability, specs and image rights before commercial launch.",
+  "products": [
+    {
+      "id": "mobile-01",
+      "name": "Samsung Galaxy M36 5G",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹16,499 / ₹17,999 / ₹20,999 launch variants",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.7-inch FHD+ Super AMOLED, 120Hz",
+        "processor": "Exynos 1380",
+        "ram_storage": "6/128GB; 8/128GB; 8/256GB",
+        "rear_camera": "50MP OIS triple camera",
+        "front_camera": "13MP",
+        "battery": "5000mAh",
+        "charging": "25W",
+        "os": "One UI 7 / Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/1.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung Newsroom India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specs and launch prices verified; current sale price needs live checkout check"
+    },
+    {
+      "id": "mobile-02",
+      "name": "Samsung Galaxy F70 Pro 5G",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹39,999 shown for 8GB/256GB buy listing; 6GB/128GB page says not for sale",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.samsung.com/in/smartphones/galaxy-f/galaxy-f70-pro-5g/"
+      },
+      "specs": {
+        "display": "6.7-inch class FHD+ Super AMOLED, 120Hz",
+        "processor": "Snapdragon 6 Gen 3",
+        "ram_storage": "6/128GB; 8/128GB; 8/256GB",
+        "rear_camera": "50MP + 5MP + 2MP, OIS",
+        "front_camera": "12MP",
+        "battery": "6000mAh",
+        "charging": "45W",
+        "os": "Android 16 / One UI 8.5",
+        "network": "5G",
+        "ip_rating": "Not stated on page"
+      },
+      "image": {
+        "primary": "assets/product-images/2.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specs verified; India price/availability needs caution because Samsung pages show conflicting sale states"
+    },
+    {
+      "id": "mobile-03",
+      "name": "Samsung Galaxy A57 5G",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹56,999 (8/256)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.7-inch Super AMOLED Plus, 120Hz",
+        "processor": "Exynos 1680",
+        "ram_storage": "8GB/256GB",
+        "rear_camera": "50MP + 12MP + 5MP",
+        "front_camera": "12MP",
+        "battery": "5000mAh",
+        "charging": "45W",
+        "os": "Android 16 / One UI",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/3.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung India official product page",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India product page confirms launch date, 8/256 variant and software support; current price cross-checked"
+    },
+    {
+      "id": "mobile-04",
+      "name": "Samsung Galaxy S26 FE",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹79,999 (8/256GB)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.7-inch FHD+ Dynamic AMOLED 2X, 120Hz",
+        "processor": "Exynos 2500",
+        "ram_storage": "8GB/256GB",
+        "rear_camera": "50MP OIS + 12MP ultrawide + 8MP 3x telephoto",
+        "front_camera": "12MP",
+        "battery": "4900mAh",
+        "charging": "45W wired + 15W wireless",
+        "os": "Android 17 / One UI 9",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/4.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung Newsroom India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India launch/specification/price verified"
+    },
+    {
+      "id": "mobile-05",
+      "name": "Samsung Galaxy S26 Ultra",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,24,990",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.9-inch Dynamic AMOLED 2X, 120Hz",
+        "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+        "ram_storage": "12/256GB; 12/512GB; 16GB/1TB",
+        "rear_camera": "200MP + 50MP + 50MP + 10MP",
+        "front_camera": "12MP",
+        "battery": "5000mAh",
+        "charging": "60W wired",
+        "os": "Android 16 / One UI",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/5.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Core specs cross-checked; final variant/price check pending"
+    },
+    {
+      "id": "mobile-06",
+      "name": "Samsung Galaxy Z Flip8",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,14,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "Cover 10.48cm; main 17.41cm; 2600 nits peak",
+        "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+        "ram_storage": "256GB; 512GB",
+        "rear_camera": "50MP FlexCam system",
+        "front_camera": null,
+        "battery": "4300mAh",
+        "charging": null,
+        "os": "One UI / Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/6.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India product page verified; exact India price/complete camera fields pending"
+    },
+    {
+      "id": "mobile-07",
+      "name": "Samsung Galaxy Z Fold8",
+      "category": "mobile-phones",
+      "brand": "Samsung",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,79,999 (12/256); ₹1,99,999 (12/512); ₹2,39,999 (16/1TB)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.samsung.com/in/smartphones/galaxy-z-fold8/"
+      },
+      "specs": {
+        "display": "13.84cm cover; 19.32cm main; foldable",
+        "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+        "ram_storage": "12/256GB; 12/512GB; 16/1TB",
+        "rear_camera": "50MP wide + 50MP ultrawide",
+        "front_camera": null,
+        "battery": "4800mAh",
+        "charging": null,
+        "os": "One UI / Android",
+        "network": "5G",
+        "ip_rating": "Not stated in extracted page"
+      },
+      "image": {
+        "primary": "assets/product-images/7.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Samsung India / Samsung Newsroom India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India product, specs and launch pricing verified; remaining camera/charging fields need extraction"
+    },
+    {
+      "id": "mobile-08",
+      "name": "Apple iPhone 17",
+      "category": "mobile-phones",
+      "brand": "Apple",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹99,900 starting",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.apple.com/in/iphone-17/"
+      },
+      "specs": {
+        "display": "6.3-inch Super Retina XDR OLED, ProMotion up to 120Hz",
+        "processor": "A19",
+        "ram_storage": "256GB; 512GB",
+        "rear_camera": "48MP Fusion Main + 48MP Fusion Ultra Wide; 2x optical-quality telephoto",
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": "iOS 27",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/8.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Apple India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India price and core specifications verified"
+    },
+    {
+      "id": "mobile-09",
+      "name": "Apple iPhone 17e",
+      "category": "mobile-phones",
+      "brand": "Apple",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹79,900 starting",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.apple.com/in/iphone-17e/"
+      },
+      "specs": {
+        "display": "6.1-inch Super Retina XDR OLED",
+        "processor": "A19",
+        "ram_storage": "256GB; 512GB",
+        "rear_camera": "48MP Fusion Main; 12MP 2x optical-quality telephoto",
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": "iOS 27",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/9.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Apple India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India price and core specifications verified"
+    },
+    {
+      "id": "mobile-10",
+      "name": "Apple iPhone 18 Pro",
+      "category": "mobile-phones",
+      "brand": "Apple",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,64,900 starting; 256GB buy page shown at ₹1,79,900",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.apple.com/in/iphone-18-pro/"
+      },
+      "specs": {
+        "display": "6.3-inch Super Retina XDR OLED, ProMotion up to 120Hz",
+        "processor": "A20 Pro",
+        "ram_storage": "256GB; 512GB; 1TB; 2TB",
+        "rear_camera": "48MP Pro Fusion system: 48MP main variable aperture + 48MP ultrawide + 48MP telephoto",
+        "front_camera": "18MP Center Stage",
+        "battery": null,
+        "charging": "Up to 50% in ~15 min with 60W+ adapter",
+        "os": "iOS 27",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/10.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Apple India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specifications verified; current Apple pricing pages show different starting/buy-page figures, so exact variant price should be tied to SKU"
+    },
+    {
+      "id": "mobile-11",
+      "name": "Apple iPhone 18 Pro Max",
+      "category": "mobile-phones",
+      "brand": "Apple",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,79,900 for 256GB (secondary current-price cross-check)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.apple.com/in/iphone-18-pro/"
+      },
+      "specs": {
+        "display": "6.9-inch Super Retina XDR OLED, ProMotion up to 120Hz",
+        "processor": "A20 Pro",
+        "ram_storage": "256GB; 512GB; 1TB; 2TB",
+        "rear_camera": "48MP Pro Fusion: 48MP main variable aperture + 48MP ultrawide + 48MP telephoto",
+        "front_camera": "18MP Center Stage",
+        "battery": "Up to 43h video playback",
+        "charging": "Up to 50% in ~15 min with 60W+ adapter",
+        "os": "iOS 27",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/11.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Apple India specs + current India price cross-check",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specs verified; exact India price cross-checked from current market listing"
+    },
+    {
+      "id": "mobile-12",
+      "name": "Google Pixel 11",
+      "category": "mobile-phones",
+      "brand": "Google",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹89,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.3-inch Actua OLED, 60–120Hz, 1080×2424",
+        "processor": "Google Tensor G6",
+        "ram_storage": "12GB / 256GB or 512GB",
+        "rear_camera": "48MP wide + 13MP ultrawide + 10.8MP 5x telephoto",
+        "front_camera": "10.5MP autofocus",
+        "battery": "4,985mAh typical",
+        "charging": "30W wired; Qi2.2 wireless up to 25W",
+        "os": "Android 17",
+        "network": "5G",
+        "ip_rating": "IP68"
+      },
+      "image": {
+        "primary": "assets/product-images/12.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Google Store India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Verified official specification page"
+    },
+    {
+      "id": "mobile-13",
+      "name": "Google Pixel 11 Pro",
+      "category": "mobile-phones",
+      "brand": "Google",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹1,19,999 starting",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.3-inch Super Actua, 120Hz",
+        "processor": "Google Tensor G6",
+        "ram_storage": "16GB / 256GB; 512GB",
+        "rear_camera": "50MP wide + 48MP ultrawide + 48MP telephoto",
+        "front_camera": "42MP AF",
+        "battery": null,
+        "charging": "Wired up to 75% in ~30 min; wireless Pixelsnap",
+        "os": "Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/13.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Google Store India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official product page/price/specifications verified; battery/IP fields pending extraction"
+    },
+    {
+      "id": "mobile-14",
+      "name": "Google Pixel 11 Pro XL",
+      "category": "mobile-phones",
+      "brand": "Google",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "Price to verify from current India checkout",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://store.google.com/in/product/pixel_11_pro_specs"
+      },
+      "specs": {
+        "display": "6.8-inch Super Actua LTPO OLED, 1–120Hz",
+        "processor": "Google Tensor G6",
+        "ram_storage": "256GB/12GB; 512GB/16GB",
+        "rear_camera": "50MP wide + 48MP ultrawide + 48MP 5x telephoto",
+        "front_camera": null,
+        "battery": "5115mAh typical",
+        "charging": "Up to 75% in ~30 min with 45W+ PPS; Qi2.2 up to 25W",
+        "os": "Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/14.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Google Store India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official Google specs verified; exact India price and some fields pending checkout/source extraction"
+    },
+    {
+      "id": "mobile-15",
+      "name": "OnePlus 15",
+      "category": "mobile-phones",
+      "brand": "OnePlus",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹85,999 base",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.78-inch LTPO AMOLED, up to 165Hz",
+        "processor": "Snapdragon 8 Elite Gen 5",
+        "ram_storage": "12/256GB; 16/512GB",
+        "rear_camera": "50MP + 50MP + 50MP",
+        "front_camera": "32MP",
+        "battery": "7300mAh",
+        "charging": "120W wired / 50W wireless",
+        "os": "Android 16 / OxygenOS",
+        "network": "5G",
+        "ip_rating": "IP66/IP68/IP69/IP69K"
+      },
+      "image": {
+        "primary": "assets/product-images/15.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OnePlus India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Core specs cross-checked; price should be rechecked before publishing"
+    },
+    {
+      "id": "mobile-16",
+      "name": "OnePlus 13s",
+      "category": "mobile-phones",
+      "brand": "OnePlus",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹54,999 (12/256); ₹59,999 (12/512)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.32-inch display",
+        "processor": "Snapdragon 8 Elite",
+        "ram_storage": "12GB/256GB; 12GB/512GB",
+        "rear_camera": "50MP AF wide + 50MP AF telephoto 2x",
+        "front_camera": "32MP AF",
+        "battery": "5850mAh",
+        "charging": "80W SUPERVOOC",
+        "os": "OxygenOS / Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/16.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OnePlus India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official product page and current OnePlus price terms verified"
+    },
+    {
+      "id": "mobile-17",
+      "name": "OnePlus Nord 6",
+      "category": "mobile-phones",
+      "brand": "OnePlus",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹46,999 (8/256); ₹52,999 (12/256) after latest reported price revision",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.oneplus.in/nord-6"
+      },
+      "specs": {
+        "display": "6.78-inch 1.5K Sunburst AMOLED, up to 165Hz",
+        "processor": "Snapdragon 8-series elite performance platform",
+        "ram_storage": "8/256GB; 12/256GB",
+        "rear_camera": "50MP Sony main with dual-axis OIS",
+        "front_camera": "32MP autofocus",
+        "battery": "9000mAh",
+        "charging": "80W",
+        "os": "OxygenOS / Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/17.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OnePlus India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official product specs verified; current price revision cross-checked from current report referencing official site"
+    },
+    {
+      "id": "mobile-18",
+      "name": "OnePlus Nord CE6",
+      "category": "mobile-phones",
+      "brand": "OnePlus",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹29,999 (8/128); ₹32,999 (8/256)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.78-inch 1.5K AMOLED, up to 144Hz",
+        "processor": "Snapdragon 7s Gen 4",
+        "ram_storage": "8GB/128GB; 8GB/256GB",
+        "rear_camera": "50MP OIS + 8MP",
+        "front_camera": "32MP",
+        "battery": "8000mAh",
+        "charging": "80W",
+        "os": "OxygenOS 16",
+        "network": "5G",
+        "ip_rating": "IP66/IP68/IP69/IP69K"
+      },
+      "image": {
+        "primary": "assets/product-images/18.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OnePlus India / launch reporting",
+      "data_status": "site_preview_ready",
+      "verification_note": "Launched in India; core specs/launch price cross-checked; final checkout price pending"
+    },
+    {
+      "id": "mobile-19",
+      "name": "Motorola Edge 70 Fusion",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹30,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": "Snapdragon 7s Gen 4",
+        "ram_storage": "Up to 12GB/256GB",
+        "rear_camera": "50MP + 13MP",
+        "front_camera": "32MP",
+        "battery": "5200mAh",
+        "charging": "68W",
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/19.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Gadgets360 current India listing",
+      "data_status": "site_preview_ready",
+      "verification_note": "Core specs cross-checked; price/official checkout pending"
+    },
+    {
+      "id": "mobile-20",
+      "name": "Motorola Edge 70 Pro",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹39,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.8-inch Extreme AMOLED, 2772×1272",
+        "processor": "Dimensity 8500 Extreme",
+        "ram_storage": "8/256GB; 12/256GB",
+        "rear_camera": "50MP + 50MP",
+        "front_camera": "50MP",
+        "battery": "6500mAh",
+        "charging": "90W wired",
+        "os": "Android 16",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/20.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Motorola Support India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specifications verified"
+    },
+    {
+      "id": "mobile-21",
+      "name": "Motorola Edge 70 Pro+",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹47,999 current Motorola India listing",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram_storage": "12GB/256GB",
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/21.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Motorola India official Edge family page",
+      "data_status": "site_preview_ready",
+      "verification_note": "Current official India listing verified; detailed specs pending"
+    },
+    {
+      "id": "mobile-22",
+      "name": "Motorola Edge 70 Max",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹54,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram_storage": null,
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/22.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Motorola India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Working-list record; fields still require final production verification."
+    },
+    {
+      "id": "mobile-23",
+      "name": "Motorola Signature",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹59,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram_storage": null,
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/23.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Motorola India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Working-list record; fields still require final production verification."
+    },
+    {
+      "id": "mobile-24",
+      "name": "Motorola Moto G37 Power",
+      "category": "mobile-phones",
+      "brand": "Motorola",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹19,999 listed",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram_storage": "4/64GB; 4/128GB; 8/128GB",
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/24.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Motorola India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Current official catalogue listing verified; detailed specs pending"
+    },
+    {
+      "id": "mobile-25",
+      "name": "realme 16 Pro 5G",
+      "category": "mobile-phones",
+      "brand": "Realme",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "Price to verify from current India checkout",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.realme.com/in/realme-16-pro-5g"
+      },
+      "specs": {
+        "display": "AMOLED, 144Hz class; 6500nit peak",
+        "processor": "Dimensity 7300-Max",
+        "ram_storage": "8/128GB; 8/256GB; 12/256GB",
+        "rear_camera": "200MP LumaColor main with Super OIS + 8MP ultrawide",
+        "front_camera": "50MP",
+        "battery": "7000mAh",
+        "charging": "80W",
+        "os": "realme UI / Android",
+        "network": "5G",
+        "ip_rating": "IP69"
+      },
+      "image": {
+        "primary": "assets/product-images/25.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "realme India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specs verified; current price pending"
+    },
+    {
+      "id": "mobile-26",
+      "name": "realme 16 Pro+ 5G",
+      "category": "mobile-phones",
+      "brand": "Realme",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": null,
+        "price_checked_on": null,
+        "price_status": "not_verified",
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": "Snapdragon 7 Gen 4",
+        "ram_storage": null,
+        "rear_camera": "200MP OIS + 50MP periscope + ultrawide",
+        "front_camera": "50MP",
+        "battery": "7000mAh",
+        "charging": "80W",
+        "os": "realme UI",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/26.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "realme India official product page",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official core specifications verified; current India price/variant fields pending"
+    },
+    {
+      "id": "mobile-27",
+      "name": "realme P4s 5G",
+      "category": "mobile-phones",
+      "brand": "Realme",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹34,999 selling price shown",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://buy.realme.com/in/goods/822"
+      },
+      "specs": {
+        "display": "17.22cm FHD+ AMOLED, up to 144Hz",
+        "processor": "Dimensity 7400 Ultra",
+        "ram_storage": "8/128GB; 8/256GB; 12/256GB",
+        "rear_camera": "50MP OIS + 8MP ultrawide",
+        "front_camera": "16MP",
+        "battery": "8000mAh",
+        "charging": "80W",
+        "os": "realme UI / Android",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/27.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "realme India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specs and current store price verified; IP/OS version should be extracted before production JSON"
+    },
+    {
+      "id": "mobile-28",
+      "name": "Redmi Note 17 5G",
+      "category": "mobile-phones",
+      "brand": "Redmi",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹27,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "17.75cm TrueColour AMOLED, up to 120Hz",
+        "processor": "Snapdragon 4 Gen 4",
+        "ram_storage": "6/128GB; 8/128GB",
+        "rear_camera": "50MP",
+        "front_camera": null,
+        "battery": "8000mAh",
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/28.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Xiaomi India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specifications verified; remaining fields pending"
+    },
+    {
+      "id": "mobile-29",
+      "name": "Redmi Note 17 Pro 5G",
+      "category": "mobile-phones",
+      "brand": "Redmi",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹36,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.83-inch 1.5K AMOLED, 120Hz",
+        "processor": "Snapdragon 6s Gen 4",
+        "ram_storage": "8/128GB; 8/256GB",
+        "rear_camera": "50MP OIS + 8MP ultrawide",
+        "front_camera": "16MP",
+        "battery": "9000mAh",
+        "charging": "67W",
+        "os": "Android 16 / HyperOS 3",
+        "network": "5G",
+        "ip_rating": "IP66/IP68/IP69/IP69K"
+      },
+      "image": {
+        "primary": "assets/product-images/29.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Xiaomi India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official specifications verified"
+    },
+    {
+      "id": "mobile-30",
+      "name": "Redmi Note 17 Pro Max 5G",
+      "category": "mobile-phones",
+      "brand": "Redmi",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹49,999 (8/256) current Mi Store listing",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.mi.com/in/product/redmi-note-17-pro-max-5g/specs/"
+      },
+      "specs": {
+        "display": "6.83-inch 1.5K AMOLED, up to 120Hz",
+        "processor": "Snapdragon 6 Gen 5",
+        "ram_storage": "8/256GB; 12/256GB",
+        "rear_camera": "50MP OIS + 8MP ultrawide",
+        "front_camera": "32MP",
+        "battery": "10000mAh",
+        "charging": "100W HyperCharge",
+        "os": "HyperOS 3 / Android 16",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/30.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Xiaomi India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specs and current store price verified; remaining IP/OS detail pending"
+    },
+    {
+      "id": "mobile-31",
+      "name": "Redmi 17 5G",
+      "category": "mobile-phones",
+      "brand": "Redmi",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹23,999 current catalogue listing; variant price should be rechecked",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.mi.com/in/product/redmi-17-5g/specs/"
+      },
+      "specs": {
+        "display": "6.9-inch display, up to 120Hz",
+        "processor": "Snapdragon 4 Gen 5",
+        "ram_storage": "6/128GB; 8/128GB",
+        "rear_camera": "50MP main",
+        "front_camera": "8MP",
+        "battery": "7900mAh",
+        "charging": "45W",
+        "os": "HyperOS 3",
+        "network": "5G",
+        "ip_rating": "IP64"
+      },
+      "image": {
+        "primary": "assets/product-images/31.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Xiaomi India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specs verified; current catalogue price seen, but exact variant mapping needs checkout verification"
+    },
+    {
+      "id": "mobile-32",
+      "name": "POCO M8x 5G",
+      "category": "mobile-phones",
+      "brand": "POCO",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹20,999",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.poco.in/product-details/M8x"
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram_storage": null,
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/32.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Price tracker",
+      "data_status": "site_preview_ready",
+      "verification_note": "Working-list record; fields still require final production verification."
+    },
+    {
+      "id": "mobile-33",
+      "name": "POCO X8 5G",
+      "category": "mobile-phones",
+      "brand": "POCO",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "India price to verify",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.poco.in/ | https://www.po.co/global/product/poco-x8/"
+      },
+      "specs": {
+        "display": "6.83-inch 1.5K AMOLED",
+        "processor": "Snapdragon 6s Gen 4",
+        "ram_storage": null,
+        "rear_camera": "50MP OIS main",
+        "front_camera": null,
+        "battery": "8340mAh",
+        "charging": "67W HyperCharge",
+        "os": "Android/HyperOS",
+        "network": "5G",
+        "ip_rating": "IP66/IP68/IP69/IP69K"
+      },
+      "image": {
+        "primary": "assets/product-images/33.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "POCO Global",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official global product verified, but India price/availability not verified; keep out of India production list until India source exists"
+    },
+    {
+      "id": "mobile-34",
+      "name": "iQOO Z11",
+      "category": "mobile-phones",
+      "brand": "iQOO",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹34,999 base (secondary source; official checkout to re-check)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "1.5K 144Hz AMOLED",
+        "processor": "Dimensity 7500 Turbo",
+        "ram_storage": null,
+        "rear_camera": "50MP + 8MP",
+        "front_camera": null,
+        "battery": "7050mAh",
+        "charging": "44W",
+        "os": null,
+        "network": "5G",
+        "ip_rating": "IP69"
+      },
+      "image": {
+        "primary": "assets/product-images/34.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "iQOO India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Core specs cross-checked; final price/variant verification pending"
+    },
+    {
+      "id": "mobile-35",
+      "name": "vivo S2 5G",
+      "category": "mobile-phones",
+      "brand": "vivo",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹39,999 listed variant",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.83-inch 1.5K AMOLED, 120Hz",
+        "processor": "Dimensity 7360-Turbo",
+        "ram_storage": "8GB/128GB listed",
+        "rear_camera": "50MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "7050mAh",
+        "charging": "44W",
+        "os": "OriginOS",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/35.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "vivo India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Current India catalogue and e-store listing verified; final variant/image check pending"
+    },
+    {
+      "id": "mobile-36",
+      "name": "Vivo T5 5G",
+      "category": "mobile-phones",
+      "brand": "vivo",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹34,999 shown for 6/128; other variants listed",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.83-inch AMOLED, 2800×1260 (shop listing)",
+        "processor": "Dimensity 7500 Turbo (shop listing)",
+        "ram_storage": "6/128GB; 8/128GB; 8/256GB; 12/256GB",
+        "rear_camera": "50MP Sony IMX882 + 8MP ultrawide",
+        "front_camera": "32MP",
+        "battery": "7050mAh",
+        "charging": "44W",
+        "os": "OriginOS 6",
+        "network": "5G",
+        "ip_rating": "IP68/IP69+"
+      },
+      "image": {
+        "primary": "assets/product-images/36.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "vivo India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India store/product pages verified; note official parameter page has conflicting chipset/battery/display details, so production data should use SKU-specific store data"
+    },
+    {
+      "id": "mobile-37",
+      "name": "OPPO K14 Plus 5G",
+      "category": "mobile-phones",
+      "brand": "OPPO",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹29,999 starting; ₹32,999 8/128; ₹35,999 8/256 current market cross-check",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.oppo.com/in/smartphones/series-k/k14-plus-5g/specs/"
+      },
+      "specs": {
+        "display": "17.22cm 1.5K AMOLED, up to 144Hz",
+        "processor": "Dimensity 7360 MAX",
+        "ram_storage": "6/128GB; 8/128GB; 8/256GB",
+        "rear_camera": "50MP OIS + 2MP",
+        "front_camera": "16MP",
+        "battery": "8000mAh",
+        "charging": "45W",
+        "os": "ColorOS 16 / Android 16",
+        "network": "5G",
+        "ip_rating": "IP69K"
+      },
+      "image": {
+        "primary": "assets/product-images/37.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OPPO India",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India specs verified; current price cross-checked from current India listing"
+    },
+    {
+      "id": "mobile-38",
+      "name": "OPPO Reno15",
+      "category": "mobile-phones",
+      "brand": "OPPO",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹45,999 (8/256); ₹48,999 (12/256); ₹53,999 (12/512)",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.59-inch AMOLED LTPS, 120Hz",
+        "processor": "Snapdragon 7 Gen 4",
+        "ram_storage": "8/256GB; 12/256GB; 12/512GB",
+        "rear_camera": "50MP OIS + 8MP ultrawide + 50MP telephoto",
+        "front_camera": "50MP AF",
+        "battery": "6500mAh",
+        "charging": "80W SUPERVOOC",
+        "os": "ColorOS",
+        "network": "5G",
+        "ip_rating": "IP66/IP68/IP69"
+      },
+      "image": {
+        "primary": "assets/product-images/38.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "OPPO India newsroom",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official India launch specs and prices verified"
+    },
+    {
+      "id": "mobile-39",
+      "name": "Nothing Phone (4a) Pro",
+      "category": "mobile-phones",
+      "brand": "Nothing",
+      "india": {
+        "availability_status": "Current",
+        "price_inr": "₹49,999 launch price; current checkout to verify",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": null
+      },
+      "specs": {
+        "display": "6.83-inch 1.5K flexible AMOLED, 144Hz",
+        "processor": "Snapdragon 7 Gen 4",
+        "ram_storage": "8/128GB; 8/256GB; 12/256GB",
+        "rear_camera": "50MP Sony OIS + 50MP periscope + ultrawide",
+        "front_camera": "32MP",
+        "battery": "5080mAh global / 5400mAh India",
+        "charging": "50W",
+        "os": "Nothing OS 4.1 / Android 16",
+        "network": "5G",
+        "ip_rating": "IP65"
+      },
+      "image": {
+        "primary": "assets/product-images/39.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "Nothing India official product page",
+      "data_status": "site_preview_ready",
+      "verification_note": "Official core specs verified; current checkout price pending"
+    },
+    {
+      "id": "mobile-40",
+      "name": "HMD Vibe 2 Pro 5G",
+      "category": "mobile-phones",
+      "brand": "HMD",
+      "india": {
+        "availability_status": "Launched; sale 8 Oct",
+        "price_inr": "₹14,999 launch price (6/128); ₹16,999 launch price (8/128); sale from 8 Oct 2026",
+        "price_checked_on": "2026-10-02",
+        "price_status": "preview_observed_recheck_before_launch",
+        "source_url": "https://www.hmd.com/en_in/"
+      },
+      "specs": {
+        "display": "6.78-inch FHD+ LCD, 120Hz",
+        "processor": "Dimensity 6300",
+        "ram_storage": "6/128GB; 8/128GB",
+        "rear_camera": "64MP + 2MP",
+        "front_camera": "13MP",
+        "battery": "6000mAh",
+        "charging": "33W",
+        "os": "Android 16",
+        "network": "5G",
+        "ip_rating": null
+      },
+      "image": {
+        "primary": "assets/product-images/40.svg",
+        "source_type": "temporary_comparemitra_placeholder",
+        "usage_basis": "Temporary development placeholder; replace with an authorized/permitted product image before commercial launch."
+      },
+      "source": "HMD launch information via current India reports; official HMD page not found for exact Pro model in search",
+      "data_status": "site_preview_ready",
+      "verification_note": "Secondary verified; launch availability is 8 Oct 2026, so not currently buyable on 2 Oct"
+    }
+  ],
+  "site_preview": "enabled",
+  "affiliate": {
+    "amazon": {
+      "associate_id": "comparemitr02-21",
+      "status": "account_created_links_not_integrated"
+    },
+    "flipkart": {
+      "status": "source_to_connect"
+    }
   },
-  {
-    "product_id": "mobile-002",
-    "brand": "Motorola",
-    "model": "Moto G86",
-    "slug": "moto-g86",
-    "category": "mobiles",
-    "price": null,
-    "display_size": "—",
-    "processor": "—",
-    "ram": "—",
-    "storage": "—",
-    "camera": "—",
-    "battery": "—",
-    "charging": "—",
-    "5g": true,
-    "pros": [
-      "Popular Android brand"
-    ],
-    "limitations": [
-      "Demo record; current data not connected yet"
-    ],
-    "amazon_url": "",
-    "flipkart_url": "",
-    "image_url": "",
-    "source": "demo",
-    "last_updated": "2026-10-02",
-    "status": "demo"
-  },
-  {
-    "product_id": "mobile-003",
-    "brand": "OnePlus",
-    "model": "OnePlus 13R",
-    "slug": "oneplus-13r",
-    "category": "mobiles",
-    "price": null,
-    "display_size": "—",
-    "processor": "—",
-    "ram": "—",
-    "storage": "—",
-    "camera": "—",
-    "battery": "—",
-    "charging": "—",
-    "5g": true,
-    "pros": [
-      "Performance-focused brand"
-    ],
-    "limitations": [
-      "Demo record; current data not connected yet"
-    ],
-    "amazon_url": "",
-    "flipkart_url": "",
-    "image_url": "",
-    "source": "demo",
-    "last_updated": "2026-10-02",
-    "status": "demo"
-  },
-  {
-    "product_id": "mobile-004",
-    "brand": "Redmi",
-    "model": "Redmi Note 14",
-    "slug": "redmi-note-14",
-    "category": "mobiles",
-    "price": null,
-    "display_size": "—",
-    "processor": "—",
-    "ram": "—",
-    "storage": "—",
-    "camera": "—",
-    "battery": "—",
-    "charging": "—",
-    "5g": true,
-    "pros": [
-      "Popular budget-oriented brand"
-    ],
-    "limitations": [
-      "Demo record; current data not connected yet"
-    ],
-    "amazon_url": "",
-    "flipkart_url": "",
-    "image_url": "",
-    "source": "demo",
-    "last_updated": "2026-10-02",
-    "status": "demo"
-  }
-]
+  "last_checked": "2026-10-02"
+}

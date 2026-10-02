@@ -1,0 +1,1558 @@
+{
+  "schema_version": "1.2",
+  "generated_on": "2026-10-02",
+  "site": "CompareMitra",
+  "tagline": "Compare Smart. Buy Better.",
+  "category": "mobile-phones",
+  "data_policy": "Only publish fields verified from an official or authorized source. Do not infer missing prices/specs/images.",
+  "products": [
+    {
+      "id": "mobile-01",
+      "name": "1",
+      "category": "mobile-phones",
+      "brand": "1",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/1.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-02",
+      "name": "2",
+      "category": "mobile-phones",
+      "brand": "2",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/2.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-03",
+      "name": "3",
+      "category": "mobile-phones",
+      "brand": "3",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/3.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-04",
+      "name": "4",
+      "category": "mobile-phones",
+      "brand": "4",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/4.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-05",
+      "name": "5",
+      "category": "mobile-phones",
+      "brand": "5",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/5.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-06",
+      "name": "6",
+      "category": "mobile-phones",
+      "brand": "6",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/6.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-07",
+      "name": "7",
+      "category": "mobile-phones",
+      "brand": "7",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/7.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-08",
+      "name": "8",
+      "category": "mobile-phones",
+      "brand": "8",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/8.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-09",
+      "name": "9",
+      "category": "mobile-phones",
+      "brand": "9",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/9.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-10",
+      "name": "10",
+      "category": "mobile-phones",
+      "brand": "10",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/10.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-11",
+      "name": "11",
+      "category": "mobile-phones",
+      "brand": "11",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/11.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-12",
+      "name": "12",
+      "category": "mobile-phones",
+      "brand": "12",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/12.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-13",
+      "name": "13",
+      "category": "mobile-phones",
+      "brand": "13",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/13.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-14",
+      "name": "14",
+      "category": "mobile-phones",
+      "brand": "14",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/14.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-15",
+      "name": "15",
+      "category": "mobile-phones",
+      "brand": "15",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/15.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-16",
+      "name": "16",
+      "category": "mobile-phones",
+      "brand": "16",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/16.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-17",
+      "name": "17",
+      "category": "mobile-phones",
+      "brand": "17",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/17.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-18",
+      "name": "18",
+      "category": "mobile-phones",
+      "brand": "18",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/18.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-19",
+      "name": "19",
+      "category": "mobile-phones",
+      "brand": "19",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/19.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-20",
+      "name": "20",
+      "category": "mobile-phones",
+      "brand": "20",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/20.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-21",
+      "name": "21",
+      "category": "mobile-phones",
+      "brand": "21",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/21.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-22",
+      "name": "22",
+      "category": "mobile-phones",
+      "brand": "22",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/22.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-23",
+      "name": "23",
+      "category": "mobile-phones",
+      "brand": "23",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/23.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-24",
+      "name": "24",
+      "category": "mobile-phones",
+      "brand": "24",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/24.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-25",
+      "name": "25",
+      "category": "mobile-phones",
+      "brand": "25",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/25.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-26",
+      "name": "26",
+      "category": "mobile-phones",
+      "brand": "26",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/26.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-27",
+      "name": "27",
+      "category": "mobile-phones",
+      "brand": "27",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/27.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-28",
+      "name": "28",
+      "category": "mobile-phones",
+      "brand": "28",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/28.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-29",
+      "name": "29",
+      "category": "mobile-phones",
+      "brand": "29",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/29.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-30",
+      "name": "30",
+      "category": "mobile-phones",
+      "brand": "30",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/30.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-31",
+      "name": "31",
+      "category": "mobile-phones",
+      "brand": "31",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/31.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-32",
+      "name": "32",
+      "category": "mobile-phones",
+      "brand": "32",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/32.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-33",
+      "name": "33",
+      "category": "mobile-phones",
+      "brand": "33",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/33.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-34",
+      "name": "34",
+      "category": "mobile-phones",
+      "brand": "34",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/34.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-35",
+      "name": "35",
+      "category": "mobile-phones",
+      "brand": "35",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/35.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-36",
+      "name": "36",
+      "category": "mobile-phones",
+      "brand": "36",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/36.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-37",
+      "name": "37",
+      "category": "mobile-phones",
+      "brand": "37",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/37.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-38",
+      "name": "38",
+      "category": "mobile-phones",
+      "brand": "38",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/38.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-39",
+      "name": "39",
+      "category": "mobile-phones",
+      "brand": "39",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/39.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    },
+    {
+      "id": "mobile-40",
+      "name": "40",
+      "category": "mobile-phones",
+      "brand": "40",
+      "india": {
+        "availability_status": "needs_final_price_date_lock",
+        "price_inr": null,
+        "price_checked_on": null,
+        "source_url": null
+      },
+      "specs": {
+        "display": null,
+        "processor": null,
+        "ram": [],
+        "storage": [],
+        "rear_camera": null,
+        "front_camera": null,
+        "battery": null,
+        "charging": null,
+        "os": null,
+        "network": "5G",
+        "ip_rating": null
+      },
+      "images": {
+        "primary": "assets/product-images/40.svg",
+        "gallery": [],
+        "source": null,
+        "usage_basis": "Temporary development placeholder; replace with authorized product image before commercial launch.",
+        "source_type": "temporary_comparemitra_placeholder",
+        "image_api_status": "real_image_pending"
+      },
+      "links": {
+        "official_product_page": null,
+        "affiliate": null
+      },
+      "status": "site_preview_ready"
+    }
+  ],
+  "status": "production_candidate_not_yet_published",
+  "image_policy": "Preview placeholders are development-only. Replace them with authorized affiliate/API product images before commercial launch.",
+  "price_policy": "Prices are source/date specific and must be refreshed before publication.",
+  "last_price_refresh": "2026-10-02",
+  "price_note": "Prices are source/date specific and can change; verify checkout before publication.",
+  "next_integration": {
+    "provider": "Amazon Associates Creators API",
+    "marketplace": "www.amazon.in",
+    "resources_needed": [
+      "images.primary.large",
+      "images.primary.medium",
+      "images.variants.large",
+      "images.variants.medium"
+    ],
+    "status": "credentials_required"
+  },
+  "site_preview": "enabled",
+  "affiliate": {
+    "amazon": {
+      "associate_id": "comparemitr02-21",
+      "image_api": "Creators API",
+      "status": "account_active_api_access_pending"
+    },
+    "flipkart": {
+      "status": "source_to_connect",
+      "note": "Do not invent Flipkart prices/images until an authorized feed/API/link source is available."
+    }
+  }
+}

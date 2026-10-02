@@ -1,0 +1,114 @@
+[
+  {
+    "product_id": "mobile-001",
+    "brand": "Samsung",
+    "model": "Samsung M36",
+    "slug": "samsung-m36",
+    "category": "mobiles",
+    "price": null,
+    "display_size": "—",
+    "processor": "—",
+    "ram": "—",
+    "storage": "—",
+    "camera": "—",
+    "battery": "—",
+    "charging": "—",
+    "5g": true,
+    "pros": [
+      "Popular Indian-market brand"
+    ],
+    "limitations": [
+      "Demo record; current data not connected yet"
+    ],
+    "amazon_url": "",
+    "flipkart_url": "",
+    "image_url": "",
+    "source": "demo",
+    "last_updated": "2026-10-02",
+    "status": "demo"
+  },
+  {
+    "product_id": "mobile-002",
+    "brand": "Motorola",
+    "model": "Moto G86",
+    "slug": "moto-g86",
+    "category": "mobiles",
+    "price": null,
+    "display_size": "—",
+    "processor": "—",
+    "ram": "—",
+    "storage": "—",
+    "camera": "—",
+    "battery": "—",
+    "charging": "—",
+    "5g": true,
+    "pros": [
+      "Popular Android brand"
+    ],
+    "limitations": [
+      "Demo record; current data not connected yet"
+    ],
+    "amazon_url": "",
+    "flipkart_url": "",
+    "image_url": "",
+    "source": "demo",
+    "last_updated": "2026-10-02",
+    "status": "demo"
+  },
+  {
+    "product_id": "mobile-003",
+    "brand": "OnePlus",
+    "model": "OnePlus 13R",
+    "slug": "oneplus-13r",
+    "category": "mobiles",
+    "price": null,
+    "display_size": "—",
+    "processor": "—",
+    "ram": "—",
+    "storage": "—",
+    "camera": "—",
+    "battery": "—",
+    "charging": "—",
+    "5g": true,
+    "pros": [
+      "Performance-focused brand"
+    ],
+    "limitations": [
+      "Demo record; current data not connected yet"
+    ],
+    "amazon_url": "",
+    "flipkart_url": "",
+    "image_url": "",
+    "source": "demo",
+    "last_updated": "2026-10-02",
+    "status": "demo"
+  },
+  {
+    "product_id": "mobile-004",
+    "brand": "Redmi",
+    "model": "Redmi Note 14",
+    "slug": "redmi-note-14",
+    "category": "mobiles",
+    "price": null,
+    "display_size": "—",
+    "processor": "—",
+    "ram": "—",
+    "storage": "—",
+    "camera": "—",
+    "battery": "—",
+    "charging": "—",
+    "5g": true,
+    "pros": [
+      "Popular budget-oriented brand"
+    ],
+    "limitations": [
+      "Demo record; current data not connected yet"
+    ],
+    "amazon_url": "",
+    "flipkart_url": "",
+    "image_url": "",
+    "source": "demo",
+    "last_updated": "2026-10-02",
+    "status": "demo"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "version": "2.0",
+  "updated_on": "2026-10-03",
+  "marketplaces": [
+    {
+      "id": "amazon",
+      "name": "Amazon India",
+      "adapter": "creators_api_or_sitestripe",
+      "status": "live_bridge",
+      "note": "Requires approved API access for automation; SiteStripe remains valid manual fallback."
+    },
+    {
+      "id": "flipkart",
+      "name": "Flipkart India",
+      "adapter": "affiliate_api_or_affiliate_tools",
+      "status": "integration_ready_path",
+      "note": "Official affiliate APIs/tools are available; credentials must stay server-side."
+    },
+    {
+      "id": "myntra",
+      "name": "Myntra India",
+      "adapter": "approved_affiliate_network_or_deeplink",
+      "status": "research_required",
+      "note": "Use only an approved affiliate/deep-link mechanism available to the account."
+    },
+    {
+      "id": "ajio",
+      "name": "AJIO India",
+      "adapter": "approved_affiliate_network_or_deeplink",
+      "status": "research_required",
+      "note": "Use only an approved affiliate/deep-link mechanism available to the account."
+    },
+    {
+      "id": "reliance-digital",
+      "name": "Reliance Digital",
+      "adapter": "approved_affiliate_network_or_deeplink",
+      "status": "research_required",
+      "note": "Do not invent links; confirm the current approved affiliate route before activation."
+    }
+  ]
+}

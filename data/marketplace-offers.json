@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "updated_on": "2026-10-03",
+  "note": "Normalized marketplace offer registry. Empty/missing marketplaces are intentional until a legitimate affiliate link or authorized API/feed is connected.",
+  "offers": [
+    {
+      "product_id": "mobile-01",
+      "marketplace": "amazon",
+      "marketplace_product_id": "B0dv5nyiY",
+      "variant": "6/128 (page-level link; verify selected variant before purchase)",
+      "affiliate_url": "https://link.amazon/B0dv5nyiY",
+      "price": "₹21,999",
+      "currency": "INR",
+      "availability": "unknown",
+      "status": "verified_link",
+      "last_checked": "2026-10-03"
+    }
+  ]
+}

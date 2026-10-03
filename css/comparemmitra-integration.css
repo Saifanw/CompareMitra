@@ -1,0 +1,17 @@
+/* CompareMitra Phase 3 non-destructive card styles */
+.cm-product-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,.06);display:flex;flex-direction:column}
+.cm-image-wrap{height:240px;display:grid;place-items:center;background:#f8fafc;padding:18px}
+.cm-image-wrap img{max-width:100%;max-height:210px;object-fit:contain}
+.cm-image-missing{background:linear-gradient(135deg,#f8fafc,#eef2ff)}
+.cm-product-body{padding:18px}
+.cm-brand{font-size:12px;font-weight:800;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
+.cm-product-body h3{font-size:18px;margin:5px 0 10px;color:#0f172a}
+.cm-product-body h3 a{text-decoration:none;color:inherit}
+.cm-price{font-size:20px;font-weight:900;color:#0f172a}
+.cm-variants{font-size:12px;color:#64748b;margin-top:5px}
+.cm-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:15px}
+.cm-btn{border-radius:10px;padding:10px 13px;font-size:13px;font-weight:800;text-decoration:none;cursor:pointer}
+.cm-primary{border:0;background:#2563eb;color:#fff}
+.cm-secondary{border:1px solid #cbd5e1;background:#fff;color:#0f172a}
+.cm-status{font-size:11px;color:#b45309}
+@media(max-width:640px){.cm-image-wrap{height:190px}.cm-product-body{padding:14px}.cm-product-body h3{font-size:16px}}

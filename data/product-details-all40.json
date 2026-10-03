@@ -1,15 +1,15 @@
 {
   "site": "CompareMitra",
   "updated_on": "2026-10-03",
-  "note": "Image paths fixed to the 1.svg–40.svg files uploaded under assets/product-images. Prices are observed/time-sensitive.",
+  "note": "Unified product-detail data for all 40 mobile products. Prices and exact SKUs remain time-sensitive; unresolved products are explicitly marked.",
   "products": [
     {
       "id": "mobile-01",
       "name": "Galaxy M36 5G",
       "brand": "Samsung",
-      "image": "assets/product-images/1.svg",
+      "image": "assets/product-images/galaxy-m36-5g.svg",
       "price": "₹21,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "6/128",
         "8/128",
@@ -25,15 +25,26 @@
       "network": "5G",
       "weight": "197g",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-02",
       "name": "Galaxy F70 Pro 5G",
       "brand": "Samsung",
-      "image": "assets/product-images/2.svg",
-      "price": "₹39,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/galaxy-f70-pro-5g.svg",
+      "price": "Price pending final refresh",
+      "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
         "6/128",
         "8/128",
@@ -49,15 +60,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-03",
       "name": "Galaxy A57 5G",
       "brand": "Samsung",
-      "image": "assets/product-images/3.svg",
+      "image": "assets/product-images/galaxy-a57-5g.svg",
       "price": "₹62,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256",
         "12/256"
@@ -72,15 +94,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-04",
       "name": "Galaxy S26 FE",
       "brand": "Samsung",
-      "image": "assets/product-images/4.svg",
-      "price": "₹72,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/galaxy-s26-fe.svg",
+      "price": "₹79,999",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256"
       ],
@@ -94,15 +127,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-05",
       "name": "Galaxy S26 Ultra",
       "brand": "Samsung",
-      "image": "assets/product-images/5.svg",
-      "price": "₹1,54,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/galaxy-s26-ultra.svg",
+      "price": "Price pending final refresh",
+      "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
         "12/256",
         "12/512",
@@ -118,15 +162,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-06",
       "name": "Galaxy Z Flip8",
       "brand": "Samsung",
-      "image": "assets/product-images/6.svg",
+      "image": "assets/product-images/galaxy-z-flip8.svg",
       "price": "₹1,24,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "12/256",
         "12/512"
@@ -141,15 +196,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-07",
       "name": "Galaxy Z Fold8",
       "brand": "Samsung",
-      "image": "assets/product-images/7.svg",
+      "image": "assets/product-images/galaxy-z-fold8.svg",
       "price": "₹1,79,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "12/256",
         "12/512",
@@ -165,15 +231,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.samsung.com/in/smartphones/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-08",
       "name": "iPhone 17",
       "brand": "Apple",
-      "image": "assets/product-images/8.svg",
+      "image": "assets/product-images/iphone-17.svg",
       "price": "₹99,900",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "256GB",
         "512GB"
@@ -188,15 +265,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.apple.com/in/shop/buy-iphone",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-09",
       "name": "iPhone 17e",
       "brand": "Apple",
-      "image": "assets/product-images/9.svg",
+      "image": "assets/product-images/iphone-17e.svg",
       "price": "₹79,900",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "256GB",
         "512GB"
@@ -211,15 +299,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.apple.com/in/shop/buy-iphone",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-10",
       "name": "iPhone 18 Pro",
       "brand": "Apple",
-      "image": "assets/product-images/10.svg",
+      "image": "assets/product-images/iphone-18-pro.svg",
       "price": "₹1,64,900",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "256GB",
         "512GB",
@@ -236,15 +335,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.apple.com/in/shop/buy-iphone",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-11",
       "name": "iPhone 18 Pro Max",
       "brand": "Apple",
-      "image": "assets/product-images/11.svg",
-      "price": "₹1,84,900",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/iphone-18-pro-max.svg",
+      "price": "Price pending final refresh",
+      "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
         "256GB",
         "512GB",
@@ -261,15 +371,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.apple.com/in/shop/buy-iphone",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-12",
       "name": "Pixel 11",
       "brand": "Google",
-      "image": "assets/product-images/12.svg",
-      "price": "₹79,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/pixel-11.svg",
+      "price": "₹89,999",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "Variant details pending final India SKU verification"
       ],
@@ -283,15 +404,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://store.google.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-13",
       "name": "Pixel 11 Pro",
       "brand": "Google",
-      "image": "assets/product-images/13.svg",
-      "price": "₹1,09,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/pixel-11-pro.svg",
+      "price": "₹1,19,999",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "256GB",
         "512GB"
@@ -306,15 +438,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://store.google.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-14",
       "name": "Pixel 11 Pro XL",
       "brand": "Google",
-      "image": "assets/product-images/14.svg",
-      "price": "₹1,29,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/pixel-11-pro-xl.svg",
+      "price": "₹1,34,999",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "256GB",
         "512GB"
@@ -329,15 +472,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://store.google.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-15",
       "name": "OnePlus 15",
       "brand": "OnePlus",
-      "image": "assets/product-images/15.svg",
-      "price": "₹73,099",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "image": "assets/product-images/oneplus-15.svg",
+      "price": "Price pending final refresh",
+      "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
         "12/256",
         "16/512"
@@ -352,15 +506,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oneplus.in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-16",
       "name": "OnePlus 13s",
       "brand": "OnePlus",
-      "image": "assets/product-images/16.svg",
+      "image": "assets/product-images/oneplus-13s.svg",
       "price": "₹54,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "12/256",
         "12/512"
@@ -375,15 +540,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oneplus.in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-17",
       "name": "Nord 6",
       "brand": "OnePlus",
-      "image": "assets/product-images/17.svg",
+      "image": "assets/product-images/nord-6.svg",
       "price": "₹42,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256",
         "12/256"
@@ -398,15 +574,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oneplus.in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-18",
       "name": "Nord CE6",
       "brand": "OnePlus",
-      "image": "assets/product-images/18.svg",
+      "image": "assets/product-images/nord-ce6.svg",
       "price": "₹29,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/128",
         "8/256"
@@ -421,13 +608,24 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oneplus.in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-19",
       "name": "Edge 70 Fusion",
       "brand": "Motorola",
-      "image": "assets/product-images/19.svg",
+      "image": "assets/product-images/edge-70-fusion.svg",
       "price": "Price pending final refresh",
       "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
@@ -446,15 +644,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "hold_final_refresh"
+      "status": "hold_final_refresh",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-20",
       "name": "Edge 70 Pro",
       "brand": "Motorola",
-      "image": "assets/product-images/20.svg",
+      "image": "assets/product-images/edge-70-pro.svg",
       "price": "₹39,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "—"
       ],
@@ -468,15 +677,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-21",
       "name": "Edge 70 Pro+",
       "brand": "Motorola",
-      "image": "assets/product-images/21.svg",
+      "image": "assets/product-images/edge-70-pro.svg",
       "price": "₹47,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "—"
       ],
@@ -490,15 +710,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-22",
       "name": "Edge 70 Max",
       "brand": "Motorola",
-      "image": "assets/product-images/22.svg",
+      "image": "assets/product-images/edge-70-max.svg",
       "price": "₹54,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256",
         "12/256"
@@ -513,15 +744,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-23",
       "name": "Signature",
       "brand": "Motorola",
-      "image": "assets/product-images/23.svg",
+      "image": "assets/product-images/signature.svg",
       "price": "₹59,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "12/256",
         "16/512",
@@ -537,15 +779,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-24",
       "name": "Moto G37 Power",
       "brand": "Motorola",
-      "image": "assets/product-images/24.svg",
+      "image": "assets/product-images/moto-g37-power.svg",
       "price": "₹19,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "4/64",
         "4/128",
@@ -561,13 +814,24 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.motorola.in/smartphones/d",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-25",
       "name": "realme 16 Pro 5G",
       "brand": "realme",
-      "image": "assets/product-images/25.svg",
+      "image": "assets/product-images/realme-16-pro-5g.svg",
       "price": "Price pending final refresh",
       "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
@@ -583,13 +847,24 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.realme.com/in/",
-      "status": "hold_final_refresh"
+      "status": "hold_final_refresh",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-26",
       "name": "realme 16 Pro+ 5G",
       "brand": "realme",
-      "image": "assets/product-images/26.svg",
+      "image": "assets/product-images/realme-16-pro-5g.svg",
       "price": "Price pending final refresh",
       "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
@@ -605,15 +880,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.realme.com/in/",
-      "status": "hold_final_refresh"
+      "status": "hold_final_refresh",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-27",
       "name": "realme P4s 5G",
       "brand": "realme",
-      "image": "assets/product-images/27.svg",
+      "image": "assets/product-images/realme-p4s-5g.svg",
       "price": "₹34,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/128",
         "8/256",
@@ -629,15 +915,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.realme.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-28",
       "name": "Redmi Note 17 5G",
       "brand": "Redmi",
-      "image": "assets/product-images/28.svg",
+      "image": "assets/product-images/redmi-note-17-5g.svg",
       "price": "₹27,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "—"
       ],
@@ -651,15 +948,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.mi.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-29",
       "name": "Redmi Note 17 Pro 5G",
       "brand": "Redmi",
-      "image": "assets/product-images/29.svg",
+      "image": "assets/product-images/redmi-note-17-pro-5g.svg",
       "price": "₹36,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "—"
       ],
@@ -673,15 +981,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.mi.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-30",
       "name": "Redmi Note 17 Pro Max 5G",
       "brand": "Redmi",
-      "image": "assets/product-images/30.svg",
+      "image": "assets/product-images/redmi-note-17-pro-max-5g.svg",
       "price": "₹49,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256",
         "12/256"
@@ -696,15 +1015,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.mi.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-31",
       "name": "Redmi 17 5G",
       "brand": "Redmi",
-      "image": "assets/product-images/31.svg",
+      "image": "assets/product-images/redmi-17-5g.svg",
       "price": "₹23,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "6/128"
       ],
@@ -718,13 +1048,24 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.mi.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-32",
       "name": "POCO M8x 5G",
       "brand": "POCO",
-      "image": "assets/product-images/32.svg",
+      "image": "assets/product-images/poco-m8x-5g.svg",
       "price": "Price pending final refresh",
       "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
@@ -740,15 +1081,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.po.co/in/",
-      "status": "hold_final_refresh"
+      "status": "hold_final_refresh",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-33",
       "name": "POCO X8 5G",
       "brand": "POCO",
-      "image": "assets/product-images/33.svg",
+      "image": "assets/product-images/poco-x8-5g.svg",
       "price": "₹29,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "6/128",
         "8/128",
@@ -764,15 +1116,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.po.co/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-34",
       "name": "iQOO Z11 5G",
       "brand": "iQOO",
-      "image": "assets/product-images/34.svg",
+      "image": "assets/product-images/iqoo-z11-5g.svg",
       "price": "₹39,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/128"
       ],
@@ -786,15 +1149,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.iqoo.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-35",
       "name": "vivo S2 5G",
       "brand": "vivo",
-      "image": "assets/product-images/35.svg",
+      "image": "assets/product-images/vivo-s2-5g.svg",
       "price": "₹42,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/128",
         "8/256"
@@ -809,15 +1183,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.vivo.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-36",
       "name": "Vivo T5 5G",
       "brand": "vivo",
-      "image": "assets/product-images/36.svg",
+      "image": "assets/product-images/vivo-t5-5g.svg",
       "price": "₹34,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "6/128",
         "8/128",
@@ -834,15 +1219,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.vivo.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-37",
       "name": "OPPO K14 Plus 5G",
       "brand": "OPPO",
-      "image": "assets/product-images/37.svg",
+      "image": "assets/product-images/oppo-k14-plus-5g.svg",
       "price": "₹29,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "—"
       ],
@@ -856,15 +1252,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oppo.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-38",
       "name": "OPPO Reno15 5G",
       "brand": "OPPO",
-      "image": "assets/product-images/38.svg",
+      "image": "assets/product-images/oppo-reno15-5g.svg",
       "price": "₹45,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "8/256",
         "12/256",
@@ -880,13 +1287,24 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.oppo.com/in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-39",
       "name": "Nothing Phone (4a) Pro",
       "brand": "Nothing",
-      "image": "assets/product-images/39.svg",
+      "image": "assets/product-images/nothing-phone-4a-pro.svg",
       "price": "Price pending final refresh",
       "price_note": "Current production price is not locked. Verify the exact India SKU/variant before publishing.",
       "variants": [
@@ -902,15 +1320,26 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://in.nothing.tech/",
-      "status": "hold_final_refresh"
+      "status": "hold_final_refresh",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     },
     {
       "id": "mobile-40",
       "name": "HMD Vibe 2 Pro 5G",
       "brand": "HMD",
-      "image": "assets/product-images/40.svg",
+      "image": "assets/product-images/hmd-vibe-2-pro-5g.svg",
       "price": "₹15,999",
-      "price_note": "Observed India price; verify the exact variant and final seller price before publishing. Checked 2026-10-03.",
+      "price_note": "Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.",
       "variants": [
         "6/128",
         "8/128"
@@ -925,7 +1354,18 @@
       "network": "5G",
       "weight": "Weight pending",
       "official_url": "https://www.hmd.com/en_in/",
-      "status": "site_preview_ready"
+      "status": "site_preview_ready",
+      "affiliate": {
+        "amazon": {
+          "status": "pending_exact_sitstripe_link",
+          "associate_id": "comparemitr02-21",
+          "url": null
+        },
+        "flipkart": {
+          "status": "pending_legitimate_affiliate_link",
+          "url": null
+        }
+      }
     }
   ]
 }

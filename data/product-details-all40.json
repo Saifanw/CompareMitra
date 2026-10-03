@@ -28,9 +28,13 @@
       "status": "site_preview_ready",
       "affiliate": {
         "amazon": {
-          "status": "pending_exact_sitstripe_link",
+          "status": "active_sitstripe_link",
           "associate_id": "comparemitr02-21",
-          "url": null
+          "url": "https://link.amazon/B0dv5nyiY",
+          "link_type": "SiteStripe Short Link",
+          "tracking_id": "comparemitr02-21",
+          "verified_product": "Samsung Galaxy M36 5G",
+          "updated_on": "2026-10-03"
         },
         "flipkart": {
           "status": "pending_legitimate_affiliate_link",

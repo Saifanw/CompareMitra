@@ -72,3 +72,278 @@
   .search-panel h1{font-size:34px}
   .dashboard-search{height:54px}
 }
+
+/* =========================================================
+   CompareMitra V6 — premium smart comparison experience
+   ========================================================= */
+:root{
+  --cm-navy:#0b1733;
+  --cm-blue:#2563eb;
+  --cm-indigo:#4f46e5;
+  --cm-cyan:#0ea5e9;
+  --cm-mint:#10b981;
+  --cm-amber:#f59e0b;
+  --cm-pink:#ec4899;
+  --cm-bg:#f5f8ff;
+  --cm-ink:#0b1733;
+  --cm-muted:#66738f;
+  --cm-line:#dfe7f5;
+}
+body{background:linear-gradient(180deg,#f7faff 0%,#eef4ff 42%,#f8fbff 100%);}
+.dashboard-section{padding-top:24px;background:radial-gradient(circle at 8% 10%,rgba(79,70,229,.12),transparent 30%),radial-gradient(circle at 90% 4%,rgba(14,165,233,.10),transparent 26%);}
+.search-panel{background:linear-gradient(155deg,#ffffff 0%,#f3f5ff 58%,#eaf4ff 100%)!important;border:1px solid rgba(109,132,190,.20)!important;box-shadow:0 22px 60px rgba(37,61,120,.13)!important;position:sticky;top:18px;overflow:hidden;}
+.search-panel:before{content:"";position:absolute;width:210px;height:210px;right:-100px;top:-100px;border-radius:50%;background:radial-gradient(circle,rgba(79,70,229,.20),rgba(79,70,229,0) 70%);pointer-events:none;}
+.search-panel h1{font-size:clamp(42px,4vw,62px)!important;line-height:.92!important;letter-spacing:-.055em!important;position:relative;z-index:1;}
+.search-panel h1 span{background:linear-gradient(105deg,#2563eb,#4f46e5 55%,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.panel-copy{font-size:14px!important;line-height:1.65!important;max-width:290px;}
+.dashboard-search{height:62px!important;border-radius:20px!important;background:rgba(255,255,255,.92)!important;border:1px solid #cdd9f0!important;box-shadow:0 10px 28px rgba(37,99,235,.13),inset 0 1px rgba(255,255,255,.9)!important;}
+.dashboard-search input{font-size:15px!important;font-weight:600!important;}
+.dashboard-search button{width:52px!important;height:52px!important;margin-right:4px;border-radius:16px!important;background:linear-gradient(135deg,#2563eb,#4f46e5)!important;box-shadow:0 8px 18px rgba(37,99,235,.28)!important;}
+.search-chips button{background:rgba(255,255,255,.72)!important;border-color:#d4def1!important;transition:.2s ease!important;}
+.search-chips button:hover{transform:translateY(-2px);border-color:#8fb0f4!important;box-shadow:0 7px 18px rgba(37,99,235,.10);}
+.result-item{background:rgba(255,255,255,.70)!important;border:1px solid transparent!important;transition:.22s ease!important;}
+.result-item:hover,.result-item.active{background:#fff!important;border-color:#b8cdfa!important;box-shadow:0 8px 20px rgba(37,99,235,.10)!important;transform:translateX(2px);}
+.add-product-btn{background:linear-gradient(135deg,#eff5ff,#ffffff)!important;border-color:#9dbcf9!important;color:#1d4ed8!important;box-shadow:0 8px 18px rgba(37,99,235,.08)!important;}
+.comparison-panel{border:1px solid rgba(111,133,181,.18)!important;box-shadow:0 26px 80px rgba(32,53,103,.11)!important;background:rgba(255,255,255,.94)!important;backdrop-filter:blur(10px);}
+.comparison-head{background:linear-gradient(110deg,#fff 0%,#f9fbff 55%,#eef6ff 100%);border-radius:24px 24px 0 0;padding:24px 24px 18px!important;}
+.comparison-head h2{font-size:32px!important;letter-spacing:-.035em!important;}
+.status-badge{background:#ecfdf5!important;border-color:#a7f3d0!important;color:#047857!important;}
+.product-overview{background:linear-gradient(110deg,#fbfdff,#f4f8ff)!important;border:1px solid #e0e8f7!important;border-radius:22px!important;margin:0 18px!important;padding:18px!important;}
+.product-image-box{background:linear-gradient(145deg,#edf4ff,#ffffff)!important;border:1px solid #d4e1f6!important;box-shadow:0 12px 30px rgba(37,99,235,.09);}
+.quick-specs>div{background:rgba(255,255,255,.82)!important;border-color:#dfe7f4!important;transition:.2s ease;}
+.quick-specs>div:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,61,120,.08);}
+.marketplace-head{margin-top:28px!important;}
+.marketplace-head h3{font-size:22px!important;}
+.marketplace-controls button{background:#f4f7ff!important;border-color:#cdd9ef!important;color:#23417b!important;box-shadow:0 5px 12px rgba(37,61,120,.06);}
+.marketplace-viewport{padding:2px 0 12px!important;}
+.market-card{border-radius:22px!important;background:linear-gradient(160deg,#fff,#f9fbff)!important;box-shadow:0 12px 30px rgba(32,53,103,.07)!important;overflow:hidden;position:relative;}
+.market-card:after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,#2563eb,#4f46e5,#0ea5e9);opacity:.8;}
+.market-card.is-active{box-shadow:0 16px 36px rgba(37,99,235,.12)!important;}
+.market-card.is-pending{opacity:.74;}
+.market-price{font-size:28px!important;letter-spacing:-.035em;}
+.market-cta{background:linear-gradient(135deg,#2563eb,#4f46e5)!important;box-shadow:0 8px 18px rgba(37,99,235,.20)!important;}
+.marketplace-footer{color:#7786a2!important;}
+.smart-compare-card{margin-top:24px!important;border-radius:26px!important;border:1px solid #d9e4f5!important;background:linear-gradient(180deg,#ffffff,#f8fbff)!important;box-shadow:0 20px 50px rgba(34,54,104,.09)!important;overflow:visible!important;}
+.smart-compare-head{padding:24px 24px 18px!important;background:linear-gradient(115deg,#fff 0%,#f5f8ff 65%,#eef5ff 100%);border-bottom:1px solid #e1e8f5!important;border-radius:26px 26px 0 0;}
+.smart-compare-head h3{font-size:25px!important;letter-spacing:-.03em!important;}
+.smart-compare-head p{color:#74819b!important;}
+.smart-filter-bar{display:flex;align-items:center;gap:16px;padding:16px 18px;background:linear-gradient(90deg,#f5f8ff,#ffffff,#f2f8ff);border-bottom:1px solid #e5ebf5;position:relative;z-index:5;}
+.filter-intro{display:flex;align-items:center;gap:10px;min-width:245px;}
+.filter-spark{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#dbeafe,#ede9fe);color:#4f46e5;box-shadow:0 6px 15px rgba(79,70,229,.13);}
+.filter-intro b{display:block;font-size:13px;color:#172554;}.filter-intro small{display:block;font-size:10px;color:#75839d;margin-top:2px;}
+.filter-pills{display:flex;gap:7px;flex-wrap:wrap;flex:1;}
+.smart-filter{border:1px solid #d8e2f1;background:#fff;color:#42516d;padding:8px 11px;border-radius:999px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s ease;white-space:nowrap;box-shadow:0 2px 6px rgba(30,55,100,.03);}
+.smart-filter:hover{transform:translateY(-1px);border-color:#a9c0ef;color:#2457c5;box-shadow:0 7px 16px rgba(37,99,235,.08);}
+.smart-filter.active{color:#fff;border-color:transparent;background:linear-gradient(135deg,#2563eb,#4f46e5);box-shadow:0 7px 18px rgba(37,99,235,.22);}
+.more-filter-btn{border:0;background:transparent;color:#3158a5;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;padding:9px 2px;}
+.more-filter-btn span{display:inline-block;transition:.25s ease;margin-left:3px;}.more-filter-btn.open span{transform:rotate(180deg);}
+.extra-filter-drawer{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px;max-height:0;overflow:hidden;background:#f7f9ff;transition:max-height .35s ease,padding .35s ease;border-bottom:1px solid transparent;}
+.extra-filter-drawer.open{max-height:100px;padding:12px 20px;border-bottom-color:#e2e8f5;}
+.smart-insights{display:grid;grid-template-columns:1.25fr repeat(3,1fr);gap:10px;padding:14px 18px;background:#f7faff;border-bottom:1px solid #e4eaf4;}
+.insight-hero,.insight-card{border:1px solid #dce6f5;border-radius:16px;background:#fff;padding:12px 14px;box-shadow:0 8px 20px rgba(37,61,120,.05);}
+.insight-hero{background:linear-gradient(135deg,#eef5ff,#f8f4ff);}.insight-label{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#71809b;font-weight:800;}.insight-hero strong{display:block;font-size:16px;color:#101b36;margin-top:3px;}.insight-hero small,.insight-card small{color:#75829a;font-size:10px;}.insight-card b{display:block;font-size:12px;color:#172554;margin-top:3px;}.insight-card.best{border-color:#b9e9d6;background:linear-gradient(135deg,#f0fdf7,#fff);}.insight-card.best b{color:#047857;}
+.comparison-table-wrap{padding:0!important;background:#fff;}
+.comparison-matrix{border-collapse:separate!important;border-spacing:0!important;width:100%;overflow:hidden;border-radius:0 0 24px 24px;}
+.comparison-matrix thead th{background:#0e1b39!important;color:#fff!important;border:0!important;padding:16px 13px!important;position:sticky;top:0;z-index:3;}
+.comparison-matrix thead th:first-child{background:#132447!important;color:#bcd0f6!important;text-transform:uppercase;font-size:9px;letter-spacing:.12em;}
+.matrix-product{display:grid;grid-template-columns:40px 1fr 18px;gap:8px;align-items:center;text-align:left;position:relative;}.matrix-image{width:40px;height:48px;border-radius:10px;background:#f3f7ff;display:grid;place-items:center;overflow:hidden;}.matrix-image img{max-width:90%;max-height:90%;}.matrix-product span{display:block;font-size:8px;color:#9db2db;text-transform:uppercase;letter-spacing:.08em;}.matrix-product b{display:block;font-size:11px;color:#fff;line-height:1.2;margin-top:2px;}.matrix-product small{display:block;font-size:8px;color:#b9c9e7;margin-top:2px;}.matrix-remove{background:transparent;border:0;color:#9fb1d4;cursor:pointer;}
+.comparison-matrix tbody th{background:#f5f8fd!important;color:#52627e!important;border-right:1px solid #e3eaf4!important;font-size:10px!important;font-weight:800!important;white-space:nowrap;}
+.comparison-matrix tbody td,.comparison-matrix tbody th{padding:13px 12px!important;border-bottom:1px solid #e5ebf4!important;border-top:0!important;vertical-align:middle;}
+.comparison-matrix tbody td{font-size:11px!important;color:#1b2a47!important;background:#fff!important;transition:.25s ease;}
+.comparison-matrix tbody tr:hover td{background:#f8fbff!important;}
+.comparison-matrix tbody tr.is-different td{background:linear-gradient(90deg,#fff,#f5f8ff)!important;}
+.comparison-matrix.highlight-mode tbody tr:not(.is-different){opacity:.42;}.comparison-matrix.highlight-mode tbody tr.is-different td{background:linear-gradient(90deg,#eef5ff,#f5f0ff)!important;color:#173c91!important;font-weight:800!important;}
+.comparison-matrix .matrix-empty{padding:45px!important;text-align:center;background:#fff!important;color:#7887a1!important;}
+.legacy-spec-card{display:none!important;}
+.affiliate-disclosure{margin-top:18px!important;background:linear-gradient(135deg,#f0f7ff,#f8f4ff)!important;border-color:#dbe5f4!important;}
+@media(max-width:1050px){.smart-filter-bar{align-items:flex-start;flex-direction:column}.filter-intro{min-width:0}.smart-insights{grid-template-columns:1fr 1fr}.more-filter-btn{position:absolute;right:18px;top:17px}.filter-pills{padding-right:100px;}}
+@media(max-width:700px){.dashboard-section{padding:10px}.search-panel{position:relative;top:auto}.search-panel h1{font-size:48px!important}.smart-insights{grid-template-columns:1fr}.filter-pills{padding-right:0}.more-filter-btn{position:static}.smart-filter-bar{padding:14px}.comparison-matrix{min-width:720px}.comparison-table-wrap{overflow-x:auto;}.comparison-matrix thead th{position:sticky;top:0}.smart-compare-card{overflow:hidden!important;}}
+.focus-pulse{animation:cmPulse .5s ease;}
+@keyframes cmPulse{0%{box-shadow:0 20px 50px rgba(34,54,104,.09)}45%{box-shadow:0 22px 60px rgba(79,70,229,.20)}100%{box-shadow:0 20px 50px rgba(34,54,104,.09)}}
+.comparison-matrix tbody tr.winner-row td{background:linear-gradient(90deg,#ecfdf5,#f7fffb)!important;color:#047857!important;font-weight:800!important;}
+
+/* =========================================================
+   COMPAREMITRA V7 — CINEMATIC PREMIUM LAYER
+   Visual-only enhancement: preserves the existing data/logic.
+   ========================================================= */
+:root{
+  --cm-midnight:#07132f;
+  --cm-navy:#0b1d43;
+  --cm-indigo:#4f46e5;
+  --cm-blue:#2563eb;
+  --cm-cyan:#0ea5e9;
+  --cm-mint:#10b981;
+  --cm-violet:#7c3aed;
+  --cm-ink:#0b1734;
+}
+
+/* Give the first screen a cinematic, editorial atmosphere. */
+.site-header{position:relative;z-index:30;box-shadow:0 10px 30px rgba(8,25,61,.07)}
+.header-search{display:none!important}
+.header-main{justify-content:space-between!important}
+
+.dashboard-section{
+  position:relative;
+  isolation:isolate;
+  padding-top:30px!important;
+  background:
+    radial-gradient(900px 500px at 7% 3%,rgba(79,70,229,.15),transparent 62%),
+    radial-gradient(760px 430px at 94% 5%,rgba(14,165,233,.13),transparent 62%),
+    radial-gradient(600px 400px at 55% 100%,rgba(16,185,129,.07),transparent 68%),
+    linear-gradient(180deg,#edf3ff 0%,#f7f9fd 42%,#f8fafc 100%)!important;
+}
+.dashboard-section:before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.42;
+  background-image:linear-gradient(rgba(30,64,175,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(30,64,175,.035) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 72%);
+}
+.dashboard-shell{grid-template-columns:330px minmax(0,1fr)!important;gap:20px!important}
+
+/* Dark cinematic search command center */
+.search-panel{
+  min-height:760px;
+  padding:28px!important;
+  border:1px solid rgba(122,151,222,.28)!important;
+  background:
+    radial-gradient(260px 220px at 100% 0%,rgba(99,102,241,.30),transparent 70%),
+    radial-gradient(220px 180px at 0% 100%,rgba(14,165,233,.16),transparent 72%),
+    linear-gradient(145deg,#07152f 0%,#0b1d43 52%,#101b46 100%)!important;
+  box-shadow:0 30px 90px rgba(7,20,51,.24),0 0 0 1px rgba(255,255,255,.025) inset!important;
+  color:#fff;
+}
+.search-panel:after{width:250px!important;height:250px!important;right:-145px!important;top:-130px!important;background:radial-gradient(circle,rgba(56,189,248,.18),transparent 68%)!important;filter:none!important}
+.search-panel:before{content:"";position:absolute;inset:auto -80px -100px auto;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.20),transparent 68%);pointer-events:none}
+.search-panel .panel-kicker{color:#8fb7ff!important;position:relative;z-index:2}
+.search-panel h1{font-size:clamp(48px,4.2vw,64px)!important;line-height:.91!important;margin:16px 0 18px!important;color:#f8fbff!important;position:relative;z-index:2;text-shadow:0 8px 28px rgba(0,0,0,.18)}
+.search-panel h1 span{background:linear-gradient(100deg,#60a5fa 4%,#a78bfa 55%,#67e8f9 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.panel-copy{color:#b7c6e3!important;max-width:270px;font-size:11px!important;line-height:1.75!important;position:relative;z-index:2}
+.dashboard-search{height:68px!important;border-radius:22px!important;background:rgba(255,255,255,.98)!important;border:1px solid rgba(148,163,184,.30)!important;box-shadow:0 18px 42px rgba(0,0,0,.22),0 0 0 5px rgba(96,165,250,.06)!important;position:relative;z-index:3}
+.dashboard-search:focus-within{border-color:#67a8ff!important;box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 0 5px rgba(96,165,250,.15)!important}
+.dashboard-search>span{color:#4f6389!important;padding-left:17px!important}
+.dashboard-search input{font-size:14px!important;font-weight:650!important;color:#101d3a!important}
+.dashboard-search button{width:56px!important;height:56px!important;margin-right:5px!important;border-radius:18px!important;background:linear-gradient(135deg,#2563eb,#5b4eea 55%,#0ea5e9)!important;box-shadow:0 10px 24px rgba(37,99,235,.34)!important;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease!important}
+.dashboard-search button:hover{transform:translateX(2px) scale(1.02)!important;filter:saturate(1.08)!important;box-shadow:0 13px 30px rgba(37,99,235,.44)!important}
+.suggestion-label,.result-label{color:#7890ba!important;position:relative;z-index:2}
+.search-chips{position:relative;z-index:2}
+.search-chips button{background:rgba(255,255,255,.065)!important;color:#c8d6ef!important;border-color:rgba(150,177,229,.22)!important;backdrop-filter:blur(8px);transition:transform .22s ease,background .22s ease,border-color .22s ease,box-shadow .22s ease!important}
+.search-chips button:hover{background:rgba(96,165,250,.14)!important;color:#fff!important;border-color:rgba(96,165,250,.50)!important;box-shadow:0 9px 24px rgba(37,99,235,.18)!important}
+.search-results{position:relative;z-index:2;max-height:285px!important}
+.result-item{background:rgba(255,255,255,.055)!important;border-color:rgba(151,177,224,.12)!important;color:#fff!important;backdrop-filter:blur(7px);transition:transform .22s ease,background .22s ease,border-color .22s ease,box-shadow .22s ease!important}
+.result-item b{color:#eaf1ff!important}.result-item small{color:#91a7ca!important}.result-item strong{color:#75a8ff!important}.result-item img{background:#edf3ff!important}
+.result-item:hover,.result-item.active{background:linear-gradient(100deg,rgba(37,99,235,.22),rgba(124,58,237,.12))!important;border-color:rgba(103,168,255,.48)!important;box-shadow:0 12px 26px rgba(0,0,0,.15)!important;transform:translateX(4px)!important}
+.add-product-btn{position:relative;z-index:2;background:linear-gradient(135deg,rgba(96,165,250,.14),rgba(124,58,237,.12))!important;border-color:rgba(126,168,245,.42)!important;color:#bcd7ff!important;border-radius:14px!important;padding:12px!important;box-shadow:0 10px 22px rgba(0,0,0,.10)!important;transition:.22s ease!important}
+.add-product-btn:hover{transform:translateY(-2px);background:linear-gradient(135deg,rgba(96,165,250,.20),rgba(124,58,237,.18))!important;box-shadow:0 14px 28px rgba(0,0,0,.15)!important}
+.search-note{color:#738bb4!important;position:relative;z-index:2}
+
+/* Main surface: expensive-looking layered glass without becoming glassmorphism-heavy. */
+.comparison-panel{
+  border:1px solid rgba(121,146,197,.22)!important;
+  background:rgba(255,255,255,.90)!important;
+  box-shadow:0 34px 100px rgba(22,42,84,.13),0 1px 0 rgba(255,255,255,.9) inset!important;
+  backdrop-filter:blur(14px)!important;
+  overflow:hidden;
+}
+.comparison-head{background:linear-gradient(105deg,rgba(255,255,255,.98),rgba(244,248,255,.94),rgba(248,245,255,.92))!important;padding:25px 24px 19px!important}
+.comparison-head h2{font-size:30px!important;color:#081633!important}
+.comparison-head p{color:#6e7e9b!important}
+.status-badge{box-shadow:0 5px 14px rgba(16,185,129,.10)}
+.product-overview{background:linear-gradient(120deg,rgba(244,248,255,.82),rgba(255,255,255,.88),rgba(247,245,255,.72))!important;border-color:rgba(190,205,232,.55)!important;box-shadow:0 10px 30px rgba(39,62,110,.045) inset!important}
+.product-image-box{background:radial-gradient(circle at 50% 40%,#fff 0,#edf4ff 58%,#e8eaff 100%)!important;box-shadow:0 18px 38px rgba(55,82,144,.11)!important}
+.quick-specs>div{background:rgba(255,255,255,.72)!important;border-color:rgba(205,217,237,.75)!important}
+.quick-specs>div:nth-child(1){box-shadow:inset 3px 0 0 #60a5fa}
+.quick-specs>div:nth-child(2){box-shadow:inset 3px 0 0 #818cf8}
+.quick-specs>div:nth-child(3){box-shadow:inset 3px 0 0 #f472b6}
+.quick-specs>div:nth-child(4){box-shadow:inset 3px 0 0 #34d399}
+.quick-specs>div:nth-child(5){box-shadow:inset 3px 0 0 #22d3ee}
+.quick-specs>div:nth-child(6){box-shadow:inset 3px 0 0 #fbbf24}
+
+/* Marketplace row becomes a premium product rail. */
+.marketplace-head{padding:0 2px}
+.marketplace-head h3{font-size:21px!important;color:#0b1734!important}
+.marketplace-controls button{width:36px!important;height:36px!important;border-radius:12px!important;background:linear-gradient(145deg,#fff,#eef4ff)!important;border-color:#cbd8ee!important;box-shadow:0 7px 18px rgba(37,61,120,.09)!important;transition:.2s ease!important}
+.marketplace-controls button:hover:not(:disabled){transform:translateY(-2px);background:linear-gradient(145deg,#eef5ff,#f4efff)!important;color:#4f46e5!important}
+.marketplace-track{gap:12px!important;transition:transform .55s cubic-bezier(.22,.8,.25,1)!important}
+.market-card{border-radius:24px!important;background:linear-gradient(150deg,#fff 0%,#f8fbff 72%,#f7f2ff 100%)!important;border-color:rgba(188,205,233,.72)!important;box-shadow:0 15px 34px rgba(33,57,105,.075)!important;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease!important}
+.market-card:hover{transform:translateY(-5px)!important;box-shadow:0 23px 45px rgba(37,66,126,.13)!important;border-color:#a9c2ee!important}
+.market-card:after{height:4px!important;background:linear-gradient(90deg,#2563eb,#7c3aed,#0ea5e9,#10b981)!important}
+.market-card:nth-child(4n+1):after{background:linear-gradient(90deg,#ffb300,#ff8a00)!important}
+.market-card:nth-child(4n+2):after{background:linear-gradient(90deg,#2563eb,#38bdf8)!important}
+.market-card:nth-child(4n+3):after{background:linear-gradient(90deg,#ec4899,#f97316)!important}
+.market-card:nth-child(4n):after{background:linear-gradient(90deg,#0f766e,#22c55e)!important}
+.market-price{font-size:29px!important;color:#081633!important}
+.market-cta{border-radius:12px!important;background:linear-gradient(135deg,#0b1d43,#2563eb)!important;box-shadow:0 9px 20px rgba(37,99,235,.22)!important;transition:.2s ease!important}
+.market-card:hover .market-cta{box-shadow:0 12px 26px rgba(37,99,235,.30)!important;transform:translateY(-1px)}
+
+/* Smart comparison = cinematic command console. */
+.smart-compare-card{
+  margin-top:28px!important;
+  border-radius:28px!important;
+  border:1px solid rgba(132,155,203,.28)!important;
+  background:linear-gradient(145deg,#fff 0%,#f7faff 68%,#f6f1ff 100%)!important;
+  box-shadow:0 28px 75px rgba(30,50,96,.12)!important;
+  overflow:hidden!important;
+}
+.smart-compare-head{
+  position:relative;overflow:hidden;padding:25px 25px 20px!important;
+  background:
+    radial-gradient(500px 180px at 95% 0%,rgba(99,102,241,.28),transparent 70%),
+    radial-gradient(420px 160px at 55% 100%,rgba(14,165,233,.12),transparent 72%),
+    linear-gradient(115deg,#07152f,#0c2050 58%,#17164d)!important;
+  border-bottom:1px solid rgba(255,255,255,.10)!important;color:#fff!important;
+}
+.smart-compare-head:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.045) 50%,transparent 70%);transform:translateX(-80%);animation:cmSheen 7s ease-in-out infinite}
+.smart-compare-head .panel-kicker{color:#7fb6ff!important}.smart-compare-head h3{color:#fff!important;font-size:27px!important}.smart-compare-head p{color:#aebedc!important}
+.smart-compare-actions{position:relative;z-index:2}
+.difference-toggle{color:#d9e5fa!important;background:rgba(255,255,255,.06);border:1px solid rgba(150,180,235,.20);padding:7px 9px;border-radius:999px;backdrop-filter:blur(8px)}
+.clear-compare{color:#b8c9e6!important;border-color:rgba(150,180,235,.20)!important;background:rgba(255,255,255,.06)!important}
+.smart-filter-bar{position:relative;overflow:visible!important;padding:18px 20px!important;background:linear-gradient(90deg,#f4f7ff,#fff,#f7f2ff)!important;border-bottom:1px solid #e1e8f5!important}
+.filter-intro{min-width:265px!important}.filter-spark{width:38px!important;height:38px!important;border-radius:13px!important;background:linear-gradient(135deg,#dbeafe,#e9d5ff,#cffafe)!important;color:#4f46e5!important;box-shadow:0 9px 20px rgba(79,70,229,.16)!important}
+.filter-intro b{font-size:14px!important;color:#111d3b!important}.filter-intro small{color:#7a89a4!important}
+.filter-pills{gap:8px!important}
+.smart-filter{padding:9px 13px!important;border-color:#d4def0!important;background:rgba(255,255,255,.86)!important;box-shadow:0 4px 10px rgba(33,58,112,.04)!important}
+.smart-filter:hover{border-color:#9bb9ef!important;box-shadow:0 9px 20px rgba(37,99,235,.10)!important}
+.smart-filter.active{background:linear-gradient(135deg,#2563eb,#5b4eea 58%,#0ea5e9)!important;box-shadow:0 9px 22px rgba(37,99,235,.24)!important}
+.more-filter-btn{padding:9px 11px!important;border:1px solid #d7e1f0!important;border-radius:999px!important;background:#fff!important;box-shadow:0 5px 12px rgba(30,55,100,.05)!important}
+.extra-filter-drawer{background:linear-gradient(90deg,#f2f6ff,#fff,#f7f1ff)!important}
+.extra-filter-drawer.open{padding:14px 20px!important;max-height:140px!important}
+
+.smart-insights{padding:16px 18px!important;background:linear-gradient(90deg,#f5f8ff,#fbfbff,#f7f4ff)!important}
+.insight-hero,.insight-card{border-color:#d8e2f2!important;border-radius:18px!important;box-shadow:0 10px 24px rgba(37,61,120,.06)!important;transition:transform .22s ease,box-shadow .22s ease!important}
+.insight-hero:hover,.insight-card:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(37,61,120,.09)!important}
+.insight-hero{background:linear-gradient(135deg,#edf5ff,#f4edff)!important}.insight-card.best{background:linear-gradient(135deg,#ecfdf7,#fff)!important;border-color:#b9ead6!important}
+
+/* Richer matrix: dark product header + colored category rails. */
+.comparison-table-wrap{background:linear-gradient(180deg,#fff,#f8fbff)!important}
+.comparison-matrix thead th{background:linear-gradient(120deg,#07152f,#10285b 58%,#28205f)!important;box-shadow:inset 0 -1px rgba(255,255,255,.10)}
+.comparison-matrix thead th:first-child{background:#081634!important}
+.comparison-matrix tbody th{background:linear-gradient(90deg,#f1f5fc,#f8faff)!important;border-right:1px solid #dce5f3!important}
+.comparison-matrix tbody tr:nth-child(4n+1) th{box-shadow:inset 3px 0 #60a5fa}
+.comparison-matrix tbody tr:nth-child(4n+2) th{box-shadow:inset 3px 0 #a78bfa}
+.comparison-matrix tbody tr:nth-child(4n+3) th{box-shadow:inset 3px 0 #f472b6}
+.comparison-matrix tbody tr:nth-child(4n) th{box-shadow:inset 3px 0 #34d399}
+.comparison-matrix tbody td{transition:background .25s ease,transform .25s ease,box-shadow .25s ease!important}
+.comparison-matrix tbody tr:hover td{background:#f4f8ff!important}
+.comparison-matrix.highlight-mode tbody tr.is-different td{background:linear-gradient(105deg,#e9f3ff,#f2edff,#edfff8)!important;box-shadow:inset 0 0 0 1px rgba(99,102,241,.07)}
+.comparison-matrix tbody tr.winner-row td{background:linear-gradient(105deg,#ecfdf5,#effdf9,#f4fbff)!important}
+
+.affiliate-disclosure{background:linear-gradient(110deg,#edf5ff,#f7f1ff,#effcf8)!important;border-color:#d6e2f2!important;box-shadow:0 10px 25px rgba(35,61,117,.05)}
+
+/* Gentle cinematic motion — always subtle and respects reduced motion. */
+.search-panel,.comparison-panel{animation:cmRise .65s cubic-bezier(.2,.8,.25,1) both}
+.search-panel{animation-delay:.03s}.comparison-panel{animation-delay:.10s}
+.product-overview,.market-card,.smart-compare-card{animation:cmFade .55s ease both}
+@keyframes cmRise{from{opacity:0;transform:translateY(14px) scale(.995)}to{opacity:1;transform:none}}
+@keyframes cmFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes cmSheen{0%,55%,100%{transform:translateX(-85%)}75%{transform:translateX(85%)}}
+@media(prefers-reduced-motion:reduce){.search-panel,.comparison-panel,.product-overview,.market-card,.smart-compare-card{animation:none!important}.smart-compare-head:after{animation:none!important}.marketplace-track{transition:none!important}}
+
+@media(max-width:1050px){
+  .dashboard-shell{grid-template-columns:300px minmax(0,1fr)!important}
+}
+@media(max-width:700px){
+  .header-search{display:none!important}
+  .dashboard-shell{grid-template-columns:1fr!important}
+  .search-panel{min-height:auto!important}
+  .search-panel h1{font-size:48px!important}
+}

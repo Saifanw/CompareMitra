@@ -83,3 +83,5 @@
   .empty-state{min-height:500px}
 }
 /* CINEMATIC FIX END */
+
+[hidden]{display:none!important}

@@ -17,6 +17,13 @@
       "note": "Official affiliate APIs/tools are available; credentials must stay server-side."
     },
     {
+      "id": "meesho",
+      "name": "Meesho India",
+      "adapter": "approved_affiliate_or_deeplink",
+      "status": "research_required",
+      "note": "Show only verified product/affiliate routes when connected."
+    },
+    {
       "id": "myntra",
       "name": "Myntra India",
       "adapter": "approved_affiliate_network_or_deeplink",

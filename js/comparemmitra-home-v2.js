@@ -47,9 +47,8 @@ function metricNumber(label,value){
   return null;
 }
 function rowsForGroup(group){
-  const marketplaceRows=marketplaces.map(m=>({label:m.name.replace(/ India$/,''),key:`market:${m.id}`,kind:'price',value:p=>marketplacePrice(p,m.id)}));
   const groups={
-    buying:{title:'💰 PRICE & BUYING',tone:'price',rows:[{label:'Current Price',kind:'price',value:p=>p.price||'—'},...marketplaceRows]},
+    buying:{title:'💰 PRICE & BUYING',tone:'price',rows:[{label:'Current Price',kind:'price',value:p=>p.price||'—'}]},
     performance:{title:'⚡ PERFORMANCE',tone:'performance',rows:[{label:'Processor',kind:'performance',value:p=>p.processor||'—'},{label:'RAM & Storage',kind:'storage',value:p=>(p.variants||[]).join(' • ')||'—'}]},
     display:{title:'◈ DISPLAY',tone:'display',rows:[{label:'Display',kind:'display',value:p=>p.display||'—'}]},
     camera:{title:'◉ CAMERA',tone:'camera',rows:[{label:'Rear / Front Camera',kind:'camera',value:p=>p.camera||'—'}]},
@@ -60,7 +59,7 @@ function rowsForGroup(group){
     design:{title:'◇ DESIGN',tone:'design',rows:[{label:'Weight',kind:'design',value:p=>p.weight||'—'}]},
     software:{title:'◫ SOFTWARE',tone:'software',rows:[{label:'Operating System',kind:'software',value:p=>p.os||'—'}]},
     charging:{title:'↯ CHARGING',tone:'battery',rows:[{label:'Charging',kind:'charging',value:p=>p.charging||'—'}]},
-    price:{title:'💰 PRICE & BUYING',tone:'price',rows:[{label:'Current Price',kind:'price',value:p=>p.price||'—'},...marketplaceRows]},
+    price:{title:'💰 PRICE & BUYING',tone:'price',rows:[{label:'Current Price',kind:'price',value:p=>p.price||'—'}]},
     value:{title:'✦ VALUE',tone:'value',rows:[{label:'CompareMitra Score',kind:'value',value:p=>compareScore(p)+'/10'}]},
     all:{title:'',tone:'all',rows:[]}
   };
@@ -91,9 +90,19 @@ function renderSmartInsights(){
   const focus=labels[state.filter]||'Smart comparison';
   root.innerHTML=`<div class="insight-hero"><span class="insight-label">✦ CompareMitra Intelligence</span><strong>${esc(focus)}</strong><small>${compareProducts.length} product${compareProducts.length>1?'s':''} • live matrix on this page</small></div><div class="insight-card best"><span class="insight-label">BEST MATCH</span><b>${winner?esc(`${winner.brand} ${winner.name}`):'Add products'}</b><small>${state.filter==='price'?'Lowest listed price':'Strongest current comparison score'}</small></div><div class="insight-card"><span class="insight-label">LOWEST PRICE</span><b>${cheapest?esc(cheapest.price):'—'}</b><small>${cheapest?esc(`${cheapest.brand} ${cheapest.name}`):'Price data pending'}</small></div><div class="insight-card"><span class="insight-label">FOCUS</span><b>${esc(focus)}</b><small>${compareProducts.length>1?'Differences are ready to surface':'Add another product to unlock side-by-side insight'}</small></div>`;
 }
+function renderMatrixMarketplaceRail(){
+  const root=$('#matrixMarketplaceRail');
+  if(!root)return;
+  if(!compareProducts.length || !marketplaces.length){root.innerHTML='';return;}
+  root.innerHTML=`<div class="matrix-marketplace-label"><span>WHERE TO BUY</span><small>Prices stay horizontal so you can scan stores at a glance</small></div><div class="matrix-marketplace-scroll">${marketplaces.map(m=>{
+    const prices=compareProducts.map(p=>{const o=getOffer(p,m.id);return o&&o.price?o.price:'—'});
+    const active=compareProducts.some(p=>{const o=getOffer(p,m.id);return o&&o.affiliate_url&&o.status&&/verified|active/i.test(o.status)});
+    return `<div class="matrix-store ${active?'is-connected':''}"><div class="matrix-store-brand"><span class="store-mark store-${esc(m.id)}">${esc(m.name.replace(/ India$/,''))}</span>${active?'<i>LIVE</i>':'<i>SOON</i>'}</div><div class="matrix-store-prices">${prices.map((v,i)=>`<span title="${esc(m.name)} · ${esc(compareProducts[i].name)}"><b>${esc(v)}</b><small>${esc(compareProducts[i].name)}</small></span>`).join('')}</div></div>`;
+  }).join('')}</div>`;
+}
 function renderComparisonMatrix(){
   const table=$('#comparisonMatrix'); if(!table)return;
-  renderSmartInsights();
+  renderMatrixMarketplaceRail();
   if(!compareProducts.length){table.querySelector('thead').innerHTML='';table.querySelector('tbody').innerHTML='<tr><td class="matrix-empty" colspan="5">Add products from the left panel to start comparing.</td></tr>';return;}
   const groups=comparisonGroups();
   const head='<tr><th class="feature-col">FEATURE</th>'+compareProducts.map(p=>`<th class="product-col"><div class="matrix-product"><div class="matrix-image"><img src="${esc(p.image)}" alt="${esc(p.name)}" onerror="this.src='assets/product-images/${esc(String(p.id).split('-').pop()||'1')}.svg';this.onerror=null"></div><div><span>${esc(p.brand)}</span><b>${esc(p.name)}</b><small>${esc((p.variants||[])[0]||'')}</small></div><button class="matrix-remove" data-remove="${esc(p.id)}" aria-label="Remove ${esc(p.name)}">×</button></div></th>`).join('')+'</tr>';
@@ -109,6 +118,7 @@ function renderComparisonMatrix(){
     });
   });
   table.querySelector('tbody').innerHTML=body||`<tr><td class="matrix-empty" colspan="${compareProducts.length+1}">No connected data for this focus yet.</td></tr>`;
+  renderSmartInsights();
   table.querySelectorAll('[data-remove]').forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.remove;compareProducts=compareProducts.filter(x=>x.id!==id);if(!compareProducts.length&&products[0])compareProducts=[products.find(x=>x.id===selected?.id)||products[0]];selected=compareProducts[0];selectProduct(selected);});
   const diff=$('#highlightDifferences'); table.classList.toggle('highlight-mode',!!diff?.checked);
 }

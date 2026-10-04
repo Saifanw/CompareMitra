@@ -646,3 +646,37 @@ body{background:linear-gradient(180deg,#f7faff 0%,#edf4ff 34%,#f8faff 100%)!impo
 
 @media(max-width:1100px){.magical-filter{grid-template-columns:1fr}.filter-pills{justify-content:flex-start}.smart-insights{grid-template-columns:1fr 1fr}.buy-cta-panel{align-items:flex-start;flex-direction:column}}
 @media(max-width:700px){.smart-insights{grid-template-columns:1fr}.matrix-stage{padding:8px}.matrix-stage-top{display:none}.comparison-matrix{min-width:1050px!important}.comparison-matrix thead .product-col,.comparison-matrix tbody .matrix-data-row td{min-width:260px!important}.comparison-matrix thead th:first-child,.comparison-matrix tbody .matrix-data-row th{width:180px!important;min-width:180px!important}.marketplace-section{padding:20px 12px}.buy-cta-panel{padding:17px}.buy-cta{width:100%;justify-content:center}}
+
+
+/* V11 — horizontal marketplace rail + true product matrix */
+.matrix-stage{overflow:visible}
+.matrix-marketplace-rail{margin:0 0 14px;padding:12px 14px;border:1px solid rgba(75,96,190,.18);border-radius:18px;background:linear-gradient(100deg,rgba(246,249,255,.98),rgba(239,243,255,.92));box-shadow:0 10px 28px rgba(30,55,120,.06)}
+.matrix-marketplace-label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 2px 9px}
+.matrix-marketplace-label span{font-size:10px;font-weight:900;letter-spacing:.16em;color:#51618a}
+.matrix-marketplace-label small{font-size:10px;color:#8390ad}
+.matrix-marketplace-scroll{display:flex;gap:9px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.matrix-store{flex:0 0 180px;min-width:180px;padding:9px 10px;border:1px solid #dfe6f7;border-radius:13px;background:#fff;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.matrix-store:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(25,55,130,.1)}
+.matrix-store.is-connected{border-color:#b9d8ff;box-shadow:inset 0 2px 0 #2e6cf6}
+.matrix-store-brand{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}
+.store-mark{font-weight:900;font-size:13px;letter-spacing:-.02em;color:#162344}
+.store-amazon{color:#111}.store-flipkart{color:#1773e8}.store-myntra{color:#e83c84}.store-ajio{color:#111}.store-reliance-digital{color:#1c4ca3}
+.matrix-store-brand i{font-style:normal;font-size:8px;font-weight:900;letter-spacing:.08em;padding:3px 6px;border-radius:999px;background:#f0f3f8;color:#8290a8}
+.matrix-store.is-connected .matrix-store-brand i{background:#e8fbf2;color:#07945a}
+.matrix-store-prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.matrix-store-prices span{min-width:0;padding:6px 7px;border-radius:9px;background:#f7f9fd}
+.matrix-store-prices b{display:block;font-size:11px;color:#17264a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.matrix-store-prices small{display:block;margin-top:2px;font-size:7px;color:#8994ac;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.comparison-table-wrap{overflow:auto;max-width:100%;border-radius:0 0 20px 20px}
+.comparison-matrix{min-width:760px;width:100%;table-layout:fixed}
+.comparison-matrix .feature-col{width:180px;position:sticky;left:0;z-index:5}
+.comparison-matrix .product-col{min-width:210px}
+.comparison-matrix tbody th{position:sticky;left:0;z-index:3;background:rgba(248,250,255,.98)}
+.matrix-data-row td,.matrix-data-row th{height:58px}
+.matrix-data-row td{vertical-align:middle}
+.matrix-cell{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.matrix-cell em{font-size:8px;font-style:normal;font-weight:900;letter-spacing:.08em;color:#008d61;background:#ddf8ed;padding:4px 6px;border-radius:999px;white-space:nowrap}
+.matrix-data-row.is-different td{background:rgba(246,249,255,.5)}
+.matrix-data-row.is-different td.is-best{background:linear-gradient(90deg,rgba(224,250,241,.92),rgba(245,255,251,.96))}
+.smart-insights-after{margin-top:14px}
+@media(max-width:900px){.matrix-marketplace-label{align-items:flex-start;flex-direction:column;gap:3px}.matrix-store{flex-basis:165px;min-width:165px}.comparison-matrix{min-width:720px}.comparison-matrix .feature-col{width:150px}.comparison-matrix .product-col{min-width:190px}}

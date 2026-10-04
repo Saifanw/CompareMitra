@@ -783,3 +783,109 @@ body{background:linear-gradient(180deg,#f7faff 0%,#edf4ff 34%,#f8faff 100%)!impo
 .buy-cta-panel{background:linear-gradient(105deg,#061633,#102d62 56%,#4f46a5)!important;box-shadow:0 18px 42px rgba(24,47,101,.18)!important}
 @media(max-width:900px){.comparison-matrix{min-width:980px!important}.smart-insights-after{grid-template-columns:1fr 1fr!important}.smart-compare-card .comparison-table-wrap{margin:0 8px!important}.matrix-stage-top{padding:10px 12px!important}}
 @media(max-width:700px){.smart-compare-head{min-height:104px!important}.magical-filter{padding:15px!important}.filter-intro{max-width:none!important}.smart-compare-card .comparison-table-wrap{min-height:380px!important}.comparison-matrix{min-width:1000px!important}.comparison-matrix thead .product-col,.comparison-matrix tbody .matrix-data-row td{min-width:230px!important}.smart-insights-after{grid-template-columns:1fr!important;margin:0 8px 10px!important}.smart-insights-after>*{border-right:0!important;border-bottom:1px solid #e5ebf4!important}.smart-insights-after>*:last-child{border-bottom:0!important}.marketplace-grid-row{grid-template-columns:120px repeat(5,minmax(130px,1fr))!important}}
+
+
+/* V14 — marketplace-first comparison flow + guaranteed product art */
+.marketplace-first{margin:0 18px 18px!important;border-radius:20px!important;padding:0!important;overflow:hidden!important;background:#fff!important;border:1px solid #d7e1ef!important;box-shadow:0 14px 38px rgba(20,43,87,.08)!important}
+.marketplace-first .marketplace-head{padding:15px 18px!important;background:linear-gradient(100deg,#f7fbff,#fff 55%,#faf7ff)!important;border-bottom:1px solid #e3eaf4!important}
+.marketplace-first .marketplace-head h3{font-size:19px!important;margin:3px 0!important;color:#12264a!important}
+.marketplace-first .marketplace-head p{font-size:10px!important;color:#71809a!important;margin:0!important}
+.marketplace-first .marketplace-viewport{padding:0!important;overflow:auto!important}
+.marketplace-first .marketplace-matrix-wrap{padding:0!important}
+.marketplace-first .marketplace-matrix{min-width:780px!important;border:0!important;box-shadow:none!important;border-radius:0!important}
+.marketplace-first .marketplace-grid-row{grid-template-columns:120px repeat(5,minmax(140px,1fr))!important}
+.marketplace-first .marketplace-grid-head{height:46px!important}
+.marketplace-first .marketplace-grid-head>*{padding:9px 10px!important;font-size:10px!important}
+.marketplace-first .marketplace-grid-row:not(.marketplace-grid-head){min-height:48px!important}
+.marketplace-first .marketplace-grid-row:not(.marketplace-grid-head)>*{padding:10px 11px!important;font-size:11px!important}
+.marketplace-first .marketplace-feature{font-size:10px!important;text-transform:uppercase!important;letter-spacing:.08em!important}
+.marketplace-first .marketplace-footer{margin:0!important;padding:8px 14px!important;background:#fbfcff!important;border-top:1px solid #e7edf5!important;font-size:9px!important;color:#8794a9!important}
+.marketplace-first + .matrix-stage{padding-top:0!important}
+.marketplace-first .marketplace-store-head{font-size:10px!important}
+.marketplace-first .marketplace-inline-cta{padding:6px 10px!important;font-size:9px!important}
+.smart-insights-after{margin-top:14px!important}
+.buy-cta-panel{margin:0 18px 18px!important}
+
+/* V15 — decision-first cinematic UX */
+.compare-steps{display:flex;align-items:center;gap:8px;margin-top:12px;color:#9db0d2;font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.compare-steps span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.compare-steps i{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;font-style:normal;background:rgba(255,255,255,.10);color:#dbeafe;border:1px solid rgba(255,255,255,.15)}
+.compare-steps .step-active i{background:linear-gradient(135deg,#22d3ee,#6366f1);color:#fff;border-color:transparent;box-shadow:0 0 18px rgba(34,211,238,.25)}
+.compare-steps b{color:#5e77a8;font-size:10px}
+
+/* Make the focus controls feel like a compact command bar rather than a large form. */
+.magical-filter{min-height:82px!important;padding:13px 18px!important;gap:14px!important}
+.filter-intro{min-width:240px!important;max-width:270px!important}
+.filter-intro small{line-height:1.35!important}
+.filter-pills{gap:7px!important;align-items:center!important}
+.smart-filter{height:34px!important;padding:0 12px!important;border-radius:999px!important;font-size:10px!important;font-weight:800!important}
+.more-filter-btn{height:34px!important;border-radius:999px!important;font-size:10px!important}
+
+/* Marketplace is the first decision table: one glance = store + price + trust + action. */
+.marketplace-first{margin:0 18px 16px!important;border-radius:22px!important;background:linear-gradient(135deg,#fff,#f7fbff 60%,#faf7ff)!important;box-shadow:0 18px 55px rgba(17,42,87,.11)!important;position:relative!important;overflow:hidden!important}
+.marketplace-first:before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,#22d3ee,#6366f1,#a855f7,#22d3ee);background-size:200% 100%;animation:cmMarketLine 6s linear infinite}
+@keyframes cmMarketLine{to{background-position:200% 0}}
+.marketplace-first .marketplace-head{padding:14px 18px!important;background:linear-gradient(100deg,#f8fbff,#fff 48%,#faf7ff)!important}
+.marketplace-first .marketplace-head h3{font-size:20px!important;letter-spacing:-.02em!important}
+.marketplace-first .marketplace-head p{font-size:10px!important;max-width:620px!important;line-height:1.45!important}
+.marketplace-first .marketplace-controls button{width:28px!important;height:28px!important;border-radius:10px!important}
+.marketplace-first .marketplace-viewport{overflow:auto!important;scrollbar-width:thin!important}
+.marketplace-first .marketplace-matrix{min-width:1080px!important}
+.marketplace-first .marketplace-grid-row{grid-template-columns:190px repeat(6,minmax(145px,1fr))!important}
+.marketplace-first .marketplace-grid-head{min-height:54px!important}
+.marketplace-first .marketplace-grid-head>*{padding:9px 10px!important}
+.marketplace-first .marketplace-grid-head .marketplace-feature{background:#081735!important;color:#b8c9e9!important}
+.marketplace-first .marketplace-store-head{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;flex-direction:column!important;background:linear-gradient(135deg,#0a1a39,#142e63)!important;color:#fff!important;border-left:1px solid rgba(255,255,255,.07)!important}
+.marketplace-first .marketplace-store-head .market-logo{font-size:11px!important;font-weight:900!important;letter-spacing:.01em!important}
+.marketplace-first .marketplace-store-head em{font-size:7px!important;letter-spacing:.09em!important;color:#7ff5cf!important;font-style:normal!important}
+.marketplace-first .marketplace-store-head.best-store{background:linear-gradient(135deg,#102f4a,#173d62 50%,#1e3b67)!important;box-shadow:inset 0 -3px 0 #22d3ee!important}
+.marketplace-first .marketplace-price-row{min-height:104px!important}
+.marketplace-first .marketplace-price-row>*{padding:13px 11px!important;border-bottom:1px solid #e3eaf4!important}
+.marketplace-first .marketplace-feature{background:linear-gradient(100deg,#eef4fb,#f9fbff)!important}
+.marketplace-product-head span{display:block;font-size:9px!important;letter-spacing:.1em!important;color:#b9c9e5!important}
+.marketplace-product-head small{display:block;font-size:8px!important;color:#7890b6!important;margin-top:2px!important}
+.marketplace-product-cell{display:flex!important;align-items:center!important}
+.market-product-mini{display:flex;align-items:center;gap:9px;width:100%}
+.market-product-mini img{width:42px;height:52px;object-fit:contain;border-radius:11px;background:#fff;border:1px solid #dce5f2;padding:3px;box-shadow:0 5px 15px rgba(23,46,90,.08)}
+.market-product-mini b{display:block;font-size:10px!important;line-height:1.25!important;color:#1a2d4f!important}
+.market-product-mini small{display:block;font-size:8px!important;color:#8190a8!important;margin-top:4px!important}
+.marketplace-offer-cell{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;background:#fff!important;transition:.2s ease!important}
+.marketplace-offer-cell:hover{background:linear-gradient(135deg,#f7fbff,#faf8ff)!important}
+.marketplace-offer-cell.is-best{background:linear-gradient(135deg,#ecfff8,#f5fffc)!important;box-shadow:inset 0 0 0 1px rgba(16,185,129,.10)!important}
+.offer-price{font-size:15px!important;line-height:1!important;color:#142b4e!important;letter-spacing:-.02em!important}
+.offer-status{font-size:8px!important;font-weight:800!important;letter-spacing:.02em!important}
+.offer-status.verified{color:#008c67!important}.offer-status.pending{color:#8997ac!important}
+.marketplace-inline-cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:25px!important;padding:0 9px!important;border-radius:8px!important;font-size:8px!important;font-weight:900!important;background:linear-gradient(135deg,#172f63,#4f46a5)!important;color:#fff!important;text-decoration:none!important;box-shadow:0 5px 12px rgba(48,63,135,.18)!important}
+.marketplace-inline-cta:hover{transform:translateY(-1px)!important;box-shadow:0 8px 16px rgba(48,63,135,.24)!important}
+.marketplace-muted{font-size:8px!important;color:#a0acbc!important}
+.marketplace-first .marketplace-footer{padding:8px 14px!important;font-size:8px!important}
+
+/* Comparison begins with a clear visual break, not another heavy card. */
+.matrix-stage{padding-top:3px!important}
+.matrix-stage-top{padding:10px 20px!important;background:linear-gradient(90deg,#eef5ff,#fff,#f7f1ff)!important}
+.matrix-stage-top span:first-child{font-weight:900!important;color:#405a83!important;letter-spacing:.12em!important}
+.matrix-stage-top span:last-child{color:#8796ad!important;font-size:9px!important}
+.comparison-table-wrap{scrollbar-width:thin!important}
+
+/* Softer intelligence: useful verdict, not four giant boxes. */
+.smart-insights-after{grid-template-columns:1.35fr 1fr 1fr 1fr!important;border-radius:14px!important}
+.smart-insights-after>*{min-height:68px!important;padding:11px 13px!important}
+
+@media(max-width:1050px){
+  .magical-filter{align-items:flex-start!important;flex-wrap:wrap!important}
+  .filter-intro{max-width:none!important;flex:1 1 100%!important}
+  .filter-pills{width:100%!important;overflow-x:auto!important;flex-wrap:nowrap!important;padding-bottom:3px!important;scrollbar-width:none!important}
+  .filter-pills::-webkit-scrollbar{display:none!important}
+  .more-filter-btn{margin-left:auto!important}
+}
+@media(max-width:700px){
+  .compare-steps{font-size:8px;gap:5px}
+  .compare-steps span:nth-of-type(2),.compare-steps b:nth-of-type(1){display:none}
+  .smart-compare-head h3{font-size:23px!important}
+  .marketplace-first{margin:0 8px 12px!important;border-radius:18px!important}
+  .marketplace-first .marketplace-matrix{min-width:1100px!important}
+  .marketplace-first .marketplace-grid-row{grid-template-columns:175px repeat(6,minmax(145px,1fr))!important}
+  .marketplace-first .marketplace-price-row{min-height:96px!important}
+  .marketplace-first .marketplace-head{padding:12px 13px!important}
+  .offer-price{font-size:14px!important}
+}

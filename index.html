@@ -14,82 +14,112 @@
 <header class="site-header">
   <div class="shell header-main">
     <a class="brand" href="index.html"><img src="assets/logo.svg" alt="CompareMitra"><span class="brand-fallback"><b>Compare</b><strong>Mitra</strong></span></a>
-    <form class="header-search" id="globalHeaderSearch"><span class="search-icon">⌕</span><input id="globalHeaderSearchInput" type="search" placeholder="Search products, brands & comparisons..."><button>Search</button></form>
-    <div class="header-actions"><a href="#comparisonWorkspace" class="header-action" id="headerCompare"><span>⇄</span><span>Compare</span><em id="compareCount">0</em></a><a href="#wishlist" class="header-action"><span>♡</span><span>Wishlist</span></a><button class="mobile-menu" id="mobileMenuBtn">☰</button></div>
+    <form class="header-search" id="headerSearch"><span class="search-icon">⌕</span><input id="headerSearchInput" type="search" placeholder="Search products, brands & comparisons..."><button>Search</button></form>
+    <div class="header-actions"><a href="#smartComparison" class="header-action" id="headerCompare"><span>⇄</span><span>Compare</span><em id="compareCount">0</em></a><a href="#wishlist" class="header-action"><span>♡</span><span>Wishlist</span></a><button class="mobile-menu" id="mobileMenuBtn">☰</button></div>
   </div>
   <nav class="category-nav" id="categoryNav"><div class="shell nav-inner">
     <a class="active" href="products.html?category=mobile-phones">Mobiles</a><a href="products.html?category=laptops">Laptops</a><a href="products.html?category=tv">TVs</a><a href="products.html?category=audio">Audio</a><a href="products.html?category=smartwatches">Smartwatches</a><a href="products.html?category=appliances">Appliances</a><a href="products.html?category=gaming">Gaming</a><a href="products.html?category=accessories">Accessories</a><a href="products.html">All Categories</a>
   </div></nav>
 </header>
 
+
 <main>
 <section class="cm-hero">
-  <div class="shell cm-hero-inner">
+  <div class="shell cm-hero-grid">
     <div class="cm-hero-copy">
-      <span class="hero-kicker">SHOPPING INTELLIGENCE</span>
+      <span class="panel-kicker">SHOPPING INTELLIGENCE</span>
       <h1>Search. Compare. <span>Buy Smarter.</span></h1>
       <p>Compare products, prices and key specifications from connected stores — all in one place.</p>
-      <form class="hero-search" id="dashboardSearch"><span>⌕</span><input id="dashboardSearchInput" type="search" value="Samsung Galaxy M36 5G" placeholder="Search mobiles, laptops, TVs, earbuds..."><button aria-label="Search">→</button></form>
-      <div class="hero-chips"><button class="search-chip" data-query="Samsung Galaxy M36 5G">Samsung M36</button><button class="search-chip" data-query="iPhone">iPhone</button><button class="search-chip" data-query="OnePlus">OnePlus</button><button class="search-chip" data-query="5G">5G phones</button></div>
-    </div>
-    <div class="cm-hero-product">
-      <div class="hero-product-art"><img id="selectedImage" src="assets/product-images/1.svg" alt="Samsung Galaxy M36 5G"></div>
-    </div>
-    <div class="cm-hero-info">
-      <span class="trend-pill">Trending now</span>
-      <span class="brand-label" id="selectedBrand">SAMSUNG</span>
-      <h2 id="selectedTitle">Galaxy M36 5G</h2><div class="variant-row" id="variantRow"></div>
-      <ul><li id="specDisplay">6.7-inch FHD+ Super AMOLED, 120Hz</li><li id="specProcessor">Exynos 1380 (5nm)</li><li id="specCamera">50MP OIS + 8MP + 2MP rear</li><li id="specBattery">5,000mAh</li></ul>
-      <a href="#comparisonWorkspace" class="hero-compare-btn">Compare prices →</a>
-    </div>
-  </div>
-</section>
-
-<section class="cm-comparison-section" id="comparisonWorkspace">
-  <div class="shell">
-    <div class="cm-section-head">
-      <div><span class="section-kicker">PRODUCT COMPARISON</span><h2>Compare everything that matters.</h2><p>Prices first. Then the specifications that actually change your decision.</p></div>
-      <div class="cm-head-actions"><span class="status-badge"><i></i> Connected data only</span><a id="detailsLink" href="product.html?id=mobile-01">View details →</a></div>
-    </div>
-
-    <div class="cm-compare-layout">
-      <aside class="cm-product-picker">
-        <div class="picker-title"><b>Find products</b><span id="resultCount">0</span></div>
-        <form class="picker-search" id="headerSearch"><span>⌕</span><input id="headerSearchInput" type="search" placeholder="Search products..."><button>↗</button></form>
-        <div class="picker-sub">SELECT UP TO 4 PRODUCTS</div>
-        <div class="search-results" id="searchResults"></div>
-        <button class="add-product-btn" id="addProductBtn">＋ Add another product</button>
-        <p class="search-note">CompareMitra shows marketplace data only when a legitimate source or link is available.</p>
-      </aside>
-
-      <div class="cm-table-area">
-        <div class="cm-focus-bar">
-          <div class="filter-intro"><b>What matters to you?</b><small>Focus the comparison.</small></div>
-          <div class="filter-pills" id="smartFilterBar" role="tablist">
-            <button class="smart-filter active" data-filter="all">All</button><button class="smart-filter" data-filter="performance">Performance</button><button class="smart-filter" data-filter="display">Display</button><button class="smart-filter" data-filter="camera">Camera</button><button class="smart-filter" data-filter="battery">Battery</button><button class="smart-filter" data-filter="storage">Storage</button><button class="smart-filter" data-filter="connectivity">Connectivity</button><button class="smart-filter" data-filter="design">Design</button><button class="smart-filter" data-filter="price">₹ Value</button>
-          </div>
-          <button class="more-filter-btn" id="moreFilterBtn">More</button>
-        </div>
-        <div class="extra-filter-drawer" id="extraFilterDrawer" hidden><button class="smart-filter" data-filter="software">Software</button><button class="smart-filter" data-filter="charging">Charging</button><button class="smart-filter" data-filter="network">5G & Network</button><button class="smart-filter" data-filter="value">Value score</button></div>
-
-        <div class="cm-subtitle"><span>WHERE TO BUY</span><b>Marketplace prices</b><small>One glance. Every connected store.</small></div>
-        <div class="cm-market-wrap"><div class="cm-market-table" id="cmMarketTable"></div></div>
-        <div class="cm-subtitle specs-subtitle"><span>COMPARE SPECS</span><b>Side-by-side specifications</b><small>Differences are highlighted automatically.</small></div>
-        <div class="comparison-table-wrap cm-clean-table-wrap"><table class="comparison-matrix cm-clean-table" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
-        <div class="cm-table-note"><span>✓</span> Best value is highlighted automatically. On smaller screens, swipe the tables horizontally.</div>
+      <form class="dashboard-search cm-hero-search" id="dashboardSearch">
+        <span>⌕</span><input id="dashboardSearchInput" type="search" value="Samsung Galaxy M36 5G" placeholder="Search mobiles, laptops, TVs, earbuds..."><button aria-label="Search">→</button>
+      </form>
+      <div class="search-chips">
+        <button data-query="Samsung Galaxy M36 5G">Samsung M36</button><button data-query="iPhone">iPhone</button><button data-query="OnePlus">OnePlus</button><button data-query="5G">5G phones</button>
       </div>
     </div>
-
-    <div class="smart-insights smart-insights-after" id="smartInsights"></div>
-    <div class="hidden-marketplace" id="marketplaceOffers" aria-hidden="true"><div id="marketplaceTrack"></div><button id="marketPrev"></button><button id="marketNext"></button><a id="bestStoreCta" href="#comparisonWorkspace"></a></div>
-    <input id="highlightDifferences" type="checkbox" hidden><button id="clearComparison" hidden>Clear</button>
+    <div class="cm-hero-product">
+      <div class="cm-hero-image"><img id="selectedImage" src="assets/product-images/1.svg" alt="Samsung Galaxy M36 5G"></div>
+    </div>
+    <div class="cm-hero-detail">
+      <span class="trend-pill">Trending now</span>
+      <span class="brand-label" id="selectedBrand">SAMSUNG</span>
+      <h2 id="selectedName">Galaxy M36 5G</h2>
+      <div class="variant-row" id="variantRow"></div>
+      <ul class="hero-spec-list">
+        <li><span>✦</span><span id="specDisplay">6.7-inch FHD+ Super AMOLED, 120Hz</span></li>
+        <li><span>✦</span><span id="specProcessor">Exynos 1380 (5nm)</span></li>
+        <li><span>✦</span><span id="specCamera">50MP OIS + 8MP + 2MP rear; 13MP front</span></li>
+        <li><span>✦</span><span id="specBattery">5,000mAh</span></li>
+      </ul>
+      <a id="detailsLink" href="#marketplaceOffers" class="hero-cta">Compare prices →</a>
+      <span id="selectedTitle" class="sr-only">Galaxy M36 5G</span>
+      <span id="selectedHighlight" class="sr-only"></span><span id="selectedSub" class="sr-only"></span>
+      <span id="specNetwork" class="sr-only">5G</span><span id="specWeight" class="sr-only">197g</span>
+    </div>
   </div>
 </section>
 
-<section class="cm-benefits"><div class="shell cm-benefit-grid"><div><span>✓</span><b>Compare prices</b><small>Across connected stores</small></div><div><span>▦</span><b>Detailed specifications</b><small>Side-by-side research</small></div><div><span>↗</span><b>Find the best value</b><small>Save time & money</small></div><div><span>♡</span><b>Buy with confidence</b><small>Research before you click</small></div></div></section>
+<section class="cm-comparison-shell" id="smartComparison" aria-label="Product comparison">
+  <div class="shell">
+    <div class="cm-comparison-title">
+      <div><span class="panel-kicker">PRODUCT COMPARISON</span><h2>Compare everything that matters.</h2><p>Prices first. Then the specifications that actually change your decision.</p></div>
+      <div class="cm-title-actions"><span class="status-badge"><i></i> Connected data only</span><a href="compare.html" class="details-link">View details →</a></div>
+    </div>
 
-<section class="section categories-section"><div class="shell"><div class="section-head"><div><span class="section-kicker">EXPLORE</span><h2>Popular categories</h2></div><a href="products.html" class="text-link">View all categories <span>→</span></a></div><div class="category-grid"><a class="category-card featured" href="products.html?category=mobile-phones"><span class="cat-icon">▣</span><b>Mobiles</b><small>Compare phones & prices</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=laptops"><span class="cat-icon">▱</span><b>Laptops</b><small>Work, study & gaming</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=tv"><span class="cat-icon">▭</span><b>TVs</b><small>Picture & price comparison</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=audio"><span class="cat-icon">◉</span><b>Audio</b><small>Earbuds & headphones</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=smartwatches"><span class="cat-icon">◫</span><b>Smartwatches</b><small>Features & deals</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=appliances"><span class="cat-icon">▤</span><b>Appliances</b><small>Compare before buying</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=gaming"><span class="cat-icon">⌁</span><b>Gaming</b><small>Consoles & accessories</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html"><span class="cat-icon">＋</span><b>All Categories</b><small>Explore the catalogue</small><span class="cat-arrow">↗</span></a></div></div></section>
-</main>
+    <div class="cm-compare-card">
+      <aside class="cm-product-picker">
+        <div class="cm-picker-head"><b>Find products</b><span id="resultCount">0</span></div>
+        <form class="dashboard-search cm-picker-search" id="pickerSearch">
+          <span>⌕</span><input id="pickerSearchInput" type="search" placeholder="Search products..."><button type="button" id="pickerGo">→</button>
+        </form>
+        <div class="cm-picker-limit">SELECT UP TO 4 PRODUCTS</div>
+        <div class="search-results cm-results" id="searchResults"></div>
+        <button class="add-product-btn cm-add" id="addProductBtn">＋ Add another product</button>
+        <p class="search-note">CompareMitra shows connected marketplace data only.</p>
+      </aside>
+
+      <div class="cm-compare-main">
+        <div class="smart-filter-bar cm-filters" id="smartFilterBar" aria-label="Comparison filters">
+          <div class="filter-intro"><div><b>What matters to you?</b><small>Focus the comparison.</small></div></div>
+          <div class="filter-pills" role="tablist">
+            <button class="smart-filter active" data-filter="all">All</button>
+            <button class="smart-filter" data-filter="performance">Performance</button>
+            <button class="smart-filter" data-filter="display">Display</button>
+            <button class="smart-filter" data-filter="camera">Camera</button>
+            <button class="smart-filter" data-filter="battery">Battery</button>
+            <button class="smart-filter" data-filter="storage">Storage</button>
+            <button class="smart-filter" data-filter="connectivity">Connectivity</button>
+            <button class="smart-filter" data-filter="design">Design</button>
+            <button class="smart-filter" data-filter="price">₹ Value</button>
+          </div>
+          <button class="more-filter-btn" id="moreFilterBtn" aria-expanded="false">More <span>⌄</span></button>
+        </div>
+        <div class="extra-filter-drawer" id="extraFilterDrawer" hidden>
+          <button class="smart-filter" data-filter="software">Software</button><button class="smart-filter" data-filter="charging">Charging</button><button class="smart-filter" data-filter="network">5G & Network</button><button class="smart-filter" data-filter="value">Value score</button>
+        </div>
+
+        <section class="marketplace-section marketplace-first" id="marketplaceOffers">
+          <div class="marketplace-head cm-market-head"><div><span class="panel-kicker">PRICE COMPARISON</span><h3>Where can you buy it?</h3><p>Compare connected stores at a glance.</p></div></div>
+          <div class="marketplace-viewport"><div class="marketplace-matrix-wrap"><div class="marketplace-matrix" id="marketplaceTrack"></div></div></div>
+          <div class="marketplace-footer"><span>Only connected, legitimate marketplace data is shown.</span></div>
+        </section>
+
+        <div class="cm-spec-head"><span>COMPARE SPECS</span><b>Side-by-side specifications</b><small>Differences are highlighted automatically.</small></div>
+        <div class="matrix-stage cm-matrix-stage">
+          <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
+        </div>
+        <div class="smart-insights smart-insights-after" id="smartInsights"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="benefit-strip"><div class="shell benefit-grid"><div><span>✓</span><div><b>Compare prices</b><small>Across connected stores</small></div></div><div><span>⌗</span><div><b>Detailed specifications</b><small>Side-by-side research</small></div></div><div><span>↗</span><div><b>Legitimate store links</b><small>No invented affiliate URLs</small></div></div><div><span>♡</span><div><b>Buy with confidence</b><small>Research before you click</small></div></div></div></section>
+
+<section class="section categories-section"><div class="shell"><div class="section-head"><div><span class="section-kicker">EXPLORE</span><h2>Popular categories</h2></div><a href="products.html" class="text-link">View all categories <span>→</span></a></div><div class="category-grid"><a class="category-card featured" href="products.html?category=mobile-phones"><span class="cat-icon">▣</span><b>Mobiles</b><small>Compare phones & prices</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=laptops"><span class="cat-icon">▱</span><b>Laptops</b><small>Work, study & gaming</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=tv"><span class="cat-icon">▣</span><b>TVs</b><small>Picture & sound</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=audio"><span class="cat-icon">◉</span><b>Audio</b><small>Earbuds & headphones</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=smartwatches"><span class="cat-icon">⌚</span><b>Smartwatches</b><small>Watches & fitness</small><span class="cat-arrow">↗</span></a><a class="category-card" href="products.html?category=gaming"><span class="cat-icon">⌁</span><b>Gaming</b><small>Gear & accessories</small><span class="cat-arrow">↗</span></a></div></div></section>
+
+<section class="section spotlight-section"><div class="shell"><div class="section-head"><div><span class="section-kicker">TODAY'S CATALOG</span><h2>Popular right now</h2></div><a href="products.html" class="text-link">Browse all <span>→</span></a></div><div class="product-grid" id="popularProducts"><div class="loading-card">Loading the catalog...</div></div></div></section>
+<section class="section compare-section"><div class="shell compare-banner"><div class="compare-banner-copy"><span class="section-kicker light">THE BETTER WAY TO DECIDE</span><h2>Don't just look at<br>the price. <span>Compare it.</span></h2><p>Put two products next to each other and see what actually changes — display, processor, camera, battery, storage and more.</p><a href="compare.html" class="primary-btn light-btn">Open comparison tool <span>→</span></a></div><div class="compare-visual"><div class="compare-phone phone-a"><div class="phone-screen">A</div></div><div class="vs-badge">VS</div><div class="compare-phone phone-b"><div class="phone-screen">B</div></div><div class="spec-chip chip-a">DISPLAY<br><b>120Hz</b></div><div class="spec-chip chip-b">BATTERY<br><b>5,000mAh</b></div></div></div></section>
 <footer class="site-footer"><div class="shell footer-grid"><div><a class="footer-brand" href="index.html"><b>Compare</b><strong>Mitra</strong></a><p>Compare Smart. Buy Better.</p><small>Independent product comparison and discovery.</small></div><div><h4>Explore</h4><a href="products.html">All products</a><a href="compare.html">Compare</a><a href="buying-guides/">Buying guides</a></div><div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><div><h4>Transparency</h4><a href="affiliate-disclosure.html">Affiliate disclosure</a><a href="terms.html">Terms</a><p>Some links may be affiliate links. We may earn a qualifying commission at no extra cost to you.</p></div></div><div class="shell footer-bottom"><span>© 2026 CompareMitra</span><span>Made for smarter shopping in India.</span></div></footer>
 <script src="js/comparemmitra-home-v2.js"></script>
-</body></html>
+</body>
+</html>

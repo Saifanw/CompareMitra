@@ -15,7 +15,7 @@
   <div class="shell header-main">
     <a class="brand" href="index.html"><img src="assets/logo.svg" alt="CompareMitra"><span class="brand-fallback"><b>Compare</b><strong>Mitra</strong></span></a>
     <form class="header-search" id="headerSearch"><span class="search-icon">⌕</span><input id="headerSearchInput" type="search" placeholder="Search products, brands & comparisons..."><button>Search</button></form>
-    <div class="header-actions"><a href="compare.html" class="header-action"><span>⇄</span><span>Compare</span><em id="compareCount">0</em></a><a href="#wishlist" class="header-action"><span>♡</span><span>Wishlist</span></a><button class="mobile-menu" id="mobileMenuBtn">☰</button></div>
+    <div class="header-actions"><a href="#smartComparison" class="header-action" id="headerCompare"><span>⇄</span><span>Compare</span><em id="compareCount">0</em></a><a href="#wishlist" class="header-action"><span>♡</span><span>Wishlist</span></a><button class="mobile-menu" id="mobileMenuBtn">☰</button></div>
   </div>
   <nav class="category-nav" id="categoryNav"><div class="shell nav-inner">
     <a class="active" href="products.html?category=mobile-phones">Mobiles</a><a href="products.html?category=laptops">Laptops</a><a href="products.html?category=tv">TVs</a><a href="products.html?category=audio">Audio</a><a href="products.html?category=smartwatches">Smartwatches</a><a href="products.html?category=appliances">Appliances</a><a href="products.html?category=gaming">Gaming</a><a href="products.html?category=accessories">Accessories</a><a href="products.html">All Categories</a>
@@ -53,8 +53,15 @@
       <div class="marketplace-viewport"><div class="marketplace-track" id="marketplaceTrack"></div></div>
       <div class="marketplace-footer"><span>Showing connected marketplace data only</span><span class="store-dots" id="storeDots"></span></div>
 
-      <div class="spec-table-card">
-        <div class="spec-table-head"><div><span class="panel-kicker">KEY SPECIFICATIONS</span><h3>What you're actually comparing</h3></div><span class="observed-note" id="priceNote">Price observed 03 Oct 2026 · verify final seller price</span></div>
+      <section class="smart-compare-card" id="smartComparison">
+        <div class="smart-compare-head">
+          <div><span class="panel-kicker">SMART COMPARISON</span><h3>Compare everything side by side</h3><p>Select up to 4 products from the left. The table updates instantly — no second page.</p></div>
+          <div class="smart-compare-actions"><label class="difference-toggle"><input type="checkbox" id="highlightDifferences"><span></span> Highlight differences</label><button id="clearComparison" class="clear-compare">Clear</button></div>
+        </div>
+        <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
+      </section>
+      <div class="spec-table-card legacy-spec-card">
+        <div class="spec-table-head"><div><span class="panel-kicker">SELECTED PRODUCT</span><h3>Key specifications</h3></div><span class="observed-note" id="priceNote">Verify final seller price before publishing</span></div>
         <div class="spec-table" id="specTable"></div>
       </div>
       <div class="affiliate-disclosure"><span>↗</span><p><b>Transparent shopping:</b> Some marketplace buttons may be affiliate links. CompareMitra may earn a qualifying commission at no extra cost to you. We only activate marketplace CTAs when a legitimate link or authorised source is available.</p><a href="affiliate-disclosure.html">Learn more</a></div>

@@ -5,7 +5,7 @@ const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const ids=()=>{try{return JSON.parse(localStorage.getItem("comparemmitra_compare")||"[]")}catch{return[]}};
 const save=a=>localStorage.setItem("comparemmitra_compare",JSON.stringify(a));
 let products=[], offers=[], marketplaces=[], selected=null, marketIndex=0, compareProducts=[];
-const state={query:"Samsung Galaxy M36 5G",filter:"all"};
+const state={query:"Samsung Galaxy M36 5G"};
 function count(){const e=$("#compareCount");if(e)e.textContent=ids().length}
 function go(v){v=v.trim();location.href=v?`products.html?search=${encodeURIComponent(v)}`:"products.html"}
 function scoreText(p){return p.price_note&&/observed/i.test(p.price_note)?"Observed price":"Catalog price"}
@@ -30,50 +30,29 @@ function toggleCompareProduct(p){
   renderResults(state.query);
   count();
 }
-function filterRows(){
-  const rows=[
-    ['Price',p=>p.price||'—','price'],
-    ['Amazon',p=>marketplacePrice(p,'amazon'),'price'],
-    ['Display',p=>p.display||'—','display'],
-    ['Processor',p=>p.processor||'—','performance'],
-    ['RAM & Storage',p=>(p.variants||[]).join(' • ')||'—','storage'],
-    ['Rear / Front Camera',p=>p.camera||'—','camera'],
-    ['Battery',p=>p.battery||'—','battery'],
-    ['Charging',p=>p.charging||'—','charging'],
-    ['Operating System',p=>p.os||'—','software'],
-    ['5G Support',p=>p.network||'—','connectivity'],
-    ['Weight',p=>p.weight||'—','design'],
-    ['CompareMitra Score',p=>compareScore(p)+'/10','value']
-  ];
-  const map={performance:['performance'],display:['display'],camera:['camera'],battery:['battery'],storage:['storage'],connectivity:['connectivity','network'],design:['design'],price:['price'],software:['software'],charging:['charging'],network:['connectivity','network'],value:['value']};
-  if(state.filter==='all') return rows;
-  const wanted=map[state.filter]||[state.filter];
-  return rows.filter(r=>wanted.includes(r[2]));
-}
-function renderSmartInsights(){
-  const root=$('#smartInsights'); if(!root)return;
-  if(!compareProducts.length){root.innerHTML='';return;}
-  const labels={all:'Overall comparison',performance:'Performance focus',display:'Display focus',camera:'Camera focus',battery:'Battery focus',storage:'Storage focus',connectivity:'Connectivity focus',design:'Design focus',price:'Price focus',software:'Software focus',charging:'Charging focus',network:'Network focus',value:'Value focus'};
-  const prices=compareProducts.map(p=>({p,v:parseInt(String(p.price||'').replace(/[^0-9]/g,''))||Infinity}));
-  const cheapest=prices.slice().sort((a,b)=>a.v-b.v)[0]?.p;
-  const scores=compareProducts.map(p=>({p,v:parseFloat(compareScore(p))})).sort((a,b)=>b.v-a.v);
-  const winner=scores[0]?.p;
-  const featureWinner=state.filter==='price'?cheapest:winner;
-  const focus=labels[state.filter]||'Smart comparison';
-  root.innerHTML=`<div class="insight-hero"><span class="insight-label">✦ CompareMitra insight</span><strong>${esc(focus)}</strong><small>${compareProducts.length} products • differences surfaced on this page</small></div><div class="insight-card best"><span class="insight-label">Best match</span><b>${esc(featureWinner?.brand||'—')} ${esc(featureWinner?.name||'—')}</b><small>${state.filter==='price'?'Lowest listed catalog price':'Highest current comparison score'}</small></div><div class="insight-card"><span class="insight-label">Lowest price</span><b>${esc(cheapest?.price||'—')}</b><small>${esc(cheapest?.brand||'')} ${esc(cheapest?.name||'')}</small></div><div class="insight-card"><span class="insight-label">Selected focus</span><b>${esc(labels[state.filter]||'All')}</b><small>Turn on Highlight Differences for a sharper view</small></div>`;
-}
 function renderComparisonMatrix(){
   const table=$('#comparisonMatrix'); if(!table)return;
-  renderSmartInsights();
   if(!compareProducts.length){table.querySelector('thead').innerHTML='';table.querySelector('tbody').innerHTML='<tr><td class="matrix-empty" colspan="5">Add products from the left panel to start comparing.</td></tr>';return;}
-  const rows=filterRows();
-  const head='<tr><th class="feature-col">'+(state.filter==='all'?'FEATURE':'FOCUS')+'</th>'+compareProducts.map(p=>`<th class="product-col"><div class="matrix-product"><div class="matrix-image"><img src="${esc(p.image)}" alt="${esc(p.name)}"></div><div><span>${esc(p.brand)}</span><b>${esc(p.name)}</b><small>${esc((p.variants||[])[0]||'')}</small></div><button class="matrix-remove" data-remove="${esc(p.id)}" aria-label="Remove ${esc(p.name)}">×</button></div></th>`).join('')+'</tr>';
+  const rows=[
+    ['Price',p=>p.price||'—'],
+    ['Amazon',p=>marketplacePrice(p,'amazon')],
+    ['Display',p=>p.display||'—'],
+    ['Processor',p=>p.processor||'—'],
+    ['RAM & Storage',p=>(p.variants||[]).join(' • ')||'—'],
+    ['Rear / Front Camera',p=>p.camera||'—'],
+    ['Battery',p=>p.battery||'—'],
+    ['Charging',p=>p.charging||'—'],
+    ['Operating System',p=>p.os||'—'],
+    ['5G Support',p=>p.network||'—'],
+    ['Weight',p=>p.weight||'—'],
+    ['CompareMitra Score',p=>compareScore(p)+'/10']
+  ];
+  const head='<tr><th class="feature-col">Feature</th>'+compareProducts.map(p=>`<th class="product-col"><div class="matrix-product"><div class="matrix-image"><img src="${esc(p.image)}" alt="${esc(p.name)}"></div><div><span>${esc(p.brand)}</span><b>${esc(p.name)}</b><small>${esc((p.variants||[])[0]||'')}</small></div><button class="matrix-remove" data-remove="${esc(p.id)}" aria-label="Remove ${esc(p.name)}">×</button></div></th>`).join('')+'</tr>';
   table.querySelector('thead').innerHTML=head;
-  table.querySelector('tbody').innerHTML=rows.length?rows.map(([label,fn])=>{
+  table.querySelector('tbody').innerHTML=rows.map(([label,fn])=>{
     const vals=compareProducts.map(fn), different=vals.some(v=>v!==vals[0]&&v!=='—'&&vals[0]!=='—');
-    const bestClass=(state.filter==='price'&&label==='Price')||(state.filter==='value'&&label==='CompareMitra Score')?' class="winner-row"':'';
-    return `<tr class="${different?'is-different':''}"${bestClass}><th>${esc(label)}</th>${vals.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`;
-  }).join(''):`<tr><td class="matrix-empty" colspan="${compareProducts.length+1}">No data is connected for this focus yet.</td></tr>`;
+    return `<tr class="${different?'is-different':''}"><th>${esc(label)}</th>${vals.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`;
+  }).join('');
   table.querySelectorAll('[data-remove]').forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.remove;compareProducts=compareProducts.filter(x=>x.id!==id);if(!compareProducts.length&&products[0])compareProducts=[products.find(x=>x.id===selected?.id)||products[0]];selected=compareProducts[0];selectProduct(selected);});
   const diff=$('#highlightDifferences'); table.classList.toggle('highlight-mode',!!diff?.checked);
 }
@@ -90,8 +69,6 @@ track.style.transform=`translateX(-${marketIndex*296}px)`; const max=Math.max(0,
 function selectProduct(p){if(!p)return;selected=p;if(!compareProducts.some(x=>x.id===p.id)){if(compareProducts.length<4)compareProducts.push(p);else compareProducts[0]=p;}marketIndex=0;state.query=`${p.brand} ${p.name}`;$("#dashboardSearchInput").value=state.query;$("#selectedName").textContent=`${p.brand} ${p.name}`;$("#selectedTitle").textContent=p.name;$("#selectedBrand").textContent=p.brand;$("#selectedHighlight").textContent=p.highlight||"Compare the product's key specifications and current connected offers.";$("#selectedImage").src=p.image;$("#selectedImage").alt=`${p.brand} ${p.name}`;$("#specDisplay").textContent=p.display||"—";$("#specProcessor").textContent=p.processor||"—";$("#specCamera").textContent=p.camera||"—";$("#specBattery").textContent=p.battery||"—";$("#specNetwork").textContent=p.network||"—";$("#specWeight").textContent=p.weight||"—";$("#detailsLink").href=`product.html?id=${encodeURIComponent(p.id)}`;$("#priceNote").textContent=p.price_note||scoreText(p);renderVariants(p);renderSpecs(p);renderResults(state.query);renderMarkets(p);renderComparisonMatrix()}
 function bind(){["#headerSearch","#dashboardSearch"].forEach(s=>{const f=$(s);if(f)f.onsubmit=e=>{e.preventDefault();const q=$("input",f).value.trim();if(!q)return;state.query=q;const list=findProducts(q);if(list[0])selectProduct(list[0]);else{renderResults(q);go(q)}}});$$('.search-chips button').forEach(b=>b.onclick=()=>{state.query=b.dataset.query;$("#dashboardSearchInput").value=state.query;const list=findProducts(state.query);if(list[0])selectProduct(list[0]);else renderResults(state.query)});$("#marketPrev").onclick=()=>{marketIndex=Math.max(0,marketIndex-1);renderMarkets(selected)};$("#marketNext").onclick=()=>{const max=Math.max(0,marketplaces.length-3);marketIndex=Math.min(max,marketIndex+1);renderMarkets(selected)};$("#addProductBtn").onclick=()=>{$("#dashboardSearchInput").focus();document.querySelector('.search-results')?.scrollIntoView({behavior:'smooth',block:'nearest'})};
   $("#clearComparison").onclick=()=>{if(selected)compareProducts=[selected];renderComparisonMatrix();renderResults(state.query);count()};
-  $$('#smartFilterBar .smart-filter, #extraFilterDrawer .smart-filter').forEach(b=>b.onclick=()=>{state.filter=b.dataset.filter||'all';$$('.smart-filter').forEach(x=>x.classList.toggle('active',x.dataset.filter===state.filter));renderComparisonMatrix();const card=$('#smartComparison');if(card)card.classList.add('focus-pulse');setTimeout(()=>card?.classList.remove('focus-pulse'),500);});
-  const more=$('#moreFilterBtn'),drawer=$('#extraFilterDrawer'); if(more&&drawer)more.onclick=()=>{const open=!drawer.classList.contains('open');drawer.hidden=false;requestAnimationFrame(()=>drawer.classList.toggle('open',open));more.classList.toggle('open',open);more.setAttribute('aria-expanded',String(open));if(!open)setTimeout(()=>drawer.hidden=true,350)};
   $("#highlightDifferences").onchange=()=>renderComparisonMatrix();
   $("#headerCompare").onclick=e=>{e.preventDefault();$("#smartComparison")?.scrollIntoView({behavior:'smooth',block:'start'})};
   const m=$("#mobileMenuBtn"),n=$("#categoryNav");if(m&&n)m.onclick=()=>n.classList.toggle("mobile-open");addEventListener("storage",count)}

@@ -51,7 +51,7 @@
 
       <section class="smart-compare-card cinematic-comparison" id="smartComparison">
         <div class="smart-compare-head">
-          <div><span class="panel-kicker">SMART COMPARISON ENGINE</span><h3>Compare everything side by side</h3><p>Choose what matters. CompareMitra reshapes the matrix around your decision.</p></div>
+          <div><span class="panel-kicker">SMART COMPARISON ENGINE</span><h3>Compare smarter. Buy with confidence.</h3><p>Pick what matters, check every marketplace, then compare the specs that actually influence your decision.</p><div class="compare-steps"><span class="step-active"><i>1</i> Focus</span><b>→</b><span><i>2</i> Price check</span><b>→</b><span><i>3</i> Compare specs</span></div></div>
           <div class="smart-compare-actions"><label class="difference-toggle"><input type="checkbox" id="highlightDifferences"><span></span> Highlight differences</label><button id="clearComparison" class="clear-compare">Clear</button></div>
         </div>
         <div class="smart-filter-bar magical-filter" id="smartFilterBar" aria-label="Comparison filters">
@@ -75,19 +75,21 @@
           <button class="smart-filter" data-filter="network">5G & Network</button>
           <button class="smart-filter" data-filter="value">Value score</button>
         </div>
-        <div class="matrix-stage">
-          <div class="matrix-stage-top"><span>COMPAREMITRA INTELLIGENCE</span><span>Up to 4 products · live comparison</span></div>
-          <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
-        </div>
+      <section class="marketplace-section marketplace-first" id="marketplaceOffers">
+        <div class="marketplace-head"><div><span class="panel-kicker">PRICE COMPARISON</span><h3>Where can you buy it?</h3><p>Compare the selected product across connected marketplaces before checking the specifications.</p></div><div class="marketplace-controls"><button id="marketPrev" aria-label="Previous stores">←</button><button id="marketNext" aria-label="Next stores">→</button></div></div>
+        <div class="marketplace-viewport"><div class="marketplace-matrix-wrap"><div class="marketplace-matrix" id="marketplaceTrack"></div></div></div>
+        <div class="marketplace-footer"><span>Only connected, legitimate marketplace data is shown. Unconnected stores stay clearly marked.</span></div>
       </section>
 
-      <section class="marketplace-section" id="marketplaceOffers">
-        <div class="marketplace-head"><div><span class="panel-kicker">WHERE TO BUY</span><h3>Marketplace price intelligence</h3><p>Compare connected offers after you know which product fits you.</p></div><div class="marketplace-controls"><button id="marketPrev" aria-label="Previous stores">←</button><button id="marketNext" aria-label="Next stores">→</button></div></div>
-        <div class="marketplace-viewport"><div class="marketplace-matrix-wrap"><div class="marketplace-matrix" id="marketplaceTrack"></div></div></div>
-        <div class="marketplace-footer"><span>Only connected, legitimate marketplace data is shown.</span></div>
+        <div class="matrix-stage">
+          <div class="matrix-stage-top"><span>COMPAREMITRA INTELLIGENCE</span><span>Up to 4 products · side-by-side workspace</span></div>
+          <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
+        </div>
         <div class="smart-insights smart-insights-after" id="smartInsights"></div>
         <div class="buy-cta-panel"><div><span class="panel-kicker">READY TO BUY?</span><h3>Research first. Click with confidence.</h3><p>When a verified affiliate or authorised marketplace link is available, CompareMitra sends you directly to the store.</p></div><a class="buy-cta" id="bestStoreCta" href="#marketplaceOffers">View available offers <span>↗</span></a></div>
       </section>
+
+
       <div class="affiliate-disclosure"><span>↗</span><p><b>Transparent shopping:</b> Some marketplace buttons may be affiliate links. CompareMitra may earn a qualifying commission at no extra cost to you. We only activate marketplace CTAs when a legitimate link or authorised source is available.</p><a href="affiliate-disclosure.html">Learn more</a></div>
 
     </section>

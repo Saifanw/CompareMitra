@@ -399,3 +399,250 @@ body{background:linear-gradient(180deg,#f7faff 0%,#eef4ff 42%,#f8fbff 100%);}
 .legacy-spec-card{display:none!important}
 @media(max-width:900px){.smart-insights{grid-template-columns:1fr 1fr!important}.comparison-matrix{min-width:880px!important}.smart-compare-card .comparison-table-wrap{margin:0 8px 8px}.comparison-matrix thead th{top:0!important}}
 @media(max-width:600px){.smart-insights{grid-template-columns:1fr!important}.matrix-section-row th small{display:none}.comparison-matrix tbody .matrix-data-row th{width:155px!important}.comparison-matrix thead th:first-child{width:155px!important}.comparison-matrix tbody .matrix-data-row td,.comparison-matrix .product-col{min-width:190px!important}}
+
+/* =========================================================
+   V9 — CINEMATIC FULL-WIDTH COMPARISON MATRIX
+   The matrix is the hero interaction, not a card collection.
+   ========================================================= */
+.smart-compare-card{
+  margin-top:28px!important;
+  border-radius:28px!important;
+  overflow:visible!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.smart-compare-head{
+  border-radius:26px 26px 0 0!important;
+  padding:28px 30px!important;
+  min-height:112px!important;
+  background:linear-gradient(118deg,#061633 0%,#0b2450 48%,#29206b 100%)!important;
+  box-shadow:0 18px 48px rgba(12,28,67,.18)!important;
+}
+.smart-compare-head h3{font-size:30px!important;letter-spacing:-.04em!important}
+.smart-compare-head p{font-size:12px!important;color:#b8c9e9!important}
+.smart-filter-bar{
+  margin:0!important;
+  padding:18px 24px!important;
+  border:1px solid #dce5f4!important;
+  border-top:0!important;
+  border-radius:0!important;
+  background:linear-gradient(110deg,#f5f8ff,#ffffff 45%,#f8f4ff)!important;
+}
+.smart-insights{
+  padding:18px 18px 12px!important;
+  margin:0!important;
+  background:linear-gradient(110deg,#eef5ff,#ffffff 48%,#f5f0ff)!important;
+  border-left:1px solid #dce5f4!important;
+  border-right:1px solid #dce5f4!important;
+}
+.smart-compare-card .comparison-table-wrap{
+  margin:0!important;
+  padding:0!important;
+  border:1px solid #d6e1f1!important;
+  border-top:0!important;
+  border-radius:0 0 26px 26px!important;
+  overflow:auto!important;
+  background:#fff!important;
+  box-shadow:0 24px 70px rgba(16,37,79,.13)!important;
+}
+.comparison-matrix{
+  min-width:1050px!important;
+  width:100%!important;
+  border-collapse:separate!important;
+  border-spacing:0!important;
+  table-layout:fixed!important;
+}
+.comparison-matrix thead th{
+  height:104px!important;
+  padding:18px 18px!important;
+  background:linear-gradient(125deg,#071633,#102d62 60%,#292269)!important;
+  color:#fff!important;
+  border-right:1px solid rgba(255,255,255,.12)!important;
+  border-bottom:1px solid rgba(255,255,255,.1)!important;
+  vertical-align:middle!important;
+}
+.comparison-matrix thead th:first-child{
+  width:205px!important;
+  min-width:205px!important;
+  text-align:left!important;
+  position:sticky!important;
+  left:0!important;
+  z-index:8!important;
+  background:linear-gradient(125deg,#06132e,#0c2349)!important;
+}
+.comparison-matrix thead .product-col{min-width:250px!important;width:auto!important}
+.comparison-matrix .matrix-product{grid-template-columns:58px 1fr 22px!important;gap:12px!important;min-height:66px!important;text-align:left!important}
+.comparison-matrix .matrix-image{width:58px!important;height:66px!important;border-radius:12px!important;background:rgba(255,255,255,.96)!important;box-shadow:0 8px 22px rgba(0,0,0,.16)!important}
+.comparison-matrix .matrix-product span{font-size:8px!important;color:#9eb8e9!important}
+.comparison-matrix .matrix-product b{font-size:14px!important;color:#fff!important}
+.comparison-matrix .matrix-product small{font-size:9px!important;color:#b9c9e7!important}
+.comparison-matrix .matrix-remove{background:rgba(255,255,255,.12)!important;color:#c8d5ed!important}
+.comparison-matrix tbody .matrix-section-row th{
+  position:sticky!important;left:0!important;z-index:5!important;
+  height:54px!important;padding:14px 18px!important;
+  background:linear-gradient(100deg,#10234a,#18346f)!important;
+  color:#fff!important;border-bottom:1px solid rgba(255,255,255,.12)!important;
+  text-align:left!important;box-shadow:none!important;
+}
+.comparison-matrix tbody .matrix-section-row th span{font-size:11px!important;letter-spacing:.13em!important;font-weight:900!important}
+.comparison-matrix tbody .matrix-section-row th small{float:right;color:#9fb4dc!important;font-size:9px!important;font-weight:600!important}
+.comparison-matrix tbody .matrix-data-row th{
+  position:sticky!important;left:0!important;z-index:4!important;
+  width:205px!important;min-width:205px!important;
+  padding:17px 18px!important;
+  background:linear-gradient(100deg,#f1f5fb,#fbfcff)!important;
+  color:#435574!important;border-right:1px solid #dce5f1!important;
+  border-bottom:1px solid #e3eaf4!important;
+  font-size:12px!important;font-weight:850!important;text-align:left!important;
+}
+.comparison-matrix tbody .matrix-data-row td{
+  min-width:250px!important;height:62px!important;
+  padding:14px 18px!important;
+  background:#fff!important;color:#172b4d!important;
+  border-right:1px solid #e7edf5!important;border-bottom:1px solid #e7edf5!important;
+  font-size:13px!important;font-weight:650!important;
+}
+.comparison-matrix tbody .matrix-data-row:nth-child(odd) td{background:#fcfdff!important}
+.comparison-matrix tbody .matrix-data-row:hover td{background:linear-gradient(100deg,#f3f8ff,#f9f6ff)!important}
+.comparison-matrix .matrix-cell{display:flex!important;align-items:center!important;gap:9px!important;min-height:30px!important}
+.comparison-matrix .matrix-cell>span{line-height:1.35!important}
+.comparison-matrix .matrix-cell em{
+  margin-left:auto!important;padding:4px 7px!important;border-radius:999px!important;
+  background:linear-gradient(90deg,#dff8ed,#e9fbf6)!important;color:#087a59!important;
+  font-size:8px!important;font-style:normal!important;font-weight:900!important;letter-spacing:.06em!important;
+}
+.comparison-matrix tbody .matrix-data-row td.is-best{background:linear-gradient(100deg,#effbf6,#f7fffc)!important;color:#087a59!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row:not(.is-different){opacity:.20!important;filter:saturate(.35)!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row.is-different td{background:linear-gradient(100deg,#e8f4ff,#f5efff,#edfff7)!important;color:#173c91!important;box-shadow:inset 0 0 0 1px rgba(99,102,241,.08)!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row.is-different th{background:linear-gradient(100deg,#eef5ff,#f9f5ff)!important;color:#173c91!important}
+/* Make the marketplace section a secondary research strip, not the main comparison. */
+.marketplace-head{margin-top:34px!important}
+.marketplace-viewport{padding-bottom:4px!important}
+@media(max-width:900px){.comparison-matrix{min-width:980px!important}.comparison-matrix thead .product-col,.comparison-matrix tbody .matrix-data-row td{min-width:230px!important}.comparison-matrix thead th:first-child,.comparison-matrix tbody .matrix-data-row th{width:175px!important;min-width:175px!important}}
+
+/* =========================================================
+   V10 — CINEMATIC SHOPPING INTELLIGENCE
+   User journey: Search → Focus → Compare → Buy
+   ========================================================= */
+:root{
+  --cm-navy:#07152f;
+  --cm-ink:#0b1735;
+  --cm-blue:#2563eb;
+  --cm-indigo:#4f46e5;
+  --cm-violet:#7c3aed;
+  --cm-cyan:#06b6d4;
+  --cm-mint:#10b981;
+  --cm-amber:#f59e0b;
+  --cm-bg:#edf4ff;
+}
+body{background:linear-gradient(180deg,#f7faff 0%,#edf4ff 34%,#f8faff 100%)!important}
+.site-header{position:relative;z-index:50;background:rgba(255,255,255,.92)!important;backdrop-filter:blur(18px);box-shadow:0 10px 35px rgba(26,48,94,.07)!important}
+.category-nav{background:linear-gradient(90deg,#fff,#f6f8ff 52%,#fff)!important;position:relative;overflow:hidden}
+.category-nav:after{content:"";position:absolute;inset:auto -20% 0;height:2px;background:linear-gradient(90deg,transparent,#2563eb,#7c3aed,#06b6d4,transparent);opacity:.45;animation:cmRail 7s linear infinite}
+@keyframes cmRail{from{transform:translateX(-18%)}to{transform:translateX(18%)}}
+.nav-inner a{transition:transform .25s ease,color .25s ease,background .25s ease}
+.nav-inner a:hover{transform:translateY(-2px);color:#2563eb!important}
+
+.dashboard-section{position:relative;overflow:hidden;background:
+  radial-gradient(650px 360px at 4% 8%,rgba(79,70,229,.16),transparent 65%),
+  radial-gradient(620px 340px at 98% 14%,rgba(6,182,212,.12),transparent 62%),
+  linear-gradient(135deg,#eaf1ff 0%,#f7f9ff 42%,#edf6ff 100%)!important}
+.dashboard-section:before,.dashboard-section:after{content:"";position:absolute;pointer-events:none;border-radius:999px;filter:blur(2px);opacity:.55}
+.dashboard-section:before{width:280px;height:280px;left:-90px;top:160px;background:radial-gradient(circle,rgba(99,102,241,.20),transparent 68%);animation:cmFloat 9s ease-in-out infinite}
+.dashboard-section:after{width:340px;height:340px;right:-120px;top:420px;background:radial-gradient(circle,rgba(6,182,212,.14),transparent 68%);animation:cmFloat 11s ease-in-out infinite reverse}
+@keyframes cmFloat{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(18px,-14px,0) scale(1.05)}}
+.dashboard-shell{position:relative;z-index:2;gap:22px!important}
+.search-panel{position:relative;overflow:hidden;background:
+  radial-gradient(260px 190px at 100% 0%,rgba(124,58,237,.35),transparent 68%),
+  radial-gradient(260px 210px at 0% 100%,rgba(37,99,235,.24),transparent 68%),
+  linear-gradient(150deg,#06132f,#0b2149 54%,#17236a)!important;
+  box-shadow:0 28px 80px rgba(7,21,47,.30)!important;border:1px solid rgba(255,255,255,.10)!important}
+.search-panel:before{content:"";position:absolute;width:230px;height:230px;right:-100px;top:-100px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.17),transparent 66%);animation:cmOrbit 10s ease-in-out infinite}
+.search-panel:after{content:"";position:absolute;left:-70px;bottom:80px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(6,182,212,.13),transparent 68%);animation:cmOrbit 12s ease-in-out infinite reverse}
+@keyframes cmOrbit{50%{transform:translate(-12px,14px) scale(1.12)}}
+.search-panel>*{position:relative;z-index:2}
+.search-panel h1{font-size:clamp(48px,4.4vw,70px)!important;line-height:.91!important;letter-spacing:-.065em!important;text-shadow:0 8px 35px rgba(0,0,0,.22)}
+.search-panel h1 span{background:linear-gradient(90deg,#60a5fa,#818cf8 52%,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dashboard-search{background:rgba(255,255,255,.98)!important;border:2px solid rgba(125,211,252,.75)!important;box-shadow:0 0 0 5px rgba(37,99,235,.09),0 20px 45px rgba(0,0,0,.18)!important;transition:transform .25s ease,box-shadow .25s ease}
+.dashboard-search:focus-within{transform:translateY(-2px);box-shadow:0 0 0 6px rgba(99,102,241,.13),0 25px 55px rgba(0,0,0,.23)!important}
+.dashboard-search button{background:linear-gradient(135deg,#2563eb,#4f46e5 60%,#06b6d4)!important;box-shadow:0 10px 24px rgba(37,99,235,.32)!important}
+.search-chips button{background:rgba(255,255,255,.07)!important;border-color:rgba(148,163,184,.30)!important;color:#dbeafe!important;transition:all .2s ease}
+.search-chips button:hover{background:rgba(96,165,250,.18)!important;border-color:rgba(125,211,252,.55)!important;transform:translateY(-2px)}
+.result-item{background:rgba(255,255,255,.06)!important;border-color:rgba(148,163,184,.20)!important;color:#e8f0ff!important;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.result-item:hover,.result-item.active{background:linear-gradient(90deg,rgba(37,99,235,.28),rgba(79,70,229,.18))!important;border-color:rgba(96,165,250,.55)!important;transform:translateX(3px)}
+.add-product-btn{background:linear-gradient(100deg,rgba(37,99,235,.18),rgba(124,58,237,.18))!important;border-color:rgba(125,211,252,.42)!important;color:#dbeafe!important}
+
+.comparison-panel{background:rgba(255,255,255,.84)!important;border:1px solid rgba(255,255,255,.92)!important;box-shadow:0 28px 80px rgba(31,55,105,.12)!important;backdrop-filter:blur(18px)}
+.comparison-head{background:linear-gradient(120deg,#fff 0%,#f8f9ff 58%,#f1f6ff 100%)!important;position:relative;overflow:hidden}
+.comparison-head:after{content:"";position:absolute;width:330px;height:180px;right:-90px;top:-70px;border-radius:50%;background:radial-gradient(circle,rgba(129,140,248,.16),transparent 70%);animation:cmFloat 8s ease-in-out infinite}
+.product-overview{position:relative;background:linear-gradient(135deg,#f9fbff,#fff 42%,#f4f7ff)!important;border:1px solid #dbe6f7!important;box-shadow:inset 0 1px 0 #fff,0 16px 45px rgba(42,67,120,.08)!important}
+.quick-specs>div{transition:transform .22s ease,box-shadow .22s ease}
+.quick-specs>div:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(37,99,235,.09)!important}
+
+/* Magical focus selector */
+.cinematic-comparison{scroll-margin-top:18px}
+.cinematic-comparison .smart-compare-head{position:relative;overflow:hidden}
+.cinematic-comparison .smart-compare-head:before{content:"";position:absolute;width:420px;height:220px;right:-120px;top:-110px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.28),transparent 68%);animation:cmFloat 9s ease-in-out infinite}
+.magical-filter{position:relative!important;display:grid!important;grid-template-columns:minmax(260px,.9fr) minmax(420px,1.8fr) auto;align-items:center;gap:18px!important;background:
+  radial-gradient(300px 130px at 0% 50%,rgba(99,102,241,.10),transparent 72%),
+  linear-gradient(110deg,#f4f7ff,#fff 45%,#f8f4ff)!important}
+.filter-intro{position:relative}
+.filter-intro b{font-size:17px!important;color:#101e3e!important}
+.filter-intro small{max-width:320px!important}
+.filter-spark{background:linear-gradient(135deg,#6366f1,#a855f7,#06b6d4)!important;color:#fff!important;box-shadow:0 10px 25px rgba(99,102,241,.25)!important;animation:cmSpark 3s ease-in-out infinite}
+@keyframes cmSpark{50%{transform:rotate(8deg) scale(1.06);box-shadow:0 14px 32px rgba(99,102,241,.32)}}
+.filter-pills{gap:9px!important}
+.smart-filter{background:rgba(255,255,255,.82)!important;border:1px solid #d6e1f4!important;box-shadow:0 5px 16px rgba(34,59,105,.05)!important;transition:all .22s ease!important}
+.smart-filter:hover{transform:translateY(-3px);border-color:#93b4f6!important;box-shadow:0 10px 22px rgba(37,99,235,.10)!important}
+.smart-filter.active{background:linear-gradient(135deg,#2563eb,#4f46e5 58%,#7c3aed)!important;border-color:transparent!important;color:#fff!important;box-shadow:0 10px 25px rgba(79,70,229,.28)!important;transform:translateY(-2px)}
+.more-filter-btn{background:linear-gradient(135deg,#fff,#f4f0ff)!important;border-color:#cfd9ef!important;transition:all .22s ease}
+.more-filter-btn:hover,.more-filter-btn.open{transform:translateY(-2px);border-color:#9b8cf4!important;box-shadow:0 12px 26px rgba(124,58,237,.12)!important}
+.extra-filter-drawer{padding:12px 24px!important;background:linear-gradient(100deg,#f8fbff,#faf6ff)!important;border:1px solid #e1e7f2!important;border-top:0!important}
+.extra-filter-drawer.open{animation:cmDrop .35s ease both}
+@keyframes cmDrop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Comparison matrix is the hero, not a stack of cards. */
+.matrix-stage{position:relative;padding:14px 14px 18px;background:linear-gradient(135deg,#eef4ff,#fff 38%,#f7f3ff);border-left:1px solid #dce5f4;border-right:1px solid #dce5f4;border-bottom:1px solid #dce5f4}
+.matrix-stage-top{display:flex;justify-content:space-between;align-items:center;padding:10px 10px 12px;color:#7182a3;font-size:9px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.matrix-stage-top span:last-child{font-size:8px;letter-spacing:.07em;font-weight:700;color:#91a0ba;text-transform:none}
+.smart-compare-card .comparison-table-wrap{border:1px solid #cfdcf0!important;border-radius:20px!important;overflow:auto!important;box-shadow:0 25px 65px rgba(18,41,83,.14)!important}
+.comparison-matrix thead th{height:112px!important}
+.comparison-matrix thead th:first-child{width:225px!important;min-width:225px!important}
+.comparison-matrix thead .product-col{min-width:285px!important}
+.comparison-matrix tbody .matrix-section-row th{height:58px!important;background:linear-gradient(100deg,#0b1d42,#173875 55%,#28236e)!important;box-shadow:inset 4px 0 0 #6366f1!important}
+.comparison-matrix tbody .matrix-data-row th{width:225px!important;min-width:225px!important;background:linear-gradient(100deg,#eef3fb,#fbfcff)!important}
+.comparison-matrix tbody .matrix-data-row td{min-width:285px!important;height:70px!important;font-size:14px!important;background:rgba(255,255,255,.94)!important}
+.comparison-matrix tbody .matrix-data-row:nth-child(odd) td{background:#f9fbff!important}
+.comparison-matrix tbody .matrix-data-row:hover td{background:linear-gradient(100deg,#edf6ff,#f8f4ff)!important}
+.comparison-matrix tbody .matrix-data-row td.is-best{background:linear-gradient(100deg,#e8fbf3,#f3fffa)!important;box-shadow:inset 0 0 0 1px rgba(16,185,129,.18)!important}
+.comparison-matrix .matrix-cell>span{font-weight:750!important}
+.comparison-matrix .difference-dot{width:7px!important;height:7px!important;background:linear-gradient(135deg,#f59e0b,#ef4444)!important;box-shadow:0 0 0 4px rgba(245,158,11,.10)!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row.is-different td{background:linear-gradient(100deg,#eaf5ff,#f8f1ff,#ecfff7)!important;box-shadow:inset 0 0 0 1px rgba(99,102,241,.13)!important}
+
+/* Insights become decision signals, not generic cards. */
+.smart-insights{display:grid!important;grid-template-columns:1.35fr 1fr 1fr 1fr!important;gap:12px!important;padding:16px 18px!important}
+.insight-hero,.insight-card{border:1px solid #d9e3f2!important;border-radius:18px!important;background:linear-gradient(135deg,#fff,#f5f8ff)!important;box-shadow:0 10px 25px rgba(33,57,103,.06)!important;min-height:86px!important;transition:transform .22s ease,box-shadow .22s ease}
+.insight-hero:hover,.insight-card:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(33,57,103,.10)!important}
+.insight-hero{background:linear-gradient(135deg,#f2f0ff,#eef9ff)!important}
+.insight-card.best{background:linear-gradient(135deg,#ecfff8,#f8fffd)!important;border-color:#bcebdc!important}
+
+/* Marketplace is intentionally after the matrix. */
+.marketplace-section{margin-top:30px;padding:26px 24px 22px;border-radius:26px;background:linear-gradient(135deg,#f8fbff,#fff 45%,#f8f5ff);border:1px solid #dce5f4;box-shadow:0 20px 55px rgba(22,46,91,.08);position:relative;overflow:hidden}
+.marketplace-section:before{content:"";position:absolute;width:280px;height:160px;right:-100px;top:-70px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.11),transparent 70%)}
+.marketplace-head{position:relative;z-index:2;margin-top:0!important}
+.marketplace-head h3{font-size:26px!important;letter-spacing:-.03em!important}
+.marketplace-head p{margin:4px 0 0;color:#7b8aa5;font-size:11px}
+.marketplace-viewport{position:relative;z-index:2}
+.market-card{transition:transform .25s ease,box-shadow .25s ease!important}
+.market-card:hover{transform:translateY(-5px)!important;box-shadow:0 20px 40px rgba(31,54,105,.13)!important}
+.buy-cta-panel{position:relative;z-index:2;margin-top:20px;padding:18px 20px;border-radius:20px;background:linear-gradient(110deg,#071633,#102d62 58%,#4f46a5);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden}
+.buy-cta-panel:after{content:"";position:absolute;width:240px;height:180px;right:-80px;top:-70px;border-radius:50%;background:radial-gradient(circle,rgba(103,232,249,.20),transparent 70%)}
+.buy-cta-panel h3{margin:4px 0;font-size:20px;letter-spacing:-.03em;position:relative;z-index:2}
+.buy-cta-panel p{margin:0;color:#c4d2ed;font-size:11px;max-width:620px;position:relative;z-index:2}
+.buy-cta{position:relative;z-index:3;white-space:nowrap;display:inline-flex;gap:10px;align-items:center;padding:12px 17px;border-radius:12px;background:linear-gradient(135deg,#60a5fa,#4f46e5,#7c3aed);color:#fff;font-weight:850;box-shadow:0 12px 28px rgba(37,99,235,.28);transition:transform .2s ease,box-shadow .2s ease}
+.buy-cta:hover{transform:translateY(-3px);box-shadow:0 17px 35px rgba(37,99,235,.36)}
+.affiliate-disclosure{margin-top:14px!important;background:rgba(255,255,255,.78)!important;border:1px solid #dbe5f2!important}
+
+@media(max-width:1100px){.magical-filter{grid-template-columns:1fr}.filter-pills{justify-content:flex-start}.smart-insights{grid-template-columns:1fr 1fr}.buy-cta-panel{align-items:flex-start;flex-direction:column}}
+@media(max-width:700px){.smart-insights{grid-template-columns:1fr}.matrix-stage{padding:8px}.matrix-stage-top{display:none}.comparison-matrix{min-width:1050px!important}.comparison-matrix thead .product-col,.comparison-matrix tbody .matrix-data-row td{min-width:260px!important}.comparison-matrix thead th:first-child,.comparison-matrix tbody .matrix-data-row th{width:180px!important;min-width:180px!important}.marketplace-section{padding:20px 12px}.buy-cta-panel{padding:17px}.buy-cta{width:100%;justify-content:center}}

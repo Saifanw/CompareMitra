@@ -49,19 +49,15 @@
         <div class="quick-specs"><div><small>DISPLAY</small><b id="specDisplay">6.7-inch FHD+ Super AMOLED, 120Hz</b></div><div><small>PROCESSOR</small><b id="specProcessor">Exynos 1380 (5nm)</b></div><div><small>CAMERA</small><b id="specCamera">50MP OIS + 8MP + 2MP rear</b></div><div><small>BATTERY</small><b id="specBattery">5,000mAh</b></div><div><small>NETWORK</small><b id="specNetwork">5G</b></div><div><small>WEIGHT</small><b id="specWeight">197g</b></div></div>
       </div>
 
-      <div class="marketplace-head"><div><span class="panel-kicker">MARKETPLACE ANALYSIS</span><h3>Compare available stores</h3></div><div class="marketplace-controls"><button id="marketPrev" aria-label="Previous stores">←</button><button id="marketNext" aria-label="Next stores">→</button></div></div>
-      <div class="marketplace-viewport"><div class="marketplace-track" id="marketplaceTrack"></div></div>
-      <div class="marketplace-footer"><span>Showing connected marketplace data only</span><span class="store-dots" id="storeDots"></span></div>
-
-      <section class="smart-compare-card" id="smartComparison">
+      <section class="smart-compare-card cinematic-comparison" id="smartComparison">
         <div class="smart-compare-head">
-          <div><span class="panel-kicker">SMART COMPARISON</span><h3>Compare everything side by side</h3><p>Select up to 4 products from the left. The table updates instantly — no second page.</p></div>
+          <div><span class="panel-kicker">SMART COMPARISON ENGINE</span><h3>Compare everything side by side</h3><p>Choose what matters. CompareMitra reshapes the matrix around your decision.</p></div>
           <div class="smart-compare-actions"><label class="difference-toggle"><input type="checkbox" id="highlightDifferences"><span></span> Highlight differences</label><button id="clearComparison" class="clear-compare">Clear</button></div>
         </div>
-        <div class="smart-filter-bar" id="smartFilterBar" aria-label="Comparison filters">
-          <div class="filter-intro"><span class="filter-spark">✦</span><div><b>What matters to you?</b><small>Choose a focus and CompareMitra will surface the useful differences.</small></div></div>
+        <div class="smart-filter-bar magical-filter" id="smartFilterBar" aria-label="Comparison filters">
+          <div class="filter-intro"><span class="filter-spark">✦</span><div><b>What matters most to you?</b><small>Pick a focus and the comparison matrix intelligently surfaces the useful differences.</small></div></div>
           <div class="filter-pills" role="tablist">
-            <button class="smart-filter active" data-filter="all">All</button>
+            <button class="smart-filter active" data-filter="all">✦ All</button>
             <button class="smart-filter" data-filter="performance">⚡ Performance</button>
             <button class="smart-filter" data-filter="display">◈ Display</button>
             <button class="smart-filter" data-filter="camera">◉ Camera</button>
@@ -69,9 +65,9 @@
             <button class="smart-filter" data-filter="storage">▦ Storage</button>
             <button class="smart-filter" data-filter="connectivity">⌁ Connectivity</button>
             <button class="smart-filter" data-filter="design">◇ Design</button>
-            <button class="smart-filter" data-filter="price">₹ Price</button>
+            <button class="smart-filter" data-filter="price">₹ Value</button>
           </div>
-          <button class="more-filter-btn" id="moreFilterBtn" aria-expanded="false">More filters <span>⌄</span></button>
+          <button class="more-filter-btn" id="moreFilterBtn" aria-expanded="false">More criteria <span>⌄</span></button>
         </div>
         <div class="extra-filter-drawer" id="extraFilterDrawer" hidden>
           <button class="smart-filter" data-filter="software">Software</button>
@@ -80,13 +76,20 @@
           <button class="smart-filter" data-filter="value">Value score</button>
         </div>
         <div class="smart-insights" id="smartInsights"></div>
-        <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
+        <div class="matrix-stage">
+          <div class="matrix-stage-top"><span>COMPAREMitra INTELLIGENCE</span><span>Up to 4 products · live comparison</span></div>
+          <div class="comparison-table-wrap"><table class="comparison-matrix" id="comparisonMatrix"><thead></thead><tbody></tbody></table></div>
+        </div>
       </section>
-      <div class="spec-table-card legacy-spec-card">
-        <div class="spec-table-head"><div><span class="panel-kicker">SELECTED PRODUCT</span><h3>Key specifications</h3></div><span class="observed-note" id="priceNote">Verify final seller price before publishing</span></div>
-        <div class="spec-table" id="specTable"></div>
-      </div>
+
+      <section class="marketplace-section" id="marketplaceOffers">
+        <div class="marketplace-head"><div><span class="panel-kicker">WHERE TO BUY</span><h3>Marketplace price intelligence</h3><p>Compare connected offers after you know which product fits you.</p></div><div class="marketplace-controls"><button id="marketPrev" aria-label="Previous stores">←</button><button id="marketNext" aria-label="Next stores">→</button></div></div>
+        <div class="marketplace-viewport"><div class="marketplace-track" id="marketplaceTrack"></div></div>
+        <div class="marketplace-footer"><span>Only connected, legitimate marketplace data is shown.</span><span class="store-dots" id="storeDots"></span></div>
+        <div class="buy-cta-panel"><div><span class="panel-kicker">READY TO BUY?</span><h3>Research first. Click with confidence.</h3><p>When a verified affiliate or authorised marketplace link is available, CompareMitra sends you directly to the store.</p></div><a class="buy-cta" id="bestStoreCta" href="#marketplaceOffers">View available offers <span>↗</span></a></div>
+      </section>
       <div class="affiliate-disclosure"><span>↗</span><p><b>Transparent shopping:</b> Some marketplace buttons may be affiliate links. CompareMitra may earn a qualifying commission at no extra cost to you. We only activate marketplace CTAs when a legitimate link or authorised source is available.</p><a href="affiliate-disclosure.html">Learn more</a></div>
+
     </section>
   </div>
 </section>

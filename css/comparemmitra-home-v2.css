@@ -347,3 +347,55 @@ body{background:linear-gradient(180deg,#f7faff 0%,#eef4ff 42%,#f8fbff 100%);}
   .search-panel{min-height:auto!important}
   .search-panel h1{font-size:48px!important}
 }
+
+/* =========================================================
+   V8 — CINEMATIC SMART COMPARISON MATRIX
+   ========================================================= */
+.smart-compare-card{background:linear-gradient(180deg,#ffffff 0%,#f7faff 72%,#f4f1ff 100%)!important}
+.smart-compare-card .comparison-table-wrap{margin:0 14px 14px;border:1px solid #dbe4f3;border-radius:22px;box-shadow:0 18px 48px rgba(19,42,87,.09);background:#fff;overflow:auto;scrollbar-width:thin}
+.comparison-matrix{min-width:900px!important;border-collapse:separate!important;border-spacing:0!important;font-size:12px!important}
+.comparison-matrix thead th{position:sticky!important;top:0!important;z-index:5!important;padding:18px 16px!important;background:linear-gradient(120deg,#07142e,#10275a 55%,#29205d)!important;color:#fff!important;border-right:1px solid rgba(255,255,255,.09)!important;border-bottom:0!important}
+.comparison-matrix thead th:first-child{left:0!important;z-index:7!important;width:190px!important;background:linear-gradient(120deg,#081630,#10254c)!important}
+.comparison-matrix .product-col{min-width:215px!important}
+.matrix-product{grid-template-columns:48px 1fr 22px!important;gap:10px!important;min-height:62px!important}
+.matrix-image{width:48px!important;height:56px!important;border-radius:12px!important;background:linear-gradient(145deg,#eef5ff,#fff,#f1edff)!important;border:1px solid rgba(151,177,225,.45)!important;box-shadow:0 7px 18px rgba(32,58,110,.10)!important}
+.matrix-image img{width:92%!important;height:92%!important}
+.matrix-product span{font-size:8px!important;color:#83a9df!important}
+.matrix-product b{font-size:12px!important;color:#fff!important}
+.matrix-product small{font-size:8px!important;color:#aebfe0!important}
+.matrix-remove{background:rgba(255,255,255,.10)!important;color:#b8c9e6!important;border:1px solid rgba(255,255,255,.12)!important}
+.matrix-remove:hover{background:#fee2e2!important;color:#dc2626!important}
+.comparison-matrix tbody .matrix-section-row th{position:sticky!important;left:0!important;z-index:4!important;padding:13px 16px!important;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.08)!important;color:#fff!important;text-align:left!important;background:linear-gradient(100deg,#111f42,#1c3470)!important;box-shadow:none!important}
+.matrix-section-row th span{display:inline-block;font-size:10px!important;font-weight:900!important;letter-spacing:.13em!important}
+.matrix-section-row th small{margin-left:12px;color:#9fb5da!important;font-size:9px!important;font-weight:500!important;letter-spacing:0!important}
+.matrix-section-row.tone-price th{background:linear-gradient(100deg,#251a07,#5b3a09)!important}
+.matrix-section-row.tone-performance th{background:linear-gradient(100deg,#091d43,#153e8d)!important}
+.matrix-section-row.tone-display th{background:linear-gradient(100deg,#201044,#4b2a86)!important}
+.matrix-section-row.tone-camera th{background:linear-gradient(100deg,#3b102d,#8c285e)!important}
+.matrix-section-row.tone-battery th{background:linear-gradient(100deg,#083d39,#087f6d)!important}
+.matrix-section-row.tone-storage th{background:linear-gradient(100deg,#1c2049,#3744a4)!important}
+.matrix-section-row.tone-connectivity th{background:linear-gradient(100deg,#083c4a,#0b7896)!important}
+.matrix-section-row.tone-design th{background:linear-gradient(100deg,#39200c,#9a5d16)!important}
+.matrix-section-row.tone-software th{background:linear-gradient(100deg,#1c1a42,#5346a9)!important}
+.matrix-section-row.tone-value th{background:linear-gradient(100deg,#073b2b,#0c8761)!important}
+.comparison-matrix tbody .matrix-data-row th{position:sticky!important;left:0!important;z-index:3!important;width:190px!important;padding:15px 16px!important;background:linear-gradient(100deg,#f3f7fd,#fbfcff)!important;color:#52627d!important;border-right:1px solid #dfe7f3!important;border-bottom:1px solid #e5ebf4!important;font-size:11px!important;font-weight:800!important}
+.comparison-matrix tbody .matrix-data-row td{min-width:215px!important;padding:14px 16px!important;background:#fff!important;border-right:1px solid #e7edf5!important;border-bottom:1px solid #e7edf5!important;color:#182b4d!important;font-size:12px!important;font-weight:650!important}
+.comparison-matrix tbody .matrix-data-row:nth-of-type(even) td{background:#fbfdff!important}
+.comparison-matrix tbody .matrix-data-row:hover td{background:linear-gradient(100deg,#f4f8ff,#f9f5ff)!important}
+.matrix-cell{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:25px}
+.matrix-cell>span{line-height:1.35}
+.matrix-cell em{font-style:normal;font-size:7px;letter-spacing:.09em;padding:4px 6px;border-radius:999px;color:#047857;background:#d9f9ea;border:1px solid #a7ebcf;white-space:nowrap;box-shadow:0 4px 10px rgba(16,185,129,.10)}
+.matrix-data-row th>span{display:inline-flex;align-items:center;gap:7px}
+.difference-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#5b5ff0;box-shadow:0 0 0 4px rgba(91,95,240,.10)}
+.comparison-matrix tbody .matrix-data-row.is-different td{background:linear-gradient(100deg,#f4f8ff,#fbf8ff)!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row:not(.is-different){opacity:.28!important;filter:saturate(.45)!important}
+.comparison-matrix.highlight-mode tbody .matrix-data-row.is-different td{background:linear-gradient(100deg,#eaf4ff,#f5efff,#edfff8)!important;color:#173c91!important;font-weight:800!important;box-shadow:inset 0 0 0 1px rgba(99,102,241,.06)}
+.comparison-matrix.highlight-mode tbody .matrix-data-row.is-different th{background:linear-gradient(100deg,#eef5ff,#f9f5ff)!important;color:#1d3e82!important}
+.smart-insights{grid-template-columns:1.35fr 1fr 1fr 1fr!important}
+.insight-hero{background:linear-gradient(135deg,#e9f2ff,#f1ecff 70%,#eafffb)!important}
+.smart-filter-bar{box-shadow:0 10px 28px rgba(44,62,112,.05)}
+.focus-pulse{animation:cmFocusPulse .55s ease}
+@keyframes cmFocusPulse{0%{box-shadow:0 28px 75px rgba(30,50,96,.12)}45%{box-shadow:0 28px 85px rgba(76,81,220,.27)}100%{box-shadow:0 28px 75px rgba(30,50,96,.12)}}
+.legacy-spec-card{display:none!important}
+@media(max-width:900px){.smart-insights{grid-template-columns:1fr 1fr!important}.comparison-matrix{min-width:880px!important}.smart-compare-card .comparison-table-wrap{margin:0 8px 8px}.comparison-matrix thead th{top:0!important}}
+@media(max-width:600px){.smart-insights{grid-template-columns:1fr!important}.matrix-section-row th small{display:none}.comparison-matrix tbody .matrix-data-row th{width:155px!important}.comparison-matrix thead th:first-child{width:155px!important}.comparison-matrix tbody .matrix-data-row td,.comparison-matrix .product-col{min-width:190px!important}}

@@ -1030,3 +1030,70 @@ body{background:#f7f9fc!important;color:#13213b!important}
 
 @media(max-width:1050px){.cm-hero-inner{grid-template-columns:1fr 230px 250px!important}.cm-compare-layout{grid-template-columns:205px minmax(0,1fr)!important}.category-grid{grid-template-columns:repeat(4,1fr)!important}}
 @media(max-width:780px){.shell{width:min(100% - 24px,1440px)!important}.header-main{height:65px!important}.brand{min-width:150px!important}.brand img{width:155px!important}.header-search{display:none!important}.cm-hero-inner{grid-template-columns:1fr 150px!important;gap:10px!important;padding:20px 8px!important;min-height:245px!important}.cm-hero-info{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}.cm-hero-info ul{display:none!important}.cm-hero-product{grid-column:2;grid-row:1}.cm-hero-copy{grid-column:1;grid-row:1}.cm-hero-copy h1{font-size:31px!important}.cm-hero-copy p{font-size:11px!important}.hero-search{height:46px!important}.hero-product-art{width:135px!important;height:165px!important}.cm-compare-layout{grid-template-columns:1fr!important}.cm-product-picker{border-right:0!important;border-bottom:1px solid #e5ebf2!important}.cm-product-picker .search-results{max-height:130px!important;display:grid!important;grid-template-columns:1fr 1fr!important}.cm-focus-bar{flex-wrap:wrap!important}.cm-focus-bar .filter-intro{min-width:100%!important}.cm-focus-bar .filter-pills{order:2}.cm-focus-bar .more-filter-btn{order:3}.cm-section-head{align-items:flex-start!important;flex-direction:column!important}.cm-head-actions{width:100%!important;justify-content:space-between!important}.cm-benefit-grid{grid-template-columns:1fr 1fr!important}.cm-benefit-grid>div:nth-child(2){border-right:0!important}.category-grid{grid-template-columns:repeat(2,1fr)!important}}
+
+/* =========================================================
+   CompareMitra V18 — SAFE POLISH
+   Keep the V17 layout. Fix density, column sizing and overlap only.
+   ========================================================= */
+.cm-comparison-section{padding:20px 0 20px!important}
+.cm-section-head{margin-bottom:10px!important}
+.cm-section-head h2{font-size:23px!important}
+.cm-section-head p{font-size:10px!important}
+.cm-compare-layout{grid-template-columns:220px minmax(0,1fr)!important;gap:10px!important}
+.cm-product-picker{padding:12px!important}
+.cm-product-picker .search-results{max-height:285px!important}
+.cm-focus-bar{min-height:52px!important;padding:7px 10px!important;gap:8px!important}
+.cm-focus-bar .filter-intro{min-width:132px!important}
+.cm-focus-bar .filter-intro b{font-size:12px!important}
+.cm-focus-bar .smart-filter{padding:5px 8px!important;font-size:8px!important}
+.cm-focus-bar .more-filter-btn{padding:5px 8px!important;font-size:8px!important}
+.cm-subtitle{padding:8px 10px 6px!important;gap:6px!important}
+.cm-subtitle b{font-size:11px!important}
+.cm-subtitle small{font-size:6.5px!important}
+.cm-market-wrap{overflow-x:auto!important;overflow-y:hidden!important}
+.cm-market-table{min-width:850px!important}
+.cm-market-row{grid-template-columns:145px repeat(6,minmax(117px,1fr))!important}
+.cm-market-head{min-height:39px!important}
+.cm-market-head>div{padding:7px 7px!important;font-size:8px!important}
+.cm-market-body{min-height:82px!important}
+.cm-market-body>div{padding:7px!important}
+.cm-market-product img{width:36px!important;height:46px!important}
+.cm-market-product b{font-size:8px!important}
+.cm-market-product small,.cm-market-product em{font-size:6px!important}
+.cm-market-cell{gap:2px!important}
+.cm-market-price{font-size:15px!important}
+.cm-market-status{font-size:6.5px!important}
+.cm-market-cell a{font-size:6.5px!important;padding:4px 7px!important}
+.cm-market-cell>small{font-size:6.5px!important}
+.specs-subtitle{margin-top:5px!important}
+.cm-clean-table-wrap{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important}
+.cm-clean-table{width:max-content!important;min-width:800px!important;table-layout:fixed!important}
+.cm-clean-table thead th{height:62px!important;padding:6px 7px!important}
+.cm-clean-table thead th:first-child{width:135px!important;min-width:135px!important}
+.cm-clean-table thead .product-col{width:220px!important;min-width:220px!important}
+.cm-clean-table .matrix-product{grid-template-columns:34px minmax(0,1fr) 16px!important;gap:6px!important}
+.cm-clean-table .matrix-image{width:34px!important;height:40px!important}
+.cm-clean-table .matrix-product b{font-size:9px!important;line-height:1.08!important;white-space:normal!important}
+.cm-clean-table .matrix-product span{font-size:6px!important}
+.cm-clean-table .matrix-product small{font-size:6px!important}
+.cm-clean-table tbody .matrix-section-row th{height:28px!important;padding:0 8px!important}
+.cm-clean-table tbody .matrix-section-row th span{font-size:7px!important}
+.cm-clean-table tbody .matrix-data-row th{height:40px!important;width:135px!important;min-width:135px!important;padding:6px 8px!important}
+.cm-clean-table tbody .matrix-data-row td{height:40px!important;width:220px!important;min-width:220px!important;padding:6px 8px!important;font-size:9px!important;line-height:1.2!important;white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important}
+.cm-clean-table .matrix-cell{min-width:0!important;max-width:100%!important;align-items:center!important}
+.cm-clean-table .matrix-cell>span{white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important}
+.cm-table-note{padding:6px 9px!important;font-size:6.5px!important}
+
+@media(max-width:1050px){
+  .cm-compare-layout{grid-template-columns:205px minmax(0,1fr)!important}
+  .cm-clean-table{min-width:800px!important}
+  .cm-clean-table thead .product-col,.cm-clean-table tbody .matrix-data-row td{width:215px!important;min-width:215px!important}
+}
+@media(max-width:780px){
+  .cm-comparison-section{padding-top:16px!important}
+  .cm-compare-layout{grid-template-columns:1fr!important}
+  .cm-product-picker{max-height:none!important}
+  .cm-product-picker .search-results{max-height:135px!important}
+  .cm-clean-table{min-width:800px!important}
+  .cm-clean-table thead .product-col,.cm-clean-table tbody .matrix-data-row td{width:215px!important;min-width:215px!important}
+}

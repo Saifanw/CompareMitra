@@ -1,375 +1,157 @@
 (() => {
   "use strict";
 
-  const PRODUCT_DATA = "data/product-details-all40.json";
-  const OFFER_DATA = "data/marketplace-offers.json";
-
-  let products = [];
-  let offers = [];
+  // CompareMitra FINAL static-page engine.
+  // Product data is embedded from data/product-details-all40.json so GitHub
+  // Pages cannot fail because of a fetch/cache/path race.
+  const products = [{"id":"mobile-01","name":"Galaxy M36 5G","brand":"Samsung","image":"assets/product-images/1.svg","price":"₹21,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["6/128","8/128","8/256"],"highlight":"50MP OIS triple camera, 6 generations of Android upgrades and 6 years of security updates.","display":"6.7-inch FHD+ Super AMOLED, 120Hz","processor":"Exynos 1380 (5nm)","camera":"50MP OIS + 8MP + 2MP rear; 13MP front","battery":"5,000mAh","charging":"25W fast charging","os":"Android 15 / One UI 7 at launch","network":"5G","weight":"197g","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"active_sitstripe_link","associate_id":"comparemitr02-21","url":"https://link.amazon/B0dv5nyiY","link_type":"SiteStripe Short Link","tracking_id":"comparemitr02-21","verified_product":"Samsung Galaxy M36 5G","updated_on":"2026-10-03"},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-02","name":"Galaxy F70 Pro 5G","brand":"Samsung","image":"assets/product-images/2.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["6/128","8/128","8/256"],"highlight":"FHD+ Super AMOLED 120Hz display with Snapdragon 6 Gen 3.","display":"6.7-inch class FHD+ Super AMOLED, 120Hz","processor":"Snapdragon 6 Gen 3","camera":"50MP OIS + supporting cameras; front camera details pending","battery":"Battery details pending","charging":"Charging details pending","os":"Android / One UI details pending","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-03","name":"Galaxy A57 5G","brand":"Samsung","image":"assets/product-images/3.svg","price":"₹62,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256","12/256"],"highlight":"Super AMOLED Plus 120Hz display with Exynos 1680.","display":"6.7-inch Super AMOLED Plus, 120Hz","processor":"Exynos 1680","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Charging details pending","os":"Android / One UI details pending","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-04","name":"Galaxy S26 FE","brand":"Samsung","image":"assets/product-images/4.svg","price":"₹79,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256"],"highlight":"Dynamic AMOLED 2X 120Hz display with Exynos 2500.","display":"6.7-inch FHD+ Dynamic AMOLED 2X, 120Hz","processor":"Exynos 2500","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Charging details pending","os":"Android / One UI details pending","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-05","name":"Galaxy S26 Ultra","brand":"Samsung","image":"assets/product-images/5.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["12/256","12/512","16/1TB"],"highlight":"Ultra flagship Galaxy with high-end camera system and premium display.","display":"6.9-inch Dynamic AMOLED 2X, 120Hz","processor":"Snapdragon flagship platform","camera":"200MP main + supporting cameras; exact configuration to verify","battery":"5,000mAh","charging":"45W wired charging","os":"Android / One UI","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-06","name":"Galaxy Z Flip8","brand":"Samsung","image":"assets/product-images/6.svg","price":"₹1,24,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["12/256","12/512"],"highlight":"Foldable Galaxy flip phone with a high-refresh Dynamic AMOLED display.","display":"6.7-inch Dynamic AMOLED 2X, 120Hz","processor":"Snapdragon flagship platform","camera":"50MP main + supporting cameras; exact configuration to verify","battery":"4,300mAh","charging":"45W wired charging","os":"Android / One UI","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-07","name":"Galaxy Z Fold8","brand":"Samsung","image":"assets/product-images/7.svg","price":"₹1,79,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["12/256","12/512","16/1TB"],"highlight":"Large foldable Galaxy with flagship cameras and premium inner display.","display":"7.6-inch foldable Dynamic AMOLED, high refresh rate","processor":"Snapdragon flagship platform","camera":"200MP main + supporting cameras; exact configuration to verify","battery":"4,400mAh","charging":"45W wired charging","os":"Android / One UI","network":"5G","weight":"Weight pending","official_url":"https://www.samsung.com/in/smartphones/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-08","name":"iPhone 17","brand":"Apple","image":"assets/product-images/8.svg","price":"₹99,900","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["256GB","512GB"],"highlight":"iPhone 17 series model with Super Retina XDR display.","display":"6.3-inch Super Retina XDR OLED, 120Hz","processor":"Apple A19","camera":"Dual rear camera system; exact capture to verify","battery":"Battery details pending","charging":"USB-C charging; exact charging rate to verify","os":"iOS","network":"5G","weight":"Weight pending","official_url":"https://www.apple.com/in/shop/buy-iphone","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-09","name":"iPhone 17e","brand":"Apple","image":"assets/product-images/9.svg","price":"₹79,900","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["256GB","512GB"],"highlight":"iPhone 17e with Apple silicon and iOS.","display":"6.1-inch-class OLED display","processor":"Apple A19-class platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"USB-C charging; exact rate to verify","os":"iOS","network":"5G","weight":"Weight pending","official_url":"https://www.apple.com/in/shop/buy-iphone","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-10","name":"iPhone 18 Pro","brand":"Apple","image":"assets/product-images/10.svg","price":"₹1,64,900","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["256GB","512GB","1TB","2TB"],"highlight":"Pro iPhone with ProMotion display and advanced camera system.","display":"6.3-inch-class ProMotion OLED, 120Hz","processor":"Apple A20 Pro-class platform","camera":"Pro camera system; exact configuration to verify","battery":"Battery details pending","charging":"USB-C / fast charging; exact rate to verify","os":"iOS","network":"5G","weight":"Weight pending","official_url":"https://www.apple.com/in/shop/buy-iphone","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-11","name":"iPhone 18 Pro Max","brand":"Apple","image":"assets/product-images/11.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["256GB","512GB","1TB","2TB"],"highlight":"Large Pro iPhone with ProMotion display and advanced camera system.","display":"6.9-inch-class ProMotion OLED, 120Hz","processor":"Apple A20 Pro-class platform","camera":"Pro camera system; exact configuration to verify","battery":"Battery details pending","charging":"USB-C / fast charging; exact rate to verify","os":"iOS","network":"5G","weight":"Weight pending","official_url":"https://www.apple.com/in/shop/buy-iphone","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-12","name":"Pixel 11","brand":"Google","image":"assets/product-images/12.svg","price":"₹89,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["Variant details pending final India SKU verification"],"highlight":"Google Pixel 11 with Tensor platform and Pixel camera experience.","display":"Pixel OLED display, high refresh rate","processor":"Google Tensor platform","camera":"Pixel camera system; exact configuration pending","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://store.google.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-13","name":"Pixel 11 Pro","brand":"Google","image":"assets/product-images/13.svg","price":"₹1,19,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["256GB","512GB"],"highlight":"Google Pixel 11 Pro with Pro camera features.","display":"Pro-grade OLED display, high refresh rate","processor":"Google Tensor platform","camera":"Pro camera system; exact configuration pending","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://store.google.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-14","name":"Pixel 11 Pro XL","brand":"Google","image":"assets/product-images/14.svg","price":"₹1,34,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["256GB","512GB"],"highlight":"Google Pixel 11 Pro XL with large Pro display.","display":"Large Pro-grade OLED display, high refresh rate","processor":"Google Tensor platform","camera":"Pro camera system; exact configuration pending","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://store.google.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-15","name":"OnePlus 15","brand":"OnePlus","image":"assets/product-images/15.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["12/256","16/512"],"highlight":"OnePlus flagship with high-refresh AMOLED and fast charging.","display":"High-refresh AMOLED display","processor":"Snapdragon flagship platform","camera":"Flagship multi-camera system; exact configuration pending","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / OxygenOS","network":"5G","weight":"Weight pending","official_url":"https://www.oneplus.in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-16","name":"OnePlus 13s","brand":"OnePlus","image":"assets/product-images/16.svg","price":"₹54,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["12/256","12/512"],"highlight":"Compact OnePlus flagship-style phone with AMOLED display.","display":"6.32-inch AMOLED, high refresh rate","processor":"Snapdragon 8s Gen 3-class platform","camera":"50MP main + supporting cameras; exact configuration to verify","battery":"5,850mAh-class battery","charging":"80W-class fast charging","os":"Android / OxygenOS","network":"5G","weight":"Weight pending","official_url":"https://www.oneplus.in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-17","name":"Nord 6","brand":"OnePlus","image":"assets/product-images/17.svg","price":"₹42,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256","12/256"],"highlight":"OnePlus Nord performance-focused 5G phone.","display":"6.78-inch AMOLED, high refresh rate","processor":"Dimensity flagship/mid-high platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / OxygenOS","network":"5G","weight":"Weight pending","official_url":"https://www.oneplus.in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-18","name":"Nord CE6","brand":"OnePlus","image":"assets/product-images/18.svg","price":"₹29,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/128","8/256"],"highlight":"OnePlus Nord value-focused 5G phone.","display":"AMOLED display, high refresh rate","processor":"Mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / OxygenOS","network":"5G","weight":"Weight pending","official_url":"https://www.oneplus.in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-19","name":"Edge 70 Fusion","brand":"Motorola","image":"assets/product-images/19.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["8/128","8/256","12/256","12/512"],"highlight":"Motorola Edge pOLED 5G phone; exact India variant needs final SKU lock.","display":"pOLED display, high refresh rate","processor":"Mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"hold_final_refresh","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-20","name":"Edge 70 Pro","brand":"Motorola","image":"assets/product-images/20.svg","price":"₹39,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["—"],"highlight":"Motorola Edge Pro with pOLED display and OIS camera.","display":"pOLED display, high refresh rate","processor":"Dimensity-class platform","camera":"50MP OIS main + supporting cameras","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-21","name":"Edge 70 Pro+","brand":"Motorola","image":"assets/product-images/21.svg","price":"₹47,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["—"],"highlight":"Premium Motorola Edge model with high-refresh display.","display":"Premium pOLED display, high refresh rate","processor":"Flagship-class platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-22","name":"Edge 70 Max","brand":"Motorola","image":"assets/product-images/22.svg","price":"₹54,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256","12/256"],"highlight":"Large premium Motorola Edge model.","display":"Premium pOLED display, high refresh rate","processor":"Flagship/mid-high platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-23","name":"Signature","brand":"Motorola","image":"assets/product-images/23.svg","price":"₹59,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["12/256","16/512","16/1TB"],"highlight":"Motorola Signature premium smartphone.","display":"Premium pOLED display, high refresh rate","processor":"Flagship-class platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-24","name":"Moto G37 Power","brand":"Motorola","image":"assets/product-images/24.svg","price":"₹19,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["4/64","4/128","8/128"],"highlight":"Motorola Moto G series phone with large battery focus.","display":"LCD display, high refresh rate","processor":"Entry/mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Large battery","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.motorola.in/smartphones/d","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-25","name":"realme 16 Pro 5G","brand":"realme","image":"assets/product-images/25.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["—"],"highlight":"realme 16 Pro 5G with AMOLED display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / realme UI","network":"5G","weight":"Weight pending","official_url":"https://www.realme.com/in/","status":"hold_final_refresh","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-26","name":"realme 16 Pro+ 5G","brand":"realme","image":"assets/product-images/26.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["—"],"highlight":"realme 16 Pro+ 5G with premium AMOLED display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / realme UI","network":"5G","weight":"Weight pending","official_url":"https://www.realme.com/in/","status":"hold_final_refresh","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-27","name":"realme P4s 5G","brand":"realme","image":"assets/product-images/27.svg","price":"₹34,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/128","8/256","12/256"],"highlight":"realme P4s 5G with high-refresh display.","display":"AMOLED display, high refresh rate","processor":"Mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / realme UI","network":"5G","weight":"Weight pending","official_url":"https://www.realme.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-28","name":"Redmi Note 17 5G","brand":"Redmi","image":"assets/product-images/28.svg","price":"₹27,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["—"],"highlight":"Redmi Note 17 5G with 6.99-inch 120Hz AMOLED and 8,000mAh battery.","display":"6.99-inch 120Hz AMOLED","processor":"Snapdragon 4 Gen 4","camera":"Camera configuration pending final capture","battery":"8,000mAh","charging":"45W fast charging","os":"Android / HyperOS","network":"5G","weight":"Weight pending","official_url":"https://www.mi.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-29","name":"Redmi Note 17 Pro 5G","brand":"Redmi","image":"assets/product-images/29.svg","price":"₹36,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["—"],"highlight":"Redmi Note 17 Pro 5G with high-refresh AMOLED display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / HyperOS","network":"5G","weight":"Weight pending","official_url":"https://www.mi.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-30","name":"Redmi Note 17 Pro Max 5G","brand":"Redmi","image":"assets/product-images/30.svg","price":"₹49,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256","12/256"],"highlight":"Redmi Note 17 Pro Max 5G with premium display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / HyperOS","network":"5G","weight":"Weight pending","official_url":"https://www.mi.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-31","name":"Redmi 17 5G","brand":"Redmi","image":"assets/product-images/31.svg","price":"₹23,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["6/128"],"highlight":"Redmi 17 5G value-focused smartphone.","display":"Large display, high refresh rate","processor":"Entry/mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / HyperOS","network":"5G","weight":"Weight pending","official_url":"https://www.mi.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-32","name":"POCO M8x 5G","brand":"POCO","image":"assets/product-images/32.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["Variant details pending final India SKU verification"],"highlight":"POCO M8x 5G — India SKU/source identity still requires confirmation.","display":"Display details pending India SKU confirmation","processor":"Platform details pending India SKU confirmation","camera":"Camera details pending India SKU confirmation","battery":"Battery details pending","charging":"Charging details pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.po.co/in/","status":"hold_final_refresh","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-33","name":"POCO X8 5G","brand":"POCO","image":"assets/product-images/33.svg","price":"₹29,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["6/128","8/128","8/256"],"highlight":"POCO X8 5G with high-refresh display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / HyperOS","network":"5G","weight":"Weight pending","official_url":"https://www.po.co/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-34","name":"iQOO Z11 5G","brand":"iQOO","image":"assets/product-images/34.svg","price":"₹39,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/128"],"highlight":"iQOO Z11 5G performance-focused smartphone.","display":"AMOLED display, high refresh rate","processor":"Snapdragon 7/8-series-class platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / OriginOS","network":"5G","weight":"Weight pending","official_url":"https://www.iqoo.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-35","name":"vivo S2 5G","brand":"vivo","image":"assets/product-images/35.svg","price":"₹42,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/128","8/256"],"highlight":"vivo S2 5G with high-refresh AMOLED display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / Funtouch OS","network":"5G","weight":"Weight pending","official_url":"https://www.vivo.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-36","name":"Vivo T5 5G","brand":"vivo","image":"assets/product-images/36.svg","price":"₹34,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["6/128","8/128","8/256","12/256"],"highlight":"vivo T5 5G with high-refresh display.","display":"AMOLED display, high refresh rate","processor":"Mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / Funtouch OS","network":"5G","weight":"Weight pending","official_url":"https://www.vivo.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-37","name":"OPPO K14 Plus 5G","brand":"OPPO","image":"assets/product-images/37.svg","price":"₹29,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["—"],"highlight":"OPPO K14 Plus 5G with 1.5K AMOLED, Dimensity 7360 MAX and 8,000mAh battery.","display":"1.5K AMOLED display","processor":"Dimensity 7360 MAX","camera":"50MP OIS main + supporting cameras","battery":"8,000mAh","charging":"45W fast charging","os":"Android / ColorOS","network":"5G","weight":"Weight pending","official_url":"https://www.oppo.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-38","name":"OPPO Reno15 5G","brand":"OPPO","image":"assets/product-images/38.svg","price":"₹45,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["8/256","12/256","12/512"],"highlight":"OPPO Reno15 5G with high-refresh AMOLED display.","display":"AMOLED display, high refresh rate","processor":"Mid/high-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / ColorOS","network":"5G","weight":"Weight pending","official_url":"https://www.oppo.com/in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-39","name":"Nothing Phone (4a) Pro","brand":"Nothing","image":"assets/product-images/39.svg","price":"Price pending final refresh","price_note":"Current production price is not locked. Verify the exact India SKU/variant before publishing.","variants":["—"],"highlight":"Nothing Phone (4a) Pro with Nothing OS.","display":"AMOLED display, high refresh rate","processor":"Platform details pending final capture","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android / Nothing OS","network":"5G","weight":"Weight pending","official_url":"https://in.nothing.tech/","status":"hold_final_refresh","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}},{"id":"mobile-40","name":"HMD Vibe 2 Pro 5G","brand":"HMD","image":"assets/product-images/40.svg","price":"₹15,999","price_note":"Observed India price checked 2026-10-03. Verify the exact variant and final seller price before publishing.","variants":["6/128","8/128"],"highlight":"HMD Vibe 2 Pro 5G value-focused smartphone.","display":"AMOLED display, high refresh rate","processor":"Mid-range 5G platform","camera":"Camera configuration pending final capture","battery":"Battery details pending","charging":"Fast charging; exact rate pending","os":"Android","network":"5G","weight":"Weight pending","official_url":"https://www.hmd.com/en_in/","status":"site_preview_ready","affiliate":{"amazon":{"status":"pending_exact_sitstripe_link","associate_id":"comparemitr02-21","url":null},"flipkart":{"status":"pending_legitimate_affiliate_link","url":null}}}];
+  const offers = [{"product_id":"mobile-01","marketplace":"amazon","marketplace_product_id":"B0dv5nyiY","variant":"6/128 (page-level link; verify selected variant before purchase)","affiliate_url":"https://link.amazon/B0dv5nyiY","price":"₹21,999","currency":"INR","availability":"unknown","status":"verified_link","last_checked":"2026-10-03"}];
   let activeProduct = null;
 
-  const $ = (selector) => document.querySelector(selector);
-  const $$ = (selector) => [...document.querySelectorAll(selector)];
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const esc = v => String(v ?? "—").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const norm = v => String(v??"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").replace(/\s+/g," ").trim();
 
-  const esc = (value) => String(value ?? "—").replace(/[&<>"']/g, (c) => ({
-    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
-  }[c]));
-
-  const normalize = (value) => String(value ?? "")
-    .toLowerCase()
-    .replace(/&/g, " and ")
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-
-  const marketplaceList = [
-    { id:"amazon", name:"Amazon" },
-    { id:"flipkart", name:"Flipkart" },
-    { id:"myntra", name:"Myntra" },
-    { id:"reliance", name:"Reliance Digital" },
-    { id:"croma", name:"Croma" }
+  const stores=[
+    {id:"amazon",name:"Amazon"},
+    {id:"flipkart",name:"Flipkart"},
+    {id:"myntra",name:"Myntra"},
+    {id:"reliance",name:"Reliance Digital"},
+    {id:"croma",name:"Croma"}
   ];
 
-  function asProducts(data) {
-    if (Array.isArray(data)) return data;
-    if (Array.isArray(data?.products)) return data.products;
-    if (Array.isArray(data?.items)) return data.items;
-    return [];
-  }
-
-  function asOffers(data) {
-    if (Array.isArray(data)) return data;
-    if (Array.isArray(data?.offers)) return data.offers;
-    if (Array.isArray(data?.items)) return data.items;
-    return [];
-  }
-
-  async function loadJson(path) {
-    try {
-      const response = await fetch(path, { cache:"no-store" });
-      if (!response.ok) throw new Error(`${response.status} ${path}`);
-      return await response.json();
-    } catch (error) {
-      console.warn("CompareMitra:", error.message);
-      return null;
-    }
-  }
-
-  function findProduct(query) {
-    const q = normalize(query);
-    if (!q) return null;
-
-    // Exact name first.
-    let product = products.find(p => normalize(p.name) === q);
-    if (product) return product;
-
-    // Important: current data may use "Galaxy M36 5G" while UI says
-    // "Samsung Galaxy M36 5G". Brand + name are therefore matched together.
-    product = products.find(p => {
-      const full = normalize(`${p.brand || ""} ${p.name || ""}`);
-      return full === q;
+  function findProduct(query){
+    const q=norm(query);
+    if(!q) return null;
+    let p=products.find(x=>norm(x.name)===q);
+    if(p) return p;
+    p=products.find(x=>norm(`${x.brand||""} ${x.name||""}`)===q);
+    if(p) return p;
+    p=products.find(x=>{
+      const n=norm(x.name), full=norm(`${x.brand||""} ${x.name||""}`);
+      return n.includes(q)||q.includes(n)||full.includes(q)||q.includes(full);
     });
-    if (product) return product;
-
-    // Containment in either direction.
-    product = products.find(p => {
-      const name = normalize(p.name);
-      const full = normalize(`${p.brand || ""} ${p.name || ""}`);
-      return full.includes(q) || q.includes(full) || name.includes(q) || q.includes(name);
-    });
-    if (product) return product;
-
-    // Token scoring for practical searches such as "Samsung M36".
-    const tokens = q.split(" ").filter(Boolean);
-    let best = null;
-    let bestScore = 0;
-
-    for (const p of products) {
-      const text = normalize(`${p.brand || ""} ${p.name || ""}`);
-      let score = 0;
-      for (const token of tokens) {
-        if (text.includes(token)) score += token.length >= 3 ? 2 : 1;
-      }
-      if (score > bestScore) {
-        bestScore = score;
-        best = p;
-      }
+    if(p) return p;
+    const tokens=q.split(" ").filter(Boolean);
+    let best=null,score=0;
+    for(const x of products){
+      const t=norm(`${x.brand||""} ${x.name||""}`);
+      const s=tokens.reduce((a,k)=>a+(t.includes(k)?(k.length>=3?2:1):0),0);
+      if(s>score){score=s;best=x;}
     }
-
-    return bestScore >= Math.max(3, Math.ceil(tokens.length * 1.5)) ? best : null;
+    return score>=Math.max(3,Math.ceil(tokens.length*1.5))?best:null;
   }
 
-  function findOffer(product, marketplace) {
-    const pid = String(product?.id ?? "");
-    const mid = normalize(marketplace);
-    return offers.find(o =>
-      String(o.product_id ?? o.productId ?? o.id ?? "") === pid &&
-      normalize(o.marketplace ?? o.store ?? "") === mid
-    ) || null;
+  function offer(p,id){
+    return offers.find(o=>String(o.product_id??o.productId??"")===String(p?.id??"") && norm(o.marketplace??o.store??"")===id)||null;
   }
 
-  function getAffiliateUrl(product, marketplace) {
-    const direct = product?.affiliate?.[marketplace];
-
-    if (typeof direct === "string" && direct.trim()) return direct;
-    if (direct && typeof direct === "object") {
-      return direct.url || direct.affiliate_url || direct.link || null;
-    }
-
-    const offer = findOffer(product, marketplace);
-    return offer?.affiliate_url || offer?.url || offer?.link || null;
+  function affiliate(p,id){
+    const a=p?.affiliate?.[id];
+    if(typeof a==="string" && a) return a;
+    if(a && typeof a==="object") return a.url||a.affiliate_url||a.link||null;
+    const o=offer(p,id);
+    return o?.affiliate_url||o?.url||o?.link||null;
   }
 
-  function displayPrice(value) {
-    if (value === null || value === undefined || value === "") return "—";
-    if (typeof value === "number") return `₹${value.toLocaleString("en-IN")}`;
-    return String(value);
-  }
-
-  /*
-   * IMPORTANT:
-   * The uploaded project stores these fields at the product ROOT:
-   * display, processor, camera, battery, charging, network, weight.
-   * They are NOT required to be inside p.specs.
-   */
-  function getSpecifications(product) {
-    const specs = product?.specs || product?.specifications || {};
-
+  function specs(p){
+    const s=p.specs||p.specifications||{};
     return {
-      "Display": product.display ?? specs.display ?? specs.screen ?? "—",
-      "Processor": product.processor ?? specs.processor ?? specs.chipset ?? "—",
-      "RAM & Storage": Array.isArray(product.variants)
-        ? product.variants.join(" • ")
-        : (product.variants || product.ram_storage || specs.ram_storage || "—"),
-      "Camera": product.camera ?? specs.camera ?? specs.rear_camera ?? "—",
-      "Battery": product.battery ?? specs.battery ?? "—",
-      "Charging": product.charging ?? specs.charging ?? specs.fast_charging ?? "—",
-      "5G Support": product.network ?? specs.network ?? specs["5g support"] ?? "5G",
-      "Weight": product.weight ?? specs.weight ?? "—"
+      "Display":p.display??s.display??s.screen??"—",
+      "Processor":p.processor??s.processor??s.chipset??"—",
+      "RAM & Storage":Array.isArray(p.variants)?p.variants.join(" • "):(p.variants||p.ram_storage||"—"),
+      "Camera":p.camera??s.camera??s.rear_camera??"—",
+      "Battery":p.battery??s.battery??"—",
+      "Charging":p.charging??s.charging??s.fast_charging??"—",
+      "5G Support":p.network??s.network??"5G",
+      "Weight":p.weight??s.weight??"—"
     };
   }
 
-  function renderQuickSpecs(specs) {
-    const target = $("#quickSpecs");
-    if (!target) return;
+  function render(p){
+    activeProduct=p;
+    const empty=$("#emptyState"), result=$("#productResult");
+    if(empty) empty.hidden=true;
+    if(result) result.hidden=false;
 
-    const selected = [
-      ["DISPLAY", specs.Display],
-      ["PROCESSOR", specs.Processor],
-      ["CAMERA", specs.Camera],
-      ["BATTERY", specs.Battery]
-    ];
+    const img=$("#productImg");
+    if(img){img.src=p.image||"assets/product-images/1.svg";img.alt=p.name||"Product";}
+    if($("#productBrand")) $("#productBrand").textContent=p.brand||"";
+    if($("#productName")) $("#productName").textContent=p.name||"";
+    if($("#productVariant")) $("#productVariant").textContent=(Array.isArray(p.variants)?p.variants.join("  |  "):"")+(p.network?`  |  ${p.network}`:"");
 
-    target.innerHTML = selected.map(([label, value]) => `
-      <div class="quick-spec">
-        <small>${esc(label)}</small>
-        <b>${esc(value)}</b>
-      </div>
-    `).join("");
-  }
+    const s=specs(p);
+    if($("#quickSpecs")) $("#quickSpecs").innerHTML=[
+      ["DISPLAY",s.Display],["PROCESSOR",s.Processor],["CAMERA",s.Camera],["BATTERY",s.Battery]
+    ].map(x=>`<div class="quick-spec"><small>${esc(x[0])}</small><b>${esc(x[1])}</b></div>`).join("");
 
-  function renderStoreHeader(product) {
-    const head = $("#storeHead");
-    if (!head) return;
-
-    head.innerHTML = `<th>FEATURE</th>` + marketplaceList.map(store => {
-      const offer = findOffer(product, store.id);
-      const url = getAffiliateUrl(product, store.id);
-      const connected = !!offer || !!url || store.id === "amazon";
-
-      return `
-        <th>
-          <span class="store-logo">${esc(store.name)}</span>
-          <span class="store-status">${connected ? "Connected" : "Not connected"}</span>
-        </th>
-      `;
+    if($("#storeHead")) $("#storeHead").innerHTML="<th>FEATURE</th>"+stores.map(st=>{
+      const o=offer(p,st.id), url=affiliate(p,st.id);
+      const connected=!!o||!!url;
+      return `<th><span class="store-logo">${esc(st.name)}</span><span class="store-status">${connected?"Connected":"Not connected"}</span></th>`;
     }).join("");
-  }
 
-  function renderMarketplaceCell(product, store, row, specs) {
-    const offer = findOffer(product, store.id);
-    const url = getAffiliateUrl(product, store.id);
-
-    if (row === "Price") {
-      const price = offer?.price ?? (store.id === "amazon" ? product.price : null);
-
-      if (price !== null && price !== undefined && price !== "") {
-        const cta = url
-          ? `<a class="store-btn ${store.id === "amazon" ? "" : "generic-btn"}"
-                target="_blank" rel="nofollow sponsored noopener"
-                href="${esc(url)}">Check price ↗</a>`
-          : `<span class="unavailable">Link pending</span>`;
-
-        return `
-          <td>
-            <span class="store-price">${esc(displayPrice(price))}</span>
-            ${cta}
-          </td>
-        `;
+    const rows=["Price",...Object.keys(s)];
+    if($("#tableBody")) $("#tableBody").innerHTML=rows.map(row=>`<tr><td>${esc(row)}</td>`+stores.map(st=>{
+      const o=offer(p,st.id), url=affiliate(p,st.id);
+      if(row==="Price"){
+        const value=o?.price??(st.id==="amazon"?p.price:null);
+        if(value!==null&&value!==undefined&&value!==""){
+          return `<td><span class="store-price">${esc(String(value))}</span>${url?`<a class="store-btn ${st.id==="amazon"?"":"generic-btn"}" target="_blank" rel="nofollow sponsored noopener" href="${esc(url)}">Check price ↗</a>`:`<span class="unavailable">Link pending</span>`}</td>`;
+        }
+        return `<td><span class="unavailable">Not connected</span></td>`;
       }
+      return st.id==="amazon"?`<td class="feature-label">${esc(s[row])}</td>`:`<td><span class="unavailable">—</span></td>`;
+    }).join("")+"</tr>").join("");
 
-      return `<td><span class="unavailable">Not connected</span></td>`;
-    }
-
-    // Until an actual marketplace feed/API is connected, do not copy the
-    // product's specification into another store column and imply verification.
-    if (store.id !== "amazon") {
-      return `<td><span class="unavailable">—</span></td>`;
-    }
-
-    return `<td class="feature-label">${esc(specs[row])}</td>`;
+    // Keep the result visible even if a browser restores a previous scroll position.
+    requestAnimationFrame(()=>{ if(result) result.scrollIntoView({behavior:"smooth",block:"nearest"}); });
   }
 
-  function renderProduct(product) {
-    activeProduct = product;
-
-    $("#emptyState").hidden = true;
-    $("#productResult").hidden = false;
-
-    const image = $("#productImg");
-    image.src = product.image || "assets/product-images/1.svg";
-    image.alt = product.name || "Product";
-
-    $("#productBrand").textContent = product.brand || "";
-    $("#productName").textContent = product.name || "";
-
-    const variants = Array.isArray(product.variants)
-      ? product.variants.join("  |  ")
-      : String(product.variants || "");
-
-    $("#productVariant").textContent =
-      `${variants}${product.network ? `  |  ${product.network}` : ""}`;
-
-    const specs = getSpecifications(product);
-    renderQuickSpecs(specs);
-    renderStoreHeader(product);
-
-    const rows = ["Price", ...Object.keys(specs)];
-
-    $("#tableBody").innerHTML = rows.map(row => `
-      <tr>
-        <td>${esc(row)}</td>
-        ${marketplaceList.map(store =>
-          renderMarketplaceCell(product, store, row, specs)
-        ).join("")}
-      </tr>
-    `).join("");
-  }
-
-  function renderEmpty(query = "") {
-    $("#emptyState").hidden = false;
-    $("#productResult").hidden = true;
-
-    const title = $("#emptyState h2");
-    const description = $("#emptyState p");
-
-    if (query.trim()) {
-      title.textContent = `No verified product found for “${query.trim()}”`;
-      description.textContent =
-        "Try a product name such as Samsung Galaxy M36 5G, iPhone 17 or OnePlus Nord 6.";
-    } else {
-      title.textContent = "Search once. See everything.";
-      description.textContent =
-        "Start with a product on the left. CompareMitra will bring useful specifications and connected store options into one clean workspace.";
+  function empty(q){
+    if($("#emptyState")) $("#emptyState").hidden=false;
+    if($("#productResult")) $("#productResult").hidden=true;
+    const h=$("#emptyState h2"),p=$("#emptyState p");
+    if(q?.trim()){
+      if(h) h.textContent=`No verified product found for “${q.trim()}”`;
+      if(p) p.textContent="Try Samsung Galaxy M36 5G, iPhone 17 or OnePlus Nord 6.";
+    }else{
+      if(h) h.textContent="Search once. See everything.";
+      if(p) p.textContent="Start with a product on the left. CompareMitra will bring useful specifications and connected store options into one clean workspace.";
     }
   }
 
-  function searchProduct(query) {
-    const product = findProduct(query);
-    if (product) {
-      renderProduct(product);
-    } else {
-      renderEmpty(query);
-    }
+  function sync(q){if($("#heroInput"))$("#heroInput").value=q;if($("#topInput"))$("#topInput").value=q;}
+  function search(q){const p=findProduct(q);p?render(p):empty(q);}
+
+  function bind(){
+    const forms=[[$("#topSearch"),$("#topInput")],[$("#heroSearch"),$("#heroInput")]];
+    forms.forEach(([form,input])=>form?.addEventListener("submit",e=>{e.preventDefault();sync(input.value.trim());search(input.value.trim());}));
+    $$("[data-q]").forEach(b=>b.addEventListener("click",()=>{sync(b.dataset.q||"");search(b.dataset.q||"");}));
+    $("#clearBtn")?.addEventListener("click",()=>{sync("");empty("");});
+    $("#highlightBtn")?.addEventListener("click",()=>{$$("#compareTable tbody td").forEach(td=>td.classList.toggle("diff"));$("#highlightBtn").classList.toggle("active");});
+    $("#moreStores")?.addEventListener("click",()=>alert("More marketplace columns will appear here as verified affiliate/API integrations are added."));
+    $("#addCompare")?.addEventListener("click",()=>{
+      if(!activeProduct)return;
+      let ids=[];try{ids=JSON.parse(localStorage.getItem("comparemmitra_compare")||"[]");}catch(_ ){}
+      if(!ids.includes(activeProduct.id))ids.push(activeProduct.id);
+      localStorage.setItem("comparemmitra_compare",JSON.stringify(ids));
+      if($("#compareCount"))$("#compareCount").textContent=ids.length;
+    });
+    try{if($("#compareCount"))$("#compareCount").textContent=JSON.parse(localStorage.getItem("comparemmitra_compare")||"[]").length;}catch(_ ){}
+
+    // Run several times because Chrome may restore/autofill the search input after DOM load.
+    const restore=()=>{
+      const q=(($("#heroInput")?.value)||($("#topInput")?.value)||"").trim();
+      if(q) search(q); else empty("");
+    };
+    restore();
+    setTimeout(restore,150);
+    setTimeout(restore,600);
+    window.addEventListener("pageshow",restore);
   }
 
-  function syncInputs(value) {
-    if ($("#heroInput")) $("#heroInput").value = value;
-    if ($("#topInput")) $("#topInput").value = value;
-  }
-
-  function bindSearch(form, input) {
-    if (!form || !input) return;
-
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      const query = input.value.trim();
-      syncInputs(query);
-      searchProduct(query);
-    });
-  }
-
-  async function init() {
-    const [productData, offerData] = await Promise.all([
-      loadJson(PRODUCT_DATA),
-      loadJson(OFFER_DATA)
-    ]);
-
-    products = asProducts(productData);
-    offers = asOffers(offerData);
-
-    bindSearch($("#topSearch"), $("#topInput"));
-    bindSearch($("#heroSearch"), $("#heroInput"));
-
-    $$("[data-q]").forEach(button => {
-      button.addEventListener("click", () => {
-        const query = button.dataset.q || "";
-        syncInputs(query);
-        searchProduct(query);
-      });
-    });
-
-    $("#clearBtn")?.addEventListener("click", () => {
-      syncInputs("");
-      activeProduct = null;
-      renderEmpty("");
-    });
-
-    $("#highlightBtn")?.addEventListener("click", () => {
-      $("#compareTable")?.querySelectorAll("tbody td").forEach(cell =>
-        cell.classList.toggle("diff")
-      );
-      $("#highlightBtn")?.classList.toggle("active");
-    });
-
-    $("#moreStores")?.addEventListener("click", () => {
-      alert("More marketplace columns will appear here as verified affiliate/API integrations are added.");
-    });
-
-    $("#addCompare")?.addEventListener("click", () => {
-      if (!activeProduct) return;
-
-      let ids = [];
-      try {
-        ids = JSON.parse(localStorage.getItem("comparemmitra_compare") || "[]");
-      } catch (_) {}
-
-      if (!ids.includes(activeProduct.id)) ids.push(activeProduct.id);
-      localStorage.setItem("comparemmitra_compare", JSON.stringify(ids));
-
-      const counter = $("#compareCount");
-      if (counter) counter.textContent = ids.length;
-    });
-
-    try {
-      const ids = JSON.parse(localStorage.getItem("comparemmitra_compare") || "[]");
-      if ($("#compareCount")) $("#compareCount").textContent = ids.length;
-    } catch (_) {}
-
-    /*
-     * Critical fix:
-     * Browsers can restore the previous search text after a refresh.
-     * Once JSON is loaded, use that restored text to render the product.
-     */
-    const restoredQuery =
-      ($("#heroInput")?.value || $("#topInput")?.value || "").trim();
-
-    if (restoredQuery) {
-      searchProduct(restoredQuery);
-    } else {
-      renderEmpty("");
-    }
-  }
-
-  init();
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",bind);
+  else bind();
 })();

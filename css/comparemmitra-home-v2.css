@@ -730,3 +730,56 @@ body{background:linear-gradient(180deg,#f7faff 0%,#edf4ff 34%,#f8faff 100%)!impo
 
 @media(max-width:900px){.header-main{height:56px!important}.brand img{width:150px!important}.category-nav,.nav-inner{height:40px!important}.nav-inner a{padding:9px 11px!important}.matrix-store-tab{min-width:132px}.matrix-stage{padding:0 8px 10px!important}.comparison-matrix{min-width:900px!important}.marketplace-grid-row{grid-template-columns:120px repeat(5,minmax(125px,1fr))}}
 @media(max-width:700px){.top-strip-inner span:last-child{display:none}.header-main{height:54px!important}.brand img{width:138px!important}.header-actions .header-action{padding:6px!important}.category-nav,.nav-inner{height:38px!important}.nav-inner a{padding:8px 10px!important;font-size:10px!important}.dashboard-section{padding-top:8px!important}.matrix-marketplace-rail{padding:9px 10px 8px!important}.matrix-marketplace-label small{display:none}.smart-compare-head{padding:18px!important}.smart-compare-head h3{font-size:25px!important}.smart-compare-card .comparison-table-wrap{border-radius:0 0 16px 16px!important}.comparison-matrix{min-width:920px!important}.marketplace-section{padding:18px 10px!important}.marketplace-matrix{min-width:780px}}
+
+
+/* V13 — cinematic compact shell + table-first comparison */
+:root{--v13-blue:#2563eb;--v13-indigo:#4f46e5;--v13-violet:#7c3aed;--v13-cyan:#06b6d4;--v13-ink:#071633}
+.top-strip{height:21px!important;background:linear-gradient(90deg,#050d20 0%,#0b1735 42%,#17164a 72%,#071633 100%)!important}
+.top-strip-inner{font-size:9px!important;letter-spacing:.01em}
+.site-header{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(247,249,255,.93))!important;border-bottom:1px solid rgba(148,163,184,.22)!important;box-shadow:0 8px 30px rgba(10,28,67,.08)!important}
+.header-main{height:54px!important;gap:14px!important}
+.header-main:before{left:8%;right:8%;height:2px;background:linear-gradient(90deg,transparent,#60a5fa 24%,#8b5cf6 52%,#22d3ee 76%,transparent)!important;opacity:.65!important;filter:blur(.2px)}
+.brand img{width:158px!important;max-height:42px!important}
+.header-actions{gap:4px!important}.header-action{font-size:11px!important;padding:6px 8px!important}.header-action:hover{background:linear-gradient(135deg,#eef5ff,#f4efff)!important;color:#1d3b7a!important}
+.category-nav{height:37px!important;background:linear-gradient(90deg,#081735,#0e2250 45%,#241b5b 78%,#0a1736)!important;border-top:0!important;position:relative!important;box-shadow:0 7px 20px rgba(8,23,53,.14)!important}
+.nav-inner{height:37px!important;mask-image:linear-gradient(90deg,transparent 0,#000 2%,#000 97%,transparent 100%)!important}
+.nav-inner a{height:37px!important;display:flex!important;align-items:center!important;padding:0 13px!important;color:#c8d5ec!important;border-bottom:2px solid transparent!important;border-radius:8px 8px 0 0!important;font-size:10px!important;transition:transform .22s ease,background .22s ease,color .22s ease,box-shadow .22s ease!important}
+.nav-inner a:hover{color:#fff!important;background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.02))!important;transform:translateY(-1px)!important}
+.nav-inner a.active{color:#fff!important;background:linear-gradient(180deg,rgba(96,165,250,.22),rgba(79,70,229,.12))!important;border-bottom-color:#67e8f9!important;box-shadow:inset 0 -7px 18px rgba(37,99,235,.12),0 0 18px rgba(96,165,250,.08)!important}
+.category-nav:after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#60a5fa,#a78bfa,#22d3ee,transparent);opacity:.55;animation:cmV13Rail 7s ease-in-out infinite alternate}
+@keyframes cmV13Rail{0%{transform:translateX(-4%);opacity:.35}100%{transform:translateX(4%);opacity:.75}}
+.dashboard-section{padding-top:10px!important;background:radial-gradient(circle at 84% 4%,rgba(34,211,238,.12),transparent 20%),radial-gradient(circle at 52% 0%,rgba(99,102,241,.12),transparent 24%),linear-gradient(135deg,#eef4ff,#f8f9ff 48%,#f6f2ff)!important}
+.smart-compare-card{margin-top:16px!important;border-radius:26px!important;background:linear-gradient(180deg,#ffffff 0%,#fbfcff 54%,#f7f5ff 100%)!important;box-shadow:0 28px 80px rgba(20,42,90,.14)!important}
+.smart-compare-head{background:linear-gradient(120deg,#061735 0%,#102a61 50%,#30216f 100%)!important;min-height:118px!important;position:relative!important;overflow:hidden!important}
+.smart-compare-head:before{content:"";position:absolute;width:360px;height:200px;right:-100px;top:-100px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.18),transparent 68%);animation:v13Glow 8s ease-in-out infinite alternate}
+.smart-compare-head:after{content:"";position:absolute;width:280px;height:140px;left:48%;bottom:-100px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.18),transparent 70%);animation:v13Glow2 9s ease-in-out infinite alternate}
+@keyframes v13Glow{from{transform:translate3d(-10px,0,0)}to{transform:translate3d(18px,10px,0)}}
+@keyframes v13Glow2{from{transform:translateX(-8px)}to{transform:translateX(16px)}}
+.smart-compare-head>*{position:relative;z-index:2}
+.magical-filter{background:linear-gradient(110deg,#fff 0%,#f8fbff 50%,#fbf7ff 100%)!important;border-bottom:1px solid #dfe7f3!important;min-height:112px!important;padding:20px 24px!important}
+.filter-intro{max-width:330px!important}.filter-spark{background:linear-gradient(145deg,#7c3aed,#4f46e5 52%,#06b6d4)!important;color:#fff!important;box-shadow:0 10px 26px rgba(79,70,229,.22)!important}
+.smart-filter{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease!important}.smart-filter:hover{transform:translateY(-2px)!important;box-shadow:0 10px 22px rgba(55,84,150,.10)!important}.smart-filter.active{background:linear-gradient(135deg,#2563eb,#4f46e5 62%,#7c3aed)!important;color:#fff!important;border-color:transparent!important;box-shadow:0 10px 26px rgba(79,70,229,.22)!important}
+/* No marketplace strip between the filter and matrix: the table is the hero. */
+.matrix-stage{padding:0 0 16px!important;background:linear-gradient(135deg,#f2f6ff,#fff 42%,#faf7ff)!important;border:0!important}
+.matrix-stage-top{display:flex!important;padding:12px 22px!important;background:linear-gradient(90deg,#edf4ff,#fff,#f7f2ff)!important;border-bottom:1px solid #e2e9f4!important;color:#5e7194!important}
+.smart-compare-card .comparison-table-wrap{margin:0 18px!important;border:1px solid #cfdcf0!important;border-radius:22px!important;overflow:auto!important;box-shadow:0 24px 70px rgba(18,41,83,.14)!important;background:#fff!important;min-height:420px!important}
+.comparison-matrix{display:table!important;visibility:visible!important;opacity:1!important;min-width:980px!important;width:100%!important}
+.comparison-matrix thead{display:table-header-group!important}.comparison-matrix tbody{display:table-row-group!important}
+.comparison-matrix thead th{height:104px!important;background:linear-gradient(135deg,#071633,#102a5d 55%,#2f246f)!important;color:#fff!important}
+.comparison-matrix thead th:first-child{width:220px!important;min-width:220px!important;background:#06152f!important}
+.comparison-matrix thead .product-col{min-width:260px!important;width:auto!important}
+.comparison-matrix tbody .matrix-section-row th{height:54px!important;background:linear-gradient(90deg,#0a1d43,#173875 54%,#30266e)!important;color:#fff!important;box-shadow:inset 5px 0 0 #60a5fa!important}
+.comparison-matrix tbody .matrix-data-row th{width:220px!important;min-width:220px!important;background:linear-gradient(90deg,#eef4fb,#fbfcff)!important}
+.comparison-matrix tbody .matrix-data-row td{min-width:260px!important;height:66px!important;font-size:14px!important;background:#fff!important}
+.comparison-matrix tbody .matrix-data-row:nth-child(odd) td{background:#fafcff!important}
+.matrix-cell>span{font-size:14px!important}.matrix-cell em{font-size:8px!important;background:linear-gradient(135deg,#d9faec,#effff8)!important;color:#008a60!important;box-shadow:0 5px 12px rgba(16,185,129,.10)!important}
+/* Verdict is a compact ribbon, not a stack of cards. */
+.smart-insights-after{display:grid!important;grid-template-columns:1.3fr 1fr 1fr 1fr!important;gap:0!important;margin:0 18px 14px!important;padding:0!important;border:1px solid #dce5f3!important;border-radius:16px!important;overflow:hidden!important;background:#fff!important;box-shadow:0 12px 30px rgba(25,48,92,.07)!important}
+.smart-insights-after>*{border:0!important;border-right:1px solid #e5ebf4!important;border-radius:0!important;box-shadow:none!important;min-height:74px!important;padding:12px 14px!important;background:linear-gradient(135deg,#fff,#f7faff)!important}.smart-insights-after>*:last-child{border-right:0!important}.smart-insights-after .best{background:linear-gradient(135deg,#effff8,#f8fffd)!important}
+/* Marketplace section is the buying stage, below the comparison. */
+.marketplace-section{margin-top:18px!important;border-radius:26px!important;background:linear-gradient(135deg,#f5f9ff,#fff 45%,#faf5ff)!important;border:1px solid #d9e3f2!important;box-shadow:0 24px 60px rgba(22,46,91,.09)!important}
+.marketplace-head{display:flex!important;align-items:center!important;justify-content:space-between!important}.marketplace-head h3{font-size:24px!important}.marketplace-matrix{border-radius:18px!important;box-shadow:0 18px 48px rgba(20,44,90,.09)!important}
+.marketplace-grid-head{background:linear-gradient(100deg,#071633,#173875 58%,#30266e)!important}.marketplace-grid-row{grid-template-columns:155px repeat(5,minmax(145px,1fr))!important}.marketplace-feature{background:#f4f7fc!important}.marketplace-grid-cell{background:#fff!important}.marketplace-grid-cell:hover{background:#f2f7ff!important}
+.buy-cta-panel{background:linear-gradient(105deg,#061633,#102d62 56%,#4f46a5)!important;box-shadow:0 18px 42px rgba(24,47,101,.18)!important}
+@media(max-width:900px){.comparison-matrix{min-width:980px!important}.smart-insights-after{grid-template-columns:1fr 1fr!important}.smart-compare-card .comparison-table-wrap{margin:0 8px!important}.matrix-stage-top{padding:10px 12px!important}}
+@media(max-width:700px){.smart-compare-head{min-height:104px!important}.magical-filter{padding:15px!important}.filter-intro{max-width:none!important}.smart-compare-card .comparison-table-wrap{min-height:380px!important}.comparison-matrix{min-width:1000px!important}.comparison-matrix thead .product-col,.comparison-matrix tbody .matrix-data-row td{min-width:230px!important}.smart-insights-after{grid-template-columns:1fr!important;margin:0 8px 10px!important}.smart-insights-after>*{border-right:0!important;border-bottom:1px solid #e5ebf4!important}.smart-insights-after>*:last-child{border-bottom:0!important}.marketplace-grid-row{grid-template-columns:120px repeat(5,minmax(130px,1fr))!important}}
